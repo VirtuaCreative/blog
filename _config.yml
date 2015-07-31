@@ -1,11 +1,17 @@
-paginate: 10
+paginate: 10 # pagination based on number of posts
 paginate_path: "page:num"
-exclude: ["README.md"]
+exclude: ["README.md"] # files to exclude
 highlighter: pygments
 markdown: kramdown
 disqus: virtuacreative
 
-title: Virtua Creative Blog
+defaults:
+  -
+    scope:
+      path: "" 
+    values:
+      title: Virtua Creative Blog
+
 description: Virtua Creative Blog
 author:
   name: VirtuaCreative
