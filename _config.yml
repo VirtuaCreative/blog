@@ -1,0 +1,26 @@
+paginate: 10
+paginate_path: "page:num"
+exclude: ["README.md"]
+highlighter: pygments
+markdown: kramdown
+disqus: virtuacreative
+
+title: Virtua Creative Blog
+description: Virtua Creative Blog
+author:
+  name: VirtuaCreative
+  email: info@virtuacreative.com
+  github: VirtuaCreative
+  twitter: xmdramos
+  flickr: virtuacreative
+  linkedin:
+  facebook: virtuacreative
+  googleplus: VirtuacreativeBrWebsites/posts
+  bio: Virtua Creative Technology
+  email_md5: 6fa7e8a0b8a820fa63c7cfd1833b1be4
+
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+
+BASE_PATH: http://virtuacreative.github.io/blog
