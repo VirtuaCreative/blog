@@ -21,6 +21,7 @@
 	<link href="{{ site.BASE_PATH }}/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<link href="{{ site.BASE_PATH }}/assets/resources/syntax/syntax.css" rel="stylesheet">
 	<link href="{{ site.BASE_PATH }}/assets/css/style.css" rel="stylesheet">
+	<link href="{{ site.BASE_PATH }}/assets/css/animate.css" rel="stylesheet">
 
 	<!-- Le fav and touch icons -->
 	<!-- Update these with your own images
@@ -103,7 +104,7 @@
 		{% include sidebar.html %}
 	</div>
 
-	<div class="header-color col-sm-9 col-sm-offset-3">
+	<div class="header-color col-sm-9 col-sm-offset-3 animated fadeIn">
 		{{ content }}
 
 		<footer>
@@ -113,7 +114,7 @@
 			</p>
 		</footer>
 	</div>
-	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/jquery/jquery.min.js">		</script>
 	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/js/app.js"></script>
 	<script>
@@ -124,6 +125,6 @@
 
 	  ga('create', 'UA-65595934-1', 'auto');
 	  ga('send', 'pageview');
-</script>
+	</script>
 </body>
 </html>
