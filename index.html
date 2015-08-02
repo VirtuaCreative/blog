@@ -44,36 +44,35 @@ tagline:
  <hr/>
 </article>
 {% endfor %}
-<hr/>
 
 
-<ul class="pager"> 
+<ul class="pager pager-index"> 
 
   {% if paginator.previous_page %}
   <li class="previous">
     {% if paginator.previous_page == 1 %}
-    <a href="{{ site.BASE_PATH }}/">&larr; + Novo </a>
+    <a href="{{ site.BASE_PATH }}/">&larr; + Novos</a>
     {% else %}
-    <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.previous_page }}">&larr; + Novo </a>
+    <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.previous_page }}">&larr; + Novos</a>
     {% endif %}
   </li>
   {% else %}
   <li class="previous disabled">
-    <a>&larr; + Novo </a>
+    <a>&larr; + Novos</a>
   </li>
   {% endif %}
   
   <li>
-    <span class="page_number">Página: {{ paginator.page }} de {{ paginator.total_pages }}</span>
+    <span class="page_number">Pág. {{ paginator.page }} de {{ paginator.total_pages }}</span>
   </li>
 
   {% if paginator.next_page %}
   <li class="next">
-    <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.next_page }}"> + Antigo &rarr;</a>
+    <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.next_page }}">+ Antigos &rarr;</a>
   </li>
   {% else %}
   <li class="next disabled">
-    <a> + Antigo &rarr;</a>        
+    <a>+ Antigos &rarr;</a>        
   </li>
   {% endif %}
 

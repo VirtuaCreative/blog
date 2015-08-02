@@ -92,6 +92,7 @@ article .share .gplus:hover {
 .page-header {
 	color: #333;
 	text-shadow: 2px 2px 4px rgba(51, 51, 51, 0.5);
+	padding-bottom: 33px;
 }
 
 article{
@@ -354,9 +355,46 @@ button:hover.navbar-toggle.collapsed {
 	background-color: white !important;
 }
 
+.navbar-brand {
+	position: relative;
+	padding-right: 0px !important;
+	margin-top: 7px;
+	padding-left: 10px;
+	padding-top: 6px;
+}
+
+.navbar-toggle {
+	margin-right: 10px !important;
+}
+
 .divider-1 {
 	border-bottom: 1px solid gray;
 }
+
+span.lineno {
+	color: red;
+}
+
+pre {
+	background-color: floralwhite !important;
+}
+
+code {
+	background-color: lightyellow;
+	color: brown;
+}
+
+.pager-index {
+	margin-top: 20px;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+
+.pager li:hover>a {
+	background-color: #477dca;
+	color: white;
+}
+
 
 @media screen and (max-width: 768px) {
 
@@ -365,5 +403,46 @@ button:hover.navbar-toggle.collapsed {
 	}
 	.tab-content {
 		margin-top: 30px;
+	}
+	.nav-tabs-vertical {
+		border-right: none;
+	}
+	.pager-index {
+		margin-top: 50px;
+	}
+	.pager li>a, .pager li>span {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 445px) {
+	.author {
+		float: left;
+		margin-top: 50px;
+	}
+	article {
+		margin-bottom: 20px;
+		padding: 0px;
+	}
+	.pager-index {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+	
+}
+
+@media screen and (max-width: 335px) {
+	.page-header {
+		padding-bottom: 33px;
+	}
+	
+	.page-header h1 {
+		font-size: 30px;
+	}
+	h2 {
+		font-size: 26px;
+	}
+	.pager li>a, .pager li>span {
+		padding: 4px 10px;
 	}
 }

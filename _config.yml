@@ -4,11 +4,12 @@ exclude: ["README.md"] # files to exclude
 highlighter: pygments
 markdown: kramdown
 disqus: virtuacreative
+permalink: /:title.html
 
 defaults:
   -
     scope:
-      path: "" 
+      path: "" # empty string for all files
     values:
       title: Virtua Creative Blog
 
