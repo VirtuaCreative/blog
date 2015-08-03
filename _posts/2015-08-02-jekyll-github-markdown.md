@@ -328,7 +328,7 @@ Veja como escrever esta frase:
 Vamos ilustrar com um gravatinha : bowtie :  e com uma setinha : arrow_left : 
 {% endhighlight %}
 
-Veja o link [Emoji - Lista de Emoticons](http://www.emoji-cheat-sheet.com/) para a lista completa de emoticons. Clicando sobre eles, você estárá copiando o código, portanto basta colar no seu texto.
+Veja o link [Emoji - Lista de Emoticons](http://www.emoji-cheat-sheet.com/) para a lista completa de emoticons. Clicando sobre eles, você estará copiando o código, portanto basta colar no seu texto.
 
 Seguindo a mesma lógica dos [links para usuários](#arroba), você precisará habilitar o uso do Emoji no seu site, adicionando ao `_config.yml`:
 
