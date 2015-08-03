@@ -37,4 +37,4 @@ gems:
   - jemoji
   - jekyll-mentions
 
-BASE_PATH: #http://virtuacreative.github.io/blog
+BASE_PATH: http://virtuacreative.github.io/blog
