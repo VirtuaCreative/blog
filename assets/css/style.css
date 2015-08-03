@@ -413,6 +413,10 @@ code {
 	margin-top: 30px;
 } 
 
+.article_body ul li {
+	text-align: justify;
+} 
+
 @media screen and (max-width: 768px) {
 
 	.tags-custom {
