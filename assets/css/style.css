@@ -417,6 +417,10 @@ code {
 	text-align: justify;
 } 
 
+.article_body ol li {
+	text-align: justify;
+}
+
 @media screen and (max-width: 768px) {
 
 	.tags-custom {
