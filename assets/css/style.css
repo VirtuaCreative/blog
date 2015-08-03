@@ -395,6 +395,23 @@ code {
 	color: white;
 }
 
+.article_body table thead tr th {
+	min-width: 150px;
+	padding: 20px 10px 20px 5px;
+	border-bottom: 1px solid lightgray;
+	border-top: 1px solid lightgray;
+} 
+
+.article_body table tbody tr td {
+	min-width: 150px;
+	padding: 10px 5px 10px 5px;
+	border-bottom: 1px solid lightgray;
+} 
+
+.article_body table {
+	margin-bottom: 30px;
+	margin-top: 30px;
+} 
 
 @media screen and (max-width: 768px) {
 

@@ -3,7 +3,7 @@ layout: post
 title: Criando blogs com Jekyll no Windows
 categories: [Jekyll, Github, Blog, Tutoriais]
 tags: [jekyll, git, blog]
-description: Criando blogs com Jekyll e publicando com o GitHub Pages
+description: Como criar blogs com Jekyll no Windows e publicar com o GitHub Pages.
 comments: true
 ---
 
@@ -137,6 +137,8 @@ Se você entende um pouco de Inglês, recomendo a leitura do artigo [The joy and
 Há uma outra fonte de prós e contras do Jekyll com o Travis Nielson, em que ele argumenta com seu amigo Jon, ambos designers. O título do vídeo é ["Jon doesn't like Jekyll"][devtips-not-jekyll].
 
 Você poderá acessar a documentação do Jekyll no [Jekyll docs][jekyll]. Se você precisar reportar bugs e novas implementações, poderá fazê-lo no [Jekyll’s GitHub repo][jekyll-gh]. Se você tiver dúvidas, eles recomendam que os procure no [Jekyll’s Help repo][jekyll-help].
+
+Por [Marcia "RamosMD"](https://plus.google.com/+MarciaDiasRamosMD/posts).
 
 [jekyll]:      http://jekyllrb.com
 [jekyll-gh]:   https://github.com/jekyll/jekyll

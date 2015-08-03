@@ -18,7 +18,7 @@ author:
   name: VirtuaCreative
   email: info@virtuacreative.com
   github: VirtuaCreative
-  twitter: xmdramos
+  twitter: virtuacreative
   flickr: virtuacreative
   linkedin:
   facebook: virtuacreative
@@ -30,4 +30,11 @@ rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
 
-BASE_PATH: http://virtuacreative.github.io/blog
+kramdown:
+  input: GFM
+
+gems:
+  - jemoji
+  - jekyll-mentions
+
+BASE_PATH: #http://virtuacreative.github.io/blog
