@@ -34,21 +34,6 @@
 
 	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.BASE_PATH }}/feed.xml">
 	<link rel="shortcut icon" href="http://virtuacreative.github.io/git/img/favicon.ico" type="image/x-icon">
-	<script type="application/ld+json">
-	{ "@context" : "http://schema.org",
-	  "@type" : "Organization",
-	  "name" : "Virtua Creative Technology",
-	  "url" : "http://www.virtuacreative.com.br",
-	  "sameAs" : [ "http://www.facebook.com/virtuacreative",
-	    "http://www.twitter.com/virtuacreative",
-	    "https://github.com/VirtuaCreative",
-	    "https://www.flickr.com/photos/virtuacreative/",
-	    "http://virtuacreative.github.io/git/",
-	    "http://virtuacreative.github.io/blog/",
-	    "http://plus.google.com/+MarciaDiasRamosMD/posts",
-	    "http://plus.google.com/+VirtuacreativeBrWebsites/posts"]
-	}
-	</script>
 </head>
 
 <body>
@@ -62,21 +47,21 @@
 				<span class="icon-bar"></span>
 			</button>
 			{% if site.author.github %}
-			<a type="button" class="navbar-toggle nav-link" target="_blank" href="http://github.com/{{ site.author.github }}">
+			<a rel="nofollow" type="button" class="navbar-toggle nav-link" target="_blank" href="http://github.com/{{ site.author.github }}">
 				<i class="fa fa-github-alt"></i>
 			</a>
 			{% endif %}
 			{% if site.author.googleplus %}
-			<a type="button" class="navbar-toggle nav-link" target="_blank" href="https://plus.google.com/+{{ site.author.googleplus }}">
+			<a rel="nofollow" type="button" class="navbar-toggle nav-link" target="_blank" href="https://plus.google.com/+{{ site.author.googleplus }}">
 				<i class="fa fa-google-plus"></i>
 			</a>
 			{% endif %}
 			{% if site.author.email %}
-			<a type="button" class="navbar-toggle nav-link" target="_blank" href="mailto:{{ site.author.email }}">
+			<a rel="nofollow" type="button" class="navbar-toggle nav-link" target="_blank" href="mailto:{{ site.author.email }}">
 				<i class="fa fa-envelope"></i>
 			</a>
 			{% endif %}
-			<a class="navbar-brand" href="{{ site.BASE_PATH }}/">
+			<a rel="nofollow" class="navbar-brand" href="{{ site.BASE_PATH }}/">
 				<img src="http://virtuacreative.github.io/git/img/logo-3.svg" width="25%" />
 				{{ site.title }}
 			</a>
@@ -142,6 +127,24 @@
 	  ga('create', 'UA-65885766-1', 'auto');
 	  ga('send', 'pageview');
 	
+	</script>
+	<script type="application/ld+json">
+	{ "@context" : "http://schema.org",
+	  "@type" : "Organization",   
+	  "name" : "Virtua Creative Technology",
+	  "logo" : "http://2.gravatar.com/avatar/6fa7e8a0b8a820fa63c7cfd1833b1be4",
+	  "email" : "info@virtuacreative.com.br",
+	  "description" : "Criação de Websites | Artes gráficas & Fotografia | Redação & Tradução!",
+	  "telephone" : "00554196406043",
+	  "url" : "http://www.virtuacreative.com.br",
+	  "sameAs" : [ "http://www.facebook.com/virtuacreative",
+	    "http://www.twitter.com/virtuacreative",
+	    "https://github.com/VirtuaCreative",
+	    "https://www.flickr.com/photos/virtuacreative/",
+	    "http://virtuacreative.github.io/git/",
+	    "http://virtuacreative.github.io/blog/",
+	    "http://plus.google.com/+VirtuacreativeBrWebsites/"]        
+   }
 	</script>
 </body>
 </html>

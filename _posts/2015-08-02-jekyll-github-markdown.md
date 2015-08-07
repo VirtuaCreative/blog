@@ -4,6 +4,11 @@ title: Jekyll e GitHub Markdown
 categories: [Jekyll, Github, Tutoriais, Blog]
 tags: [git, jekyll, markdown, kramdown, emoji]
 description: Lista prática de markdowns do Jekyll e do Github.
+image: https://c2.staticflickr.com/4/3826/20355844915_657dc373d8_b.jpg
+imageUrl: https://www.flickr.com/photos/virtuacreative/20355844915
+author: Marcia Ramos
+authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
+authorEmail: virtua.creative@gmail.com
 comments: true
 ---
 
@@ -406,4 +411,3 @@ Valeu! Abraços!
 - [Instalação local do Jekyll Mentions](https://github.com/jekyll/jekyll-mentions)
 - [Kramdown + GFM - Jekyll Docs](http://jekyllrb.com/docs/configuration/#kramdown)
 
-Por [Marcia "RamosMD"](https://plus.google.com/+MarciaDiasRamosMD/posts).

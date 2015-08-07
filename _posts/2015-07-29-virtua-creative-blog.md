@@ -4,7 +4,13 @@ title: Virtua Creative Blog
 categories: [Blog, Jekyll, Github]
 tags: [git, blog, jekyll]
 description: Welcome to Virtua Creative Blog!
+image: https://c2.staticflickr.com/4/3716/20169383239_8f30dcecd9_b.jpg
+imageUrl: https://www.flickr.com/photos/virtuacreative/20169383239
+author: Marcia Ramos
+authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
+authorEmail: virtua.creative@gmail.com
 ---
+
 ### Olá pessoal! :smiley:
 
 <br>
@@ -48,4 +54,6 @@ Veja nossos contatos em [Virtua Creative - Contatos](http://virtuacreative.com.b
 
 Obrigada e até a próxima!
 
-[Marcia "RamosMD"](https://plus.google.com/+MarciaDiasRamosMD/posts)
+<br>
+
+[Marcia Ramos](https://plus.google.com/+MarciaDiasRamosMD/posts)

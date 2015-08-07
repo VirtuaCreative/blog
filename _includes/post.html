@@ -1,9 +1,38 @@
 <div class="page-header">
   <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
 </div>
+
+<article itemscope="" itemtype="http://schema.org/BlogPosting">
+	<meta itemprop="name" content="{{ page.title }}" />	
+  	<meta itemprop="headline"
+        content="{{ page.description }}" />
+	<meta itemprop="keywords" content="{{ page.tags | join: ',' }}" />
+	<meta itemprop="url" content="{{ site.BASE_PATH }}{{ page.url }}" />
+	<div itemprop="author" itemscope itemtype="http://schema.org/Person" >
+		<meta itemprop="name"
+			content="{{ page.author }}" />
+		<meta itemprop="url" rel="author"
+			content="{{ page.authorUrl }}" />
+		<meta itemprop="email" rel="author"
+			content="{{ page.authorEmail }}" />	
+	</div>
+	<div itemprop="isPartOf" itemscope="" itemtype="http://schema.org/Blog">
+		<meta itemprop="name"
+			content="Virtua Creative Blog" />
+		<meta itemprop="url"
+			  content="http://virtuacreative.github.io/blog/" />
+			<div itemprop="isPartOf" itemscope="" itemtype="http://schema.org/Website">
+			<meta itemprop="name"
+				content="Virtua Creative & GitHub" />
+			<meta itemprop="url"
+				  content="http://virtuacreative.github.io/git/" />
+			</div>
+		</div>
 	
-<article>
 	<div class="col-sm-10 animated item1 fadeIn">
+		<time class="schema-tags" itemprop="datePublished"
+        datetime="{{ page.date | date_to_xmlschema }}">
+		</time>
 		 <span class="post-date">
 		   {% assign m = page.date | date: "%-m" %}
 			{{ page.date | date: "%-d" }}&nbsp;de
@@ -20,10 +49,12 @@
 			  {% when '10' %}Outubro
 			  {% when '11' %}Novembro
 			  {% when '12' %}Dezembro
-			{% endcase %}&nbsp;de
+			{% endcase %}de
 			{{ page.date | date: "%Y" }}
-		 </span>
-		<div class="article_body">
+		 </span> 
+		&nbsp;&nbsp;<span class="post-date" style="float: right">Por <a rel="nofollow" target="_blank" href="{{ page.authorUrl }}">{{ page.author }}</a></span>
+		<div class="article_body" itemprop="articleBody">
+			<a rel="nofollow" title="Ver imagem na galeria" href="{{ page.imageUrl }}" target="_blank"><img itemprop="image" class="article-top" src="{{ page.image }}" alt="{{ page.title }}"></a>
 		  {{ content }}
 			  <hr />
 		</div>
@@ -93,15 +124,15 @@
 		<div class="post-footer clearfix">
 		  <section class="share col-sm-6">
 			<h4 class="section-title" style="font-family:'Raleway', sans-serif">Compartilhar</h4>
-			<a class="btn btn-default btn-sm2 twitter" href="http://twitter.com/share?text={{page.title | encode}}{% if site.author.twitter%}&via={{site.author.twitter}}{% endif %}"
+			<a rel="nofollow" class="btn btn-default btn-sm2 twitter" href="http://twitter.com/share?text={{page.title | encode}}{% if site.author.twitter%}&via={{site.author.twitter}}{% endif %}"
 			   onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
 			  <i class="fa fa-twitter fa-lg"></i>
 			</a>
-			<a class="btn btn-default btn-sm2 facebook" href="https://www.facebook.com/sharer/sharer.php"
+			<a rel="nofollow" class="btn btn-default btn-sm2 facebook" href="https://www.facebook.com/sharer/sharer.php"
 			   onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
 			  <i class="fa fa-facebook fa-lg"></i>
 			</a>
-			<a class="btn btn-default btn-sm2 gplus"
+			<a rel="nofollow" class="btn btn-default btn-sm2 gplus"
 			   onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
 			  <i class="fa fa-google-plus fa-lg"></i>
 			</a>
