@@ -140,7 +140,7 @@ Para quem entende Inglês, sugiro que siga os tutoriais em vídeo da série Jeky
 
 #### **Não tão simples assim...**
 
-Infelizmente, para quem está acostumado com a liguagem html/css sem markdowns, o Jekyll pode exigir bem mais tempo para aprendizagem, mas você poderá checar uma lista de markdowns [aqui]({% post_url 2015-08-02-jekyll-github-markdown %}). Há desenvolvedores que utilizam outros geradores de sites estáticos (Static Site Generators - SSGs), em razão das limitações impostas pelo Jekyll.
+Infelizmente, para quem está acostumado com a liguagem html/css sem markdowns, o Jekyll pode exigir bem mais tempo para aprendizagem, mas você poderá checar uma lista de markdowns [aqui]({{ site.BASE_PATH }}{% post_url 2015-08-02-jekyll-github-markdown %}). Há desenvolvedores que utilizam outros geradores de sites estáticos (Static Site Generators - SSGs), em razão das limitações impostas pelo Jekyll.
 
 Para quem precisa de websites mais elaborados com páginas de login, com CMS, com formulários de cadastro, ou mesmo sites que precisem de atualizações constantes, não recomendo nem o Jekyll e nem o GitHub Pages. Eles não têm este propósito e nem permitem estas funcionalidades. Para tais sites, é realmente necessária a interação dinâmica com o servidor, utilizando bases de dados e códigos em liguagem de servidor.   
 
