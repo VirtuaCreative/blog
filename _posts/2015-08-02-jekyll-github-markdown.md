@@ -18,7 +18,7 @@ Para facilitar a sua escrita com o **Jekyll**, vou fazer uma lista de markdowns 
 
 Eu mesma uso o conteúdo deste artigo como guia quando não lembro de algum markdown, por isso resolvi publicá-lo e deixá-lo à mão para a comunidade web também. 
 
-Este artigo parte do princípio que você já tem o Jekyll instalado e usa o GitHub Pages para publicar seu site ou seu blog. Se você precisa de mais informações sobre isso, veja o artigo [Criando Blogs com Jekyll no Windows]({% post_url 2015-07-30-jekyll-github-blog %}).
+Este artigo parte do princípio que você já tem o Jekyll instalado e usa o GitHub Pages para publicar seu site ou seu blog. Se você precisa de mais informações sobre isso, veja o artigo [Criando Blogs com Jekyll no Windows]({{ site.BASE_PATH }}{% post_url 2015-07-30-jekyll-github-blog %}).
 
 <br>  
 
