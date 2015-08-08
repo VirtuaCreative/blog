@@ -1,13 +1,18 @@
 ---
 layout: post
+fb_type: article
+fb_section: Tutorials - Jekyll
 title: Criando blogs com Jekyll no Windows
+fb_title: Criando blogs com Jekyll no Windows
 categories: [Jekyll, Github, Blog, Tutoriais]
 tags: [jekyll, git, blog]
+meta_keywords: jekyll, git, blog
 description: Como criar blogs com Jekyll no Windows e publicar com o GitHub Pages.
 image: https://c1.staticflickr.com/1/311/20329582166_7a11e1a308_b.jpg
 imageUrl: https://www.flickr.com/photos/virtuacreative/20329582166
 author: Marcia Ramos
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
+author_fb: marciaramosmdr
 authorEmail: virtua.creative@gmail.com
 comments: true
 ---

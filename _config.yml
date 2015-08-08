@@ -14,6 +14,13 @@ defaults:
       title: Virtua Creative Blog
 
 description: Virtua Creative Blog
+fb_description: Tutoriais e dicas para desenvolvimento de websites, web design e artes gráficas.
+fb_title: Web Development | Web Design | Art&Photo
+meta_keywords: blog, tutoriais, tutorials, jekyll, github, sass, html5, php, websites, web development, web design, artes gráficas, dreamweaver, criação de websites
+fb_app:
+  namespace: virtuacreative
+  app_id: 1634907943429790
+  app_admin: 100000561118294
 author:
   name: VirtuaCreative
   email: info@virtuacreative.com
@@ -22,7 +29,7 @@ author:
   flickr: virtuacreative
   linkedin:
   facebook: virtuacreative
-  googleplus: VirtuacreativeBrWebsites/posts
+  googleplus: VirtuacreativeBrWebsites/
   bio: Virtua Creative Technology
   email_md5: 6fa7e8a0b8a820fa63c7cfd1833b1be4
 

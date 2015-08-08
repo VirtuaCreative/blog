@@ -1,13 +1,18 @@
 ---
 layout: post
+fb_type: article
+fb_section: Tutorials
 title: Virtua Creative Blog
+fb_title: Virtua Creative Blog
 categories: [Blog, Jekyll, Github]
 tags: [git, blog, jekyll]
+meta_keywords: git, blog, jekyll
 description: Welcome to Virtua Creative Blog!
 image: https://c2.staticflickr.com/4/3716/20169383239_8f30dcecd9_b.jpg
 imageUrl: https://www.flickr.com/photos/virtuacreative/20169383239
 author: Marcia Ramos
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
+author_fb: marciaramosmdr
 authorEmail: virtua.creative@gmail.com
 ---
 

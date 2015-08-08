@@ -1,29 +1,49 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="pt">
-<head>
+  {% if page.fb_title %}<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">{% else %}<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# {{ site.fb_app.namespace }}: http://ogp.me/ns/fb/{{ site.fb_app.namespace }}#">{% endif %}
 	<meta charset="utf-8">
-	<title>{{ page.title }}</title>
-	{% if page.description %}
-	<meta name="description" content="{{ page.description }}">
-	{% endif %}
-	<meta name="author" content="{{ site.author.name }}">
-
-	<!-- Enable responsive viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="me" href="https://plus.google.com/+MarciaDiasRamosMD"/>
-
+	<title>{{ page.title }}</title>
+	{% if page.description %}<meta name="description" content="{{ page.description }}">{% else %}<meta name="description" content="{{ site.fb_description }}">{% endif %}
+	{% if page.author %}<meta name="author" content="{{ page.author }}">{% else %}<meta name="author" content="{{ site.author.name }}">{% endif %}
+	{% if page.meta_keywords %}<meta name="keywords" content="{{ page.meta_keywords }}">{% else %}<meta name="keywords" content="{{ site.meta_keywords }}">{% endif %}
+	<!-- Facebook OG tags -->
+	<meta property="fb:app_id" content="{{ site.fb_app.app_id }}"/>
+	<meta property="fb:admins" content="{{ site.fb_app.app_admin }}"/>
+	<meta property="og:site_name" content="Virtua Creative Blog" />
+	{% if page.fb_title %}<meta property="og:title" content="{{ page.fb_title }}">{% else %}<meta property="og:title" content="{{ site.fb_title }}">{% endif %}
+	{% if page.fb_type %}<meta property="og:type" content="article">{% else %}<meta property="og:type" content="{{ site.fb_app.namespace }}:blog">{% endif %}
+	{% if page.description %}<meta property="og:description" content="{{ page.description }}">{% else %}<meta property="og:description" content="{{ site.fb_description }}">{% endif %}
+	{% if page.fb_type %}<meta property="og:url" content="{{ site.BASE_PATH }}{{ page.url }}">{% else %}<meta property="og:url" content="{{ site.BASE_PATH | replace: 'index.html','' }}">{% endif %}	
+	{% if page.language %}<meta property="og:locale" content="pt_BR" />{% for language in page.language %}<meta property="og:locale:alternate" content="{{ language }}" />{% endfor %}{% else %}<meta property="og:locale" content="pt_BR" />{% endif %}
+	{% if page.date %}<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+	<meta property="article:author" content="http://www.facebook.com/{{ page.author_fb }}">
+	<meta property="article:publisher" content="{{ site.BASE_PATH | replace: 'index.html','' }}" />{% endif %}
+	{% if page.image %}<meta property="og:image" content="{{ page.image }}">{% else %}
+	<meta property="og:image" content="http://virtuacreative.com.br/images/fb_feed1200x630_virtua.png">{% endif %}
+	{% if page.fb_section %}<meta property="article:section" content="{{ page.fb_section }}">{% endif %}
+	{% if page.tags %}{% for tag in page.tags %}<meta property="article:tag" content="{{ tag }}">{% endfor %}{% endif %}
+	{% if page.fb_type %}{% for post in site.related_posts limit:3 %}<meta property="og:see_also" content="{{ site.BASE_PATH }}{{ post.url }}">{% endfor %}{% endif %}
+	<!-- Facebook OG tags -->	
+	<!-- Twitter card tags -->
+	{% if page.fb_type %}<meta name="twitter:card" content="summary_large_image">{% else %}<meta name="twitter:card" content="summary">{% endif %}		
+	<meta name="twitter:site" content="@{{ site.author.twitter }}">
+	<meta name="twitter:creator" content="@{{ site.author.twitter }}">
+	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}">
+	<meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.fb_description }}{% endif %}">
+	<meta name="twitter:image" content="{% if page.image %}{{ page.image }}{% else %}http://www.gravatar.com/avatar/{{site.author.email_md5}}{% endif %}">	
+	<!-- Twitter card tags -->	
 	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
 	<!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-
 	<!-- Le styles -->
 	<link href="{{ site.BASE_PATH }}/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="{{ site.BASE_PATH }}/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<link href="{{ site.BASE_PATH }}/assets/resources/syntax/syntax.css" rel="stylesheet">
 	<link href="{{ site.BASE_PATH }}/assets/css/style.css" rel="stylesheet">
 	<link href="{{ site.BASE_PATH }}/assets/css/animate.css" rel="stylesheet">
-
 	<!-- Le fav and touch icons -->
 	<!-- Update these with your own images
 	<link rel="shortcut icon" href="images/favicon.ico">
@@ -31,12 +51,30 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 	-->
-
+	<link rel="canonical" title="{{ site.description }}" href="{{ site.BASE_PATH | replace:'index.html','' }}">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.BASE_PATH }}/feed.xml">
 	<link rel="shortcut icon" href="http://virtuacreative.github.io/git/img/favicon.ico" type="image/x-icon">
-</head>
+	<link rel="author, nofollow" href="https://plus.google.com/+{{ site.author.googleplus }}">
+ </head>
 
 <body>
+	<script>
+	  window.fbAsyncInit = function() {
+		FB.init({
+		  appId      : '1028985767130633',
+		  xfbml      : true,
+		  version    : 'v2.4'
+		});
+	  };
+
+	  (function(d, s, id){
+		 var js, fjs = d.getElementsByTagName(s)[0];
+		 if (d.getElementById(id)) {return;}
+		 js = d.createElement(s); js.id = id;
+		 js.src = "//connect.facebook.net/en_US/sdk.js";
+		 fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+	</script>
 	<nav class="navbar navbar-default visible-xs" role="navigation">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
