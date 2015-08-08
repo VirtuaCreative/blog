@@ -13,6 +13,7 @@ imageUrl: https://www.flickr.com/photos/virtuacreative/20355844915
 author: Marcia Ramos
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
 author_fb: marciaramosmdr
+author_twitter: xmdramos
 authorEmail: virtua.creative@gmail.com
 comments: true
 # language: [en_US, en_UK]
