@@ -39,8 +39,9 @@
 	<ul id="contact-list-secondary" class="list-unstyled list-inline">
 		{% if site.author.twitter %}
 		<li>
-			<a rel="nofollow" class="btn btn-default btn-sm" href="https://twitter.com/{{ site.author.twitter }}">
+			<a title="Follow Us" rel="nofollow" class="btn btn-default btn-sm" href="https://twitter.com/intent/follow?screen_name={{ site.author.twitter }}">
 				<i class="fa fa-twitter fa-lg"></i>
+				<script async src="https://platform.twitter.com/widgets.js"></script>
 			</a>
 		</li>
 		{% endif %}
