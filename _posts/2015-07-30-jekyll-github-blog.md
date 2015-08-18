@@ -23,7 +23,7 @@ date_update: 2015-08-17 22:22:26 UTC
 
 # **Jekyll**
 
-[Jekyll](http://jekyllrb.com/) é um programa que permite a criação de websites e blogs utilizando apenas html, css e javascript. Entenda o que é o Jekyll neste artigo: "**[O que é e para que serve o Jekyll]({{ site.baseurl }}{% post_url 2015-08-10-jekyll-for-beginners-introduction %})**", no qual explicamos detalhadamente como ele funciona.
+[Jekyll](http://jekyllrb.com/) é um programa que permite a criação de websites e blogs utilizando apenas html, css e javascript. Entenda o que é o Jekyll neste artigo: "**[O que é e para que serve o Jekyll]({{ site.baseurl }}{% post_url 2015-08-17-jekyll-for-beginners-introduction %})**", no qual explicamos detalhadamente como ele funciona.
 
 <br>
 
@@ -234,7 +234,7 @@ Estas informações poderão ser recuperadas por todo o site, utilizando tags, o
 
 Estes são apenas exemplos simples. Aprofundaremos os detalhes da escrita em Liquid futuramente, em outros artigos. 
 
-O único arquivo que não trará o cabeçalho se configuração será o seu `default.html` da pasta `_includes`. Este arquivo será o padrão para seu html. Nele serão inseridas as tags `<html>`, `<head>` e o `<body>` de todas as páginas, que terão seus conteúdos inseridos dinamicamente através da chamada `{% raw %}{{ content }}{% endraw %}`. Este tipo de objeto faz parte da estrutura Liquid, que deixaremos para discutir em outros artigos. Para ter um panorama introdutório a este assunto, veja nosso artigo ["O que é Jekyll - e para que ele serve"]({{ site.baseurl }}{% post_url 2015-08-10-jekyll-for-beginners-introduction %}). 
+O único arquivo que não trará o cabeçalho se configuração será o seu `default.html` da pasta `_includes`. Este arquivo será o padrão para seu html. Nele serão inseridas as tags `<html>`, `<head>` e o `<body>` de todas as páginas, que terão seus conteúdos inseridos dinamicamente através da chamada `{% raw %}{{ content }}{% endraw %}`. Este tipo de objeto faz parte da estrutura Liquid, que deixaremos para discutir em outros artigos. Para ter um panorama introdutório a este assunto, veja nosso artigo ["O que é Jekyll - e para que ele serve"]({{ site.baseurl }}{% post_url 2015-08-17-jekyll-for-beginners-introduction %}). 
 
 <br>
 
