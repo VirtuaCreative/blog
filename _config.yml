@@ -5,6 +5,7 @@ highlighter: pygments
 markdown: kramdown
 disqus: virtuacreative
 permalink: /:title.html
+timezone: America/Sao_Paulo
 
 defaults:
   -
@@ -16,7 +17,8 @@ defaults:
 description: Virtua Creative Blog
 fb_description: Tutoriais e dicas para desenvolvimento de websites, web design e artes gráficas.
 meta_keywords: blog, tutoriais, tutorials, jekyll, github, sass, html5, php, websites, web development, web design, artes gráficas, dreamweaver, criação de websites
-share_image: http://virtuacreative.com.br/images/fb_feed1200x630_virtua.png
+share_image: http://goo.gl/JsefHX
+logo_image: http://goo.gl/mXXyFH
 fb_app:
   namespace: virtuacreative
   app_id: 1634907943429790
@@ -31,11 +33,12 @@ author:
   facebook: virtuacreative
   googleplus: VirtuacreativeBrWebsites/
   bio: Virtua Creative Technology
-  email_md5: 6fa7e8a0b8a820fa63c7cfd1833b1be4
+  email_md5: 6fa7e8a0b8a820fa63c7cfd1833b1be4 # gravatar
 
 rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
+copyright_path: copyright.html
 
 kramdown:
   input: GFM
@@ -44,4 +47,4 @@ gems:
   - jemoji
   - jekyll-mentions
 
-BASE_PATH: http://virtuacreative.github.io/blog
+baseurl: http://virtuacreative.github.io/blog

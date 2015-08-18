@@ -8,13 +8,16 @@ categories: [Blog, Jekyll, Github]
 tags: [git, blog, jekyll]
 meta_keywords: git, blog, jekyll
 description: Welcome to Virtua Creative Blog!
-image: https://c2.staticflickr.com/4/3716/20169383239_8f30dcecd9_b.jpg
+image: https://goo.gl/dO6ntT
 imageUrl: https://www.flickr.com/photos/virtuacreative/20169383239
 author: Marcia Ramos
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
 author_fb: marciaramosmdr
 author_twitter: xmdramos
 authorEmail: virtua.creative@gmail.com
+date: 2015-07-29 20:00:02 UTC
+# date_update: 2015-08-11 12:00:00
+# language: [en_US, en_UK]
 ---
 
 ### Olá pessoal! :smiley:

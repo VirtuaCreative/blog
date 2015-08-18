@@ -8,7 +8,7 @@ categories: [Jekyll, Github, Tutoriais, Blog]
 tags: [git, jekyll, markdown, kramdown, emoji]
 meta_keywords: git, jekyll, markdown, kramdown, emoji
 description: Lista prática de markdowns do Jekyll e do Github.
-image: https://c2.staticflickr.com/4/3826/20355844915_657dc373d8_b.jpg
+image: https://goo.gl/CbwGMU
 imageUrl: https://www.flickr.com/photos/virtuacreative/20355844915
 author: Marcia Ramos
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
@@ -16,6 +16,8 @@ author_fb: marciaramosmdr
 author_twitter: xmdramos
 authorEmail: virtua.creative@gmail.com
 comments: true
+date: 2015-08-02 17:47:29 UTC
+date_update: 2015-08-17 22:22:46 UTC
 # language: [en_US, en_UK]
 ---
 
@@ -25,7 +27,7 @@ Para facilitar a sua escrita com o **Jekyll**, vou fazer uma lista de markdowns 
 
 Eu mesma uso o conteúdo deste artigo como guia quando não lembro de algum markdown, por isso resolvi publicá-lo e deixá-lo à mão para a comunidade web também. 
 
-Este artigo parte do princípio que você já tem o Jekyll instalado e usa o GitHub Pages para publicar seu site ou seu blog. Se você precisa de mais informações sobre isso, veja o artigo [Criando Blogs com Jekyll no Windows]({{ site.BASE_PATH }}{% post_url 2015-07-30-jekyll-github-blog %}).
+Este artigo parte do princípio que você já tem o Jekyll instalado e usa o GitHub Pages para publicar seu site ou seu blog. Se você precisa de mais informações sobre isso, veja o artigo [Criando Blogs com Jekyll no Windows]({{ site.baseurl }}{% post_url 2015-07-30-jekyll-github-blog %}).
 
 <br>  
 
@@ -255,11 +257,9 @@ span.lineno {
  
 #### <a name="arroba"></a>**Links para Usuários**
 
-Se você achou que este artigo foi útil, poderá me dar uma :star: em @VirtuaCreative!
+Se você achou que este artigo foi útil, poderá dar uma :star: para @VirtuaCreative!
 
-<br>
-
-O link para meu perfil no Github na frase acima foi adicionado com um simples arroba na frente do meu nome de usuário.
+O link para o perfil de Virtua Creative no Github na frase acima foi adicionado com um simples arroba na frente do meu nome de usuário.
 
 O único detalhe é que você precisa "ativar" a menção de usuários nos seus artigos adicionado uma linha `gems` ao seu `_config.yml`:
 
@@ -395,7 +395,7 @@ gems:
 
 É isso gente, para checar as informações acima, veja abaixo a lista de referências que usei para elaborar o artigo.
 
-Se gostou do artigo, por favor deixe eu saber disso! :clap: :grimacing: :clap: 
+Se gostou do artigo, por favor deixe a gente saber disso nos comentários abaixo! :clap: :grimacing: :clap: 
 
 Deixe seu comentário se puder complementar, dar mais algumas dicas, sugestões e deixar sua contribuição para a comundade!
 
@@ -417,4 +417,3 @@ Valeu! Abraços!
 - [Instalação local do Emoji - Emoticons](https://github.com/jekyll/jemoji)
 - [Instalação local do Jekyll Mentions](https://github.com/jekyll/jekyll-mentions)
 - [Kramdown + GFM - Jekyll Docs](http://jekyllrb.com/docs/configuration/#kramdown)
-
