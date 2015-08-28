@@ -17,7 +17,7 @@ author_twitter: xmdramos
 authorEmail: virtua.creative@gmail.com
 comments: true
 date: 2015-08-17 22:32:11 UTC
-# date_update: 2015-08-11 12:00:00
+date_update: 2015-08-28 17:12:18 UTC
 # language: [en_US, en_UK]
 ---
 
@@ -240,7 +240,7 @@ sass:
 ---
 {% endhighlight %}
 
-A leitura da [documentação do Jekyll](http://jekyllrb.com/docs/assets/) que explica o assunto **SASS** em detalhes, incluindo como trabalhar com `\@import` é fundamental para estruturar o projeto corretamente. 
+A leitura da [documentação do Jekyll](http://jekyllrb.com/docs/assets/) que explica o assunto **SASS** em detalhes, incluindo como trabalhar com "imports" **é fundamental** para estruturar o projeto corretamente. 
 
 <br>
 
@@ -248,11 +248,11 @@ A leitura da [documentação do Jekyll](http://jekyllrb.com/docs/assets/) que ex
 
 Além das funcionalidades da Liquid, com inserção de __variáveis__, trabalho com __dados__, __coleções de dados__, __variáveis múltiplas__ e mais um monte de **[atrativos](http://webdesign.tutsplus.com/tutorials/getting-started-with-liquid-shopifys-template-language--cms-19747)** para qualquer desenvolvedor, há ainda editores de códigos que podem facilitar a vida de **autores de artigos** de blog em Jekyll. 
 
-Eu sou fã do Dreamweaver, mas o [Brackets](http://brackets.io/) é um editor muito interessante, pois é leve, gratuito, que não costuma dar panes e é fácil de usar. Você pode facilmente indicá-lo aos autores do blog. Utilizando os highlights para arquivos markdown fica muito simples de escrever. 
+Particularmente, eu sou fã do Dreamweaver, mas o [Brackets](http://brackets.io/) é um editor muito interessante, pois é leve, gratuito, não costuma dar panes e é muito fácil de usar. Você poderá facilmente indicá-lo aos autores do blog. Utilizando os highlights para arquivos markdown fica muito simples de escrever. 
 
-O [Sublime](http://www.sublimetext.com/) é outro editor de texto muito interessante. A exemplo do Jekyll, ele foi criado para computadores MAC, mas tem as versões para Windows e Linux. Ele não é tão imediato como o Brackets, mas há quem diga que é um dos melhores editores de código do mercado. O que ele provê de mais interessante (para o caso em questão) é uma extensão chamada [Sublime-Jekyll](https://packagecontrol.io/packages/Jekyll) que permite que você trabalhe muito mais facilmente com o Jekyll. Este pacote de extensão permite criar novos posts com todo o cabeçalho superior previamente estruturado, criar rascunhos e facilmente promovê-los a artigos, inserir data e hora com apenas dois comandos no teclado e assim por diante.
+O [Sublime](http://www.sublimetext.com/) é outro editor de texto muito interessante. Seu uso não é tão imediato como o Brackets, mas há quem diga que é um dos melhores editores de código do mercado. O que ele provê de mais interessante (para o caso em questão) é uma extensão chamada [Sublime-Jekyll](https://packagecontrol.io/packages/Jekyll) que permite que você trabalhe muito mais facilmente com o Jekyll. Este pacote de extensão permite criar novos posts com todo o cabeçalho superior previamente estruturado, criar rascunhos e facilmente promovê-los a artigos, inserir data e hora com apenas dois comandos no teclado e assim por diante.
 
-Portanto, caso você seja um desenvolvedor e pense duas vezes antes de escrever em Jekyll a estrutura de **blogs para terceiros**, pode ficar tranquilo. Mesmo que você mesmo tenha que publicar os artigos para seu cliente, transformar um arquivos de texto em markdown é uma passada, e um _git commit_ dá pra fazer "com as mãos nas costas"... O bacana é que sai tudo do forno com a uma simplicidade impressionante de comandos. :dancers:
+Portanto, caso você seja um desenvolvedor e pense duas vezes antes de escrever em Jekyll a estrutura de **blogs para terceiros**, pode ficar tranquilo. Mesmo que você mesmo tenha que publicar os artigos para seu cliente, transformar um arquivos de texto em markdown é "uma passada", e um _git commit_ dá pra fazer "com as mãos nas costas"... O bacana é que sai tudo do forno com a uma simplicidade impressionante de comandos. :dancers:
 
 <br>
 
