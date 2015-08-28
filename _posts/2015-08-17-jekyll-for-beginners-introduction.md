@@ -240,7 +240,7 @@ sass:
 ---
 {% endhighlight %}
 
-A leitura da [documentação do Jekyll](http://jekyllrb.com/docs/assets/) que explica o assunto **SASS** em detalhes, incluindo como trabalhar com `@import` é fundamental para estruturar o projeto corretamente. 
+A leitura da [documentação do Jekyll](http://jekyllrb.com/docs/assets/) que explica o assunto **SASS** em detalhes, incluindo como trabalhar com `\@import` é fundamental para estruturar o projeto corretamente. 
 
 <br>
 
