@@ -25,9 +25,9 @@ date: 2015-09-14 23:41:41 UTC
 
 O **[GitHub][]** é uma rede social para programadores e desenvolvedores web, criada com o objetivo primário de compartilhar códigos, programas e plug-ins entre pessoas da área. Além do compartilhamento, ele pode ser usado para:
 
-- permitir acesso a múltiplos desenvolvedores em empresas de tecnologia, dando a possibilidade de vários programadores trabalharem no mesmo arquivo, a partir de qualquer computador conectado à internet;
-- hospedar websites gratuitamente;
-- fazer backup de seus websites e arquivos.
+- :point_right:  permitir acesso a múltiplos desenvolvedores em empresas de tecnologia, dando a possibilidade de vários programadores trabalharem no mesmo arquivo, a partir de qualquer computador conectado à internet;
+- :point_right:  hospedar websites gratuitamente;
+- :point_right:  fazer backup de seus websites e arquivos.
 
 ### **<mkp-blue>Como funciona</mkp-blue>**
 
