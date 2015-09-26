@@ -532,6 +532,8 @@ mkp-yellow {
 
 iframe {
 	max-width: 100% !important;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 @media screen and (max-width: 768px) {
