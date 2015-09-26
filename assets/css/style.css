@@ -530,6 +530,10 @@ mkp-yellow {
 	padding-top: 10px;
 }
 
+iframe {
+	max-width: 100% !important;
+}
+
 @media screen and (max-width: 768px) {
 	.tags-custom {
 		border-bottom: 1px solid #999;
