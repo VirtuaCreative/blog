@@ -14,7 +14,7 @@ comments: true
 fb_type: article
 meta_keywords: github, free hosting, tutorials github, github pages, github user website, github organization website, websites, create free website, free website
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
-date_update: 2015-09-27 03:58:48 UTC
+date_update: 2015-09-27 09:16:13 UTC
 date: 2015-09-26 02:22:34 UTC
 author_fb: marciaramosmdr
 fb_section: Tutorials - GitHub
@@ -32,7 +32,9 @@ description: Learn how to create your own website hosting it on GitHub for free!
 In order to publish your website with [GitHub Pages][], you must be aware of a few things:
 
 1. **First**: your source code is going to be public, so everyone with internet connection will be able to see it.
+
 2. **Second**: your website pages must be written in static html, css and javascript. Server language based websites, as php, are not supported by GitHub for security purposes. Also, you cannot use a database, so you will not have registered users, for example.
+
 3. **Third**: you can use GitHub sub-domains (always **username**.github.io) or your own domain name (like **mydomain**.com).
 
 <br/>
@@ -75,9 +77,8 @@ Our account @virtuacreative has one user website at [http://virtuacreative.githu
 
 2. **Project websites**:
 We also have two other project websites, and they live in their own repositories. 
-
-	2.1. One of them is this Blog ([http://virtuacreative.github.io/blog/](http://virtuacreative.github.io/blog/)), which lives in its repository called `blog`. 
-	2.2. The other is Git ([http://virtuacreative.github.io/git/](http://virtuacreative.github.io/git/)), a website we have build for demonstration purposes, and it lives in its own repository, called `git`.
+  2.1. One of them is this Blog ([http://virtuacreative.github.io/blog/](http://virtuacreative.github.io/blog/)), which lives in its repository called `blog`. 
+  2.2. The other is Git ([http://virtuacreative.github.io/git/](http://virtuacreative.github.io/git/)), a website we have build for demonstration purposes, and it lives in its own repository, called `git`.
 
 Note that all of them are part of the same sub-domain `virtuacreative.github.io`, but as they live in different repositories, their structure doesn't need to be the same, and in fact they aren't! 
 
@@ -105,17 +106,24 @@ It is quite simple. Please click on the following frame if you wish to **watch o
 #### **<mkp-blue>Step by Step Tutorial</mkp-blue>**
 
 1. Go to [https://github.com](https://github.com) and create your account or sign in if you already have one.
+
 2. Create a new repository.
-	2.1. Name your repository by typing on the text box, exactly: `username.github.io` (where `username` is your username).
-	PS.: As you see your username beside the text box, you tend to type `.github.io` only. DO NOT DO THAT! You need to repeat your username, and your repository will have this odd name `username.github.io`.
-	2.2. If you are willing to use Jekyll for writing your website, you can add a default `gitignore` just when you are creating your repository. You don't need to add it at this point, you can add it afterwards; it's up to you.
-	2.3. You can add a README file at this point too - so you can describe what is the purpose to this repository in order to inform other GitHub users. But again, it's up to you.
-3. After creating your repository, go to `settings` and there you will be able to see if everything worked as it was supposed to. If it's all right, you will see this warning: **"Your site is published at http://<hello>username.github.io"**.
-	3.1. At this point, you can click on **"Launch automatic page generator"** button, so GitHub will create an index file to your website. If you follow their steps, you can easily customize your content, based on one of their templates. So, if you aren't interested in designing your website, you can pick one of their templates and develop your content as you wish.
+  2.1. Name your repository by typing on the text box, exactly: `username.github.io` (where `username` is your username).
+  PS.: As you see your username beside the text box, you tend to type `.github.io` only. DO NOT DO THAT! You need to repeat your username, and your repository will have this odd name `username.github.io`.
+  2.2. If you are willing to use Jekyll for writing your website, you can add a default `gitignore` just when you are creating your repository. You don't need to add it at this point, you can add it afterwards; it's up to you.
+  2.3. You can add a README file at this point too - so you can describe what is the purpose to this repository in order to inform other GitHub users. But again, it's up to you.
+
+3. After creating your repository, go to `settings` and there you will be able to see if everything worked as it was supposed to. If it's all right, you will see this warning: <strong>"Your site is published at http:// username.github.io"</strong>.
+  3.1. At this point, you can click on <strong>"Launch automatic page generator"</strong> button, so GitHub will create an index file to your website. If you follow their steps, you can easily customize your content, based on one of their templates. So, if you aren't interested in designing your website, you can pick one of their templates and develop your content as you wish.
+
 4. Let's say you are not interested in following the previous 3.1 step and you want to develop and design your website according to your needs. Click on `username.github.io` to go back to your repository. 
+
 5. Click on the PLUS `+` sign to create your `index.html` file and type it in the text box.
+
 6. Copy and paste your content from a file you might have ready to go. Or, write your content directly on the textarea provided by GitHub.
+
 7. Commit your new file: if you are new to GitHub, you need to know that every time you add something or change something, you need to `commit` it. It is their way to **save your file** and track exactly what are you doing at that moment. For doing this, you will need to add a short description to tell yourself and other users and contributors what that act means. You can also add a long description, but it is not required.
+
 8. That's it! Your website's Home Page already exists at `http://username.github.io`.
 
 Please, if you got lost on reading those steps, please watch our video tutorial (posted above) to make it more clear. 
@@ -131,11 +139,17 @@ Please, if you got lost on reading those steps, please watch our video tutorial 
 **The following steps can be found on the same video tutorial posted above.**
 
 1. Sign in and go to your repository.
+
 2. Click on the plus sign, as you do to add a new file.
+
 3. Instead of typing the new file name, type the name of the folder you wish to create. After typing the folder name, add a slash `/` at the end, like, for example: `css/`.
+
 4. There we go! You will see that now you will have the text box moved to the end of the path. 
+
 5. Type your file name in the text box, for example `styles.css`.
+
 6. Add your content and commit your file.
+
 7. That's it. We are done!
 
 Note that **you CANNOT create an empty folder**. Every time you create a folder you will need to add a file to it.
@@ -160,12 +174,19 @@ Please click on the following frame if you wish to **watch our video tutorial** 
 #### **<mkp-blue>Step by Step Tutorial</mkp-blue>**
 
 1. Download and install [GitHub Desktop][] application to your PC or MAC.
+
 2. Open the app and sign in to your account.
+
 3. Clone your repository to your desktop.
+
 4. Open the folder created in your computer - which is exactly the same as your repository on GitHub.
+
 5. Inside your repository folder - on your computer, create a new folder and add to it the images you want to.
+
 6. Go back to the app. You will be notified that there were changes made to your repository.
+
 7. Commit your changes and sync your app with GitHub.
+
 8. There we go! Your images are going to be uploaded to GitHub exactly as you did it on your computer.
 
 <br/>
