@@ -14,7 +14,7 @@ comments: true
 fb_type: article
 meta_keywords: github, free hosting, tutorials github, github pages, github user website, github organization website, websites, create free website, free website
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
-date_update: 2015-09-27 03:26:48 UTC
+date_update: 2015-09-27 03:58:48 UTC
 date: 2015-09-26 02:22:34 UTC
 author_fb: marciaramosmdr
 fb_section: Tutorials - GitHub
@@ -178,7 +178,7 @@ That's all for now folks! I hope this article have been useful for you! :smiley:
 
 <br/>
 
-Subscribe to our **[YouTube new Channel][]**!
+Subscribe to our new **[YouTube Channel][]**!
 
 Follow us on [Twitter][]!
 
