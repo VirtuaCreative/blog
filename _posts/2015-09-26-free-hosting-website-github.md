@@ -186,7 +186,7 @@ Add our [Blog][] to your [news feed]!
 
 
 
-[YouTube new Channel]: http://www.youtube.com/c/VirtuaCreativeBrWebsites 
+[YouTube Channel]: http://www.youtube.com/c/VirtuaCreativeBrWebsites 
 [Twitter]: https://twitter.com/virtuacreative
 [Blog]: http://virtuacreative.github.io/blog/
 [GitHub Desktop]: https://desktop.github.com/
