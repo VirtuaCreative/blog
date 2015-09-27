@@ -28,6 +28,19 @@ pg_type: index
 	  	</div>
 	  	<div class="thumb col-xs-9 col-md-10">
 	   		<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> </h2>
+			  {% if post.language %}
+			  <span class="post-date">
+			  	{% assign d = post.date | date: "%-d"  %}
+			  	{{ post.date | date: "%B" }} 
+			  	{% case d %}
+			  	  {% when '1' or '21' or '31' %}{{ d }}st,
+			  	  {% when '2' or '22' %}{{ d }}nd,
+			  	  {% when '3' or '23' %}{{ d }}rd,
+			  	  {% else %}{{ d }}th,
+			  	  {% endcase %} 
+			  	{{ post.date | date: "%Y" }}
+			  </span> 
+			  {% else %}
 			  <span class="post-date">
 				   {% assign m = post.date | date: "%-m" %}
 					{{ post.date | date: "%-d" }}&nbsp;de
@@ -40,13 +53,14 @@ pg_type: index
 						  {% when '6' %}Junho
 						  {% when '7' %}Julho
 						  {% when '8' %}Agosto
-						  {% when '9' %}Septembro
+						  {% when '9' %}Setembro
 						  {% when '10' %}Outubro
 						  {% when '11' %}Novembro
 						  {% when '12' %}Dezembro
 						{% endcase %}&nbsp;de
 					{{ post.date | date: "%Y" }}
 			  </span>
+			  {% endif %}
 		 	 <div>
 				{% if post.fullview %}
 					{{ post.content }}
