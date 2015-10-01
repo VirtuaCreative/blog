@@ -7,6 +7,8 @@
 body{
 	color: #333;
 	  -webkit-font-smoothing: antialiased;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
 }
 
 .schema-tags {
@@ -422,10 +424,22 @@ code {
 	color: brown;
 }
 
+code,
+samp {
+  white-space: pre-wrap !important;
+}
+
 .pager-index {
 	margin-top: 20px;
 	padding-right: 40px;
 	padding-left: 40px;
+}
+
+p > code,
+li > code,
+samp {
+  margin: 0 -.03125em;
+  padding: .0625em .25em 0; /* breathing room for inline code that has a different background or an outline */
 }
 
 .pager li:hover>a {
