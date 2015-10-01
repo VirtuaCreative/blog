@@ -128,6 +128,8 @@ Criar um repositório também é bastante simples: após acessar sua conta, cliq
 
 <br>
 
+<a name="add-files"></a>
+
 #### **Adicionando arquivos**
 
 Existem algumas formas de inserir arquivos ao seu repositório:
