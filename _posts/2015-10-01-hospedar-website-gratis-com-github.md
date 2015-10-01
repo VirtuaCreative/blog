@@ -17,13 +17,13 @@ author_fb: marciaramosmdr
 fb_section: Tutoriais - GitHub
 comments: true
 date: 2015-10-01 00:19:58 UTC
+date_update: 2015-10-01 18:44:31 UTC
 # language: [en_US, en_UK]
-# date_update: 
 ---
 
 # **GitHub**
 
-Para saber o que é o **[GitHub][]** e quais são as melhores formas de aproveitá-lo, por favor leia o artigo ["O que é o GitHub - e porque utilizá-lo"](http://virtuacreative.github.io/blog/introducao-ao-github.html), em que cobrimos os seguintes tópicos:
+Para saber o que é o **[GitHub][]** e quais são as melhores formas de aproveitá-lo, por favor leia o artigo **[O que é o GitHub - e porque utilizá-lo](http://virtuacreative.github.io/blog/introducao-ao-github.html)**, em que cobrimos os seguintes tópicos:
 
 1. **O que é GitHub**: Como funciona / Privacidade / Cotas
 2. **Hospedagem gratuita de websites com o GitHub**: Como funciona / Limitações / Extensões / Privacidade
@@ -86,7 +86,7 @@ Websites de projetos estão sujeitos às mesmas **três condições** descritas 
 
 ### **<mkp-blue>Vantagens</mkp-blue>** 
 
-O maior ganho que temos é a possibilidade de utilizar uma conta do GitHub apenas para hospedar múltiplos websites. Isso mesmo, podemos criar quantos websites quisermos, pois o GitHub não impõe limite de cotas de utilização, conforme explicado detalhadamente no artigo anterior ["O que é o GitHub - e porque utilizá-lo"](http://virtuacreative.github.io/blog/introducao-ao-github.html). Mas atenção! Você poderá publicar apenas UM website de usuário, mas poderá criar quantos websites de projetos precisar.
+O maior ganho que temos é a possibilidade de utilizar uma conta do GitHub apenas para hospedar múltiplos websites. Isso mesmo, podemos criar quantos websites quisermos, pois o GitHub não impõe limite de cotas de utilização, conforme explicado detalhadamente no artigo anterior **[O que é o GitHub - e porque utilizá-lo](http://virtuacreative.github.io/blog/introducao-ao-github.html)**. Mas atenção! Você poderá publicar apenas UM website de usuário, mas poderá criar quantos websites de projetos precisar.
 
 Então caso você precise de um website para sua empresa, com o domínio `suaempresa.com` e precise de um outro website para você mesmo, com um segundo domínio `voce.com`, é possível fazer isso com apenas uma conta do GitHub e **sem gastar um centavo** em hospedagem! Basta alocar cada um deles em um repositório diferente e pronto! :smiley:
 
@@ -108,11 +108,11 @@ Os seus websites poderão estar "linkados" entre si, mas somente se você quiser
 
 Se não ficou muito claro, vamos exemplificar com os websites de Virtua Creative:
 
-Temos nosso website do usuário:
+**Temos nosso website do usuário:**
 
 Nosso usuário do GitHub, @virtuacreative, tem como **website de usuário** a seguinte URL: [http://virtuacreative.github.io](http://virtuacreative.github.io), que "mora" no repositório especialmente nomeado como `virtuacreative.github.io`.
 
-Temos dois websites de projetos:
+**Temos dois websites de projetos:**
 
 1. [Virtua Creative Blog](http://virtuacreative.github.io/blog/), acessado via `http://virtuacreative.github.io/blog`, que "mora" no repositório chamado `blog`;
 2. [Virtua Creative & GitHub](http://virtuacreative.github.io/git/), acessado via `http://virtuacreative.github.io/git`, que mora no repositório chamado `git`.
@@ -123,7 +123,7 @@ As estruturas dos websites não precisam ser as mesmas, e no exemplo dado, de fa
 
 ### **<mkp-blue>Integração com Redes Sociais e outros serviços</mkp-blue>**
 
-Como a maior parte das empresas que fornecem serviços variados para serem integrados aos websites de terceiros normalmente fornecem um bloco de código pronto e escrito em javascript para inserirmos no `<body>` ou na `<head>` dos nossos arquivos, não há a menor dificuldade em utilizá-los. Proceda normalmente sua integração com o Google Analytics, Facebook, Twitter, Gravatar, etc.
+Como a maior parte das empresas que fornecem serviços variados para serem integrados aos websites de terceiros normalmente fornecem um **bloco de código** pronto e escrito em **javascript** para inserirmos no `<body>` ou na `<head>` dos nossos arquivos, não há a menor dificuldade em utilizá-los. Proceda normalmente sua integração com o Google Analytics, Facebook, Twitter, Gravatar, etc.
 
 <br>
 
@@ -141,25 +141,23 @@ O vídeo a seguir mostra como fazer o processo inteiro. Caso prefira, logo abaix
 
 ### **<mkp-blue>Passo-a-Passo</mkp-blue>**
 
-1. Vá até o [Github][] e faça login na sua conta.
+1. Vá até o [GitHub][] e faça login na sua conta.
 2. Crie um repositório de nome `nome-do-usuario.github.io` (note que, neste momento, você poderá tender a digitar apenas `.github.io`, uma vez que seu nome de usuário já aparece na tela. Não faça isso! Repita o nome do usuário, escrevendo exatamente como descrevemos.)
 3. Defina-o como `Repositório Público`, de outra forma não poderá ser usado para hospedar nenhum website.
 4. Defina as demais opções para seu repositório (criar automaticamente um README.md, adicionar um gitigonore e licensas para seu conteúdo). Nada disso precisa ser feito, fica a seu critério como utilizar as opções adicionais.
 5. Depois de criado, o GitHub automaticamente redirecionará para a página do repositório. Nesta página, clique em `Settings` (barra lateral direita), que é a parte que define as configurações do repositório.
 6. Se deu tudo certo até aqui, você verá o seguinte alerta: <strong>"Your site is published at http:// username.github.io"</strong>, mostrando o endereço de acesso do seu website de usuário/orgazinação.
-  6.1. Neste momento, você poderá executar o comando <strong>"Launch automatic page generator"</strong>, que gerará uma Home Page para você. Ao clicar nesta opção, o GitHub o redirecionará para uma nova página, onde você poderá escolher um tema do GitHub e editar o conteúdo da sua Home Page. Ao clicar em "Publicar", seu website estará no ar. Mas digamos que você queira continuar o processo sem utilizar um dos _templates_ do GitHub, e vamos aos próximos itens.
-
+  **6.1.** Neste momento, você poderá executar o comando <strong>"Launch automatic page generator"</strong>, que gerará uma Home Page para você. Ao clicar nesta opção, o GitHub o redirecionará para uma nova página, onde você poderá escolher um tema do GitHub e editar o conteúdo da sua Home Page. Ao clicar em "Publicar", seu website estará no ar. Mas digamos que você queira continuar o processo sem utilizar um dos _templates_ do GitHub, e vamos aos próximos itens.
 7. Ignorando o sub-item 6.1., vamos voltar ao seu repositório e criar sua Home Page. Clique sobre o nome do repositório.
 8. Clique no sinal de `+` para adicionar um arquivo. Escreva na caixa de texto `index.html`. Escreva o conteúdo na área de texto ou copie e cole de um arquivo que você já tenha pronto.
-	8.1. Se você ainda não tem nada para colocar no arquivo, mas deseja testar o processo, copie e cole o [código abaixo](#bloco-html) na área de texto fornecida pelo GitHub. Depois você poderá voltar e editar o conteúdo como quiser.
-
+  **8.1.** Se você ainda não tem nada para colocar no arquivo, mas deseja testar o processo, copie e cole o [código abaixo](#bloco-html) na área de texto fornecida pelo GitHub. Depois você poderá voltar e editar o conteúdo como quiser.
 9. Clique em `Commit New File` para salvá-lo. Pronto! Seu website já estará no ar!
 
 <br>
 
 <a name="bloco-html"></a>
 
-**BLoco de código para o item 8.1.:**
+**Bloco de código para o item 8.1.:**
 
 {% highlight html %}
 <!DOCTYPE html>
@@ -200,7 +198,7 @@ Para criar uma pasta e adicionar imagens a ela para que você possa inserí-las 
 
 ### **<mkp-blue>Passo-a-Passo</mkp-blue>**
 
-1. Faça o download e instale o [GitHub Deskto][] e faça login na sua conta.
+1. Faça o download e instale o [GitHub Desktop][] e faça login na sua conta.
 2. Clone seu repositório criado para websites e escolha uma pasta para alocar seus arquivos.
 3. Vá até o diretório clonado e crie uma nova pasta. Digamos que sua pasta chame-se `img`
 4. Adicione a esta pasta quantas imagens quiser. Digamos que uma das imagens chame-se "imagem.png"
@@ -235,6 +233,17 @@ Esperamos ter sido úteis! Por favor, contribua para o assunto deixando seu come
 Se você tiver dúvidas ou sugestões, comente ou acesse nosso [formulário de contato](http://virtuacreative.github.io/git/contact.html).
 
 Obrigada e até o próximo artigo!
+
+<br>
+
+---------------
+
+### **Artigos relacionados**
+
+[O que é GitHub - e porque utilizá-lo](http://virtuacreative.github.io/blog/introducao-ao-github.html)
+[O que é Jekyll - e para que ele serve](http://virtuacreative.github.io/blog/jekyll-for-beginners-introduction.html)
+[Criando blogs com Jekyll no Windows](http://virtuacreative.github.io/blog/jekyll-github-blog.html)
+[Jekyll e GitHub Markdown](http://virtuacreative.github.io/blog/jekyll-github-markdown.html)
 
 <br>
 
