@@ -17,8 +17,8 @@ author_fb: marciaramosmdr
 fb_section: Tutorials - GitHub
 comments: true
 date: 2015-09-14 23:41:41 UTC
+date_update: 2015-10-01 00:34:50 UTC
 # language: [en_US, en_UK]
-# date_update: 
 ---
 
 # **O que é GitHub**
@@ -73,7 +73,7 @@ Uma das possibilidades mais interessantes do GitHub para não-programadores é a
 
 ### **<mkp-blue>Como funciona a hospedagem gratuita do GitHub</mkp-blue>**
 
-Para hospedar seu website, você precisará criar uma conta no GitHub e criar um repositório. Há certas especificações e passos a serem seguidos, e você poderá encontrá-los no nosso próximo artigo **"Como hospedar um website gratuitamente com o GitHub"** (data agendada para publicação: 25/09/15). Siga-nos no [Twitter][] para receber a chamada em primeira mão!
+Para hospedar seu website, você precisará criar uma conta no GitHub e criar um repositório. Há certas especificações e passos a serem seguidos, e você poderá encontrá-los no artigo **[Como hospedar um website gratuitamente no GitHub](http://virtuacreative.github.io/blog/hospedar-website-gratis-com-github.html)**.
 
 Seu website poderá ser acessado através de um subdomínio do GitHub `suaempresa.github.io` ou através do seu próprio domínio, `www.suaempresa.com`. Veja exemplos: [http://virtuacreative.github.io](http://virtuacreative.github.io) e [https://jekyllrb.com/](https://jekyllrb.com/)
 
@@ -170,7 +170,7 @@ Todo repositório público poderá ser acessado via url escrita neste formato: `
 2. no formato `nome-do-usuario.github.io` - levará ao website do usuário ou organização;
 3. no formato `nome-do-usuario.github.io/nome-do-repositorio/` - levará ao website do projeto.
 
-Entenda a diferença entre os tipos de website (usuário/organização e projeto) no nosso próximo artigo **"Como hospedar um website gratuitamente com o GitHub"** (data agendada para publicação: 25/09/15). Siga-nos no [Twitter][] para receber a chamada em primeira mão!
+Entenda a diferença entre os tipos de website (usuário/organização e projeto) no artigo **[Como hospedar um website gratuitamente no GitHub](http://virtuacreative.github.io/blog/hospedar-website-gratis-com-github.html)**. Siga-nos no [Twitter][] para receber a chamada em primeira mão!
 
 <br>
 
@@ -178,7 +178,7 @@ Entenda a diferença entre os tipos de website (usuário/organização e projeto
 
 Este artigo descreveu brevemente uma introdução ao uso do GitHub. Outras funcionalidades podem ser atingidas, como, por exemplo, o trabalho com diferentes tipos de `branches` - são tipos de conteúdos dentro dos repositórios, ou ainda, o comando `fork`, que permite a criação de um projeto sobre outro já existente, ou ainda a função `contribute` que permite que várias pessoas trabalhem no mesmo repositório, entre outras funcionalidades avançadas que não convém serem detalhadas em artigos introdutórios como este.
 
-Nosso próximo artigo **"Como hospedar um website gratuitamente com o GitHub"** cobrirá os aspectos do uso do GitHub para hospedagem de websites, caso seu interesse no GitHub seja este. Por isso este tema não foi detalhado no presente artigo.
+Nosso artigo **[Como hospedar um website gratuitamente no GitHub](http://virtuacreative.github.io/blog/hospedar-website-gratis-com-github.html)** cobre os aspectos do uso do GitHub para hospedagem de websites, caso seu interesse no GitHub seja este. Por isso este tema não foi detalhado no presente artigo.
 
 Esperamos que este artigo tenha sido útil para você, no sentido de dar uma visão geral sobre o uso do GitHub e das funcionalidades que ele oferece.
 
