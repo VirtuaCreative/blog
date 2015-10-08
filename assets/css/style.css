@@ -559,6 +559,19 @@ mkp-yellow {
 	height: 100%;
 }
 
+button.copy {
+	color: #fff !important;
+	background-color: #333;
+	border:none;
+	font-size: 12px !important;
+}
+
+button.copy:hover {
+	color: #fff !important;
+	background-color: #6a99da;
+	border:none;
+}
+
 @media screen and (max-width: 768px) {
 	.tags-custom {
 		border-bottom: 1px solid #999;
