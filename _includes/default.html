@@ -56,6 +56,19 @@
 	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.baseurl }}/feed.xml">
 	<link rel="shortcut icon" href="http://virtuacreative.github.io/git/img/favicon.ico" type="image/x-icon">
 	<link rel="author, nofollow" href="https://plus.google.com/+{{ site.author.googleplus }}">
+	{% if page.copy %}
+	<script type="text/javascript" src="{{ site.baseurl }}/assets/resources/jquery/jquery.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/resources/clipboard/ZeroClipboard.js"></script>
+	<script src="{{ site.baseurl }}/assets/resources/clipboard/main.js"></script>
+    <script>
+    $(document).ready(function() {
+            var clientTarget = new ZeroClipboard( $(".target-to-copy"), {
+              moviePath: "{{ site.baseurl }}/assets/resources/clipboard/ZeroClipboard.swf",
+              debug: false
+            } );    
+        });
+    </script>
+    {% endif %}
  </head>
  <body>
 	<script>
@@ -153,7 +166,10 @@
 			</p>
 		</footer>
 	</div>
+	{% if page.copy %} 
+	{% else %}
 	<script type="text/javascript" src="{{ site.baseurl }}/assets/resources/jquery/jquery.min.js">		</script>
+	{% endif %}
 	<script type="text/javascript" src="{{ site.baseurl }}/assets/resources/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="{{ site.baseurl }}/assets/js/app.js"></script>
 	<script>
