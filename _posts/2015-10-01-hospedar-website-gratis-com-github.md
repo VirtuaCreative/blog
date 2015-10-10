@@ -160,7 +160,7 @@ O vídeo a seguir mostra como fazer o processo inteiro. Caso prefira, logo abaix
 
 **Bloco de código para o item 8.1.:**
 
-<div name="clipboard-text" id="clipboard-text-UNIQUE_ID">
+<div name="clipboard-text" id="clipboard-text-1">
 
 {% highlight html %}
 <!DOCTYPE html>
@@ -179,8 +179,16 @@ O vídeo a seguir mostra como fazer o processo inteiro. Caso prefira, logo abaix
 
 </div>
 
-<button id="target-to-copy" data-clipboard-target="clipboard-text-UNIQUE_ID" class="target-to-copy copy btn btn-lg" title="Clique para copiar o texto acima e cole no seu documento."><i class="fa fa-files-o"></i>
+<button onclick="fDisplay()" id="target-to-copy" data-clipboard-target="clipboard-text-1" class="target-to-copy copy btn btn-lg" title="Clique para copiar o texto acima e cole no seu documento."><i class="fa fa-files-o"></i>
 &nbsp;&nbsp;Clique para copiar o código</button>
+
+<p id="ok0"></p>
+
+<script>
+function fDisplay() {
+    document.getElementById("ok0").innerHTML = "<button class='btn btn-success'><i class='fa fa-check'>&nbsp;Copiado!</button>";
+}
+</script>
 
 <br>
 
@@ -227,15 +235,21 @@ Caso precise, aqui está um exemplo de tag de imagem para ser inserida no `<body
 <div name="clipboard-text" id="clipboard-text-2">
 
 {% highlight html %}
-
 <img src="http://nome-do-usuario.github.io/img/imagem.png" alt="Exemplo de Imagem">
-
 {% endhighlight %}
 
 </div>
 
-<button id="target-to-copy" data-clipboard-target="clipboard-text-2" class="target-to-copy copy btn btn-lg" title="Clique para copiar o texto acima e cole no seu documento."><i class="fa fa-files-o"></i>
+<button onclick="Display()" id="target-to-copy" data-clipboard-target="clipboard-text-2" class="target-to-copy copy btn btn-lg" title="Clique para copiar o texto acima e cole no seu documento."><i class="fa fa-files-o"></i>
 &nbsp;&nbsp;Clique para copiar o código</button>
+
+<p id="ok1"></p>
+
+<script>
+function Display() {
+    document.getElementById("ok1").innerHTML = "<button class='btn btn-success'><i class='fa fa-check'>&nbsp;Copiado!</button>";
+}
+</script>
 
 <br>
 

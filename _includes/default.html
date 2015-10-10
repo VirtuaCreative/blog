@@ -58,6 +58,22 @@
 	<link rel="author, nofollow" href="https://plus.google.com/+{{ site.author.googleplus }}">
 	{% if page.copy %}
 	<script type="text/javascript" src="{{ site.baseurl }}/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="{{ site.baseurl }}/assets/resources/modernizr/modernizr-custom.js"></script>
+	
+	<script type="text/javascript">
+		function hasFlash()
+		{
+			if(swfobject.hasFlashPlayerVersion("1"))
+			{
+				$('html').addClass('flash');
+			}
+			else
+			{
+				$('html').addClass('noflash');
+			}
+		}
+	</script>
+	<script src="{{ site.baseurl }}/assets/resources/jquery/jquery.swfobject.1-1-1.min.js"></script>
 	<script src="{{ site.baseurl }}/assets/resources/clipboard/ZeroClipboard.js"></script>
 	<script src="{{ site.baseurl }}/assets/resources/clipboard/main.js"></script>
     <script>
@@ -65,7 +81,7 @@
             var clientTarget = new ZeroClipboard( $(".target-to-copy"), {
               moviePath: "{{ site.baseurl }}/assets/resources/clipboard/ZeroClipboard.swf",
               debug: false
-            } );    
+            } );   
         });
     </script>
     {% endif %}
