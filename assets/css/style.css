@@ -559,9 +559,9 @@ mkp-yellow {
 	height: 100%;
 }
 
-.noflash button.copy {
- 	display: none !important;
- }
+p.clipb {
+	display: inline-block;
+}
 
 button.copy {
 	color: #fff !important;
@@ -575,6 +575,15 @@ button.copy:hover {
 	background-color: #6a99da;
 	border:none;
 }
+
+/*@media rules*/
+ 
+@media screen and (max-width: 768px) {
+	p.clipb {
+		display: none;
+	}
+}
+
  
 @media screen and (max-width: 768px) {
 	.tags-custom {
@@ -678,3 +687,4 @@ button.copy:hover {
 		padding: 4px 10px;
 	}
 }
+
