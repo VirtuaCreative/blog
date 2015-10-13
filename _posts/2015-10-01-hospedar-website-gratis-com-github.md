@@ -17,9 +17,10 @@ author_fb: marciaramosmdr
 fb_section: Tutoriais - GitHub
 comments: true
 date: 2015-10-01 00:19:58 UTC
-date_update: 2015-10-07 23:49:46 UTC
+date_update: 2015-10-13 19:44:27 UTC
 # language: [en_US, en_UK]
 copy: true
+codingbox: true
 ---
 
 # **GitHub**
@@ -179,14 +180,13 @@ O vídeo a seguir mostra como fazer o processo inteiro. Caso prefira, logo abaix
 
 </div>
 
-<button onclick="fDisplay()" id="target-to-copy" data-clipboard-target="clipboard-text-1" class="target-to-copy copy btn btn-lg" title="Clique para copiar o texto acima e cole no seu documento."><i class="fa fa-files-o"></i>
-&nbsp;&nbsp;Clique para copiar o código</button>
+<p id="btn1" class="clipb"><button onclick="fDisplay()" id="target-to-copy" data-clipboard-target="clipboard-text-1" class="target-to-copy copy btn btn-lg" title="Clique para copiar o texto acima e cole no seu documento."><i class="fa fa-files-o"></i>&nbsp;&nbsp;Clique para copiar o código</button></p>
 
-<p id="ok0"></p>
+<p id="ok0" class="clipb"></p>
 
 <script>
 function fDisplay() {
-    document.getElementById("ok0").innerHTML = "<button class='btn btn-success'><i class='fa fa-check'>&nbsp;Copiado!</button>";
+    document.getElementById("ok0").innerHTML = "<button class='btn btn-success'>&nbsp;<i class='fa fa-check'>&nbsp;</button>";
 }
 </script>
 
@@ -240,14 +240,14 @@ Caso precise, aqui está um exemplo de tag de imagem para ser inserida no `<body
 
 </div>
 
-<button onclick="Display()" id="target-to-copy" data-clipboard-target="clipboard-text-2" class="target-to-copy copy btn btn-lg" title="Clique para copiar o texto acima e cole no seu documento."><i class="fa fa-files-o"></i>
-&nbsp;&nbsp;Clique para copiar o código</button>
+<p id="btn2" class="clipb"><button onclick="Display()" id="target-to-copy" data-clipboard-target="clipboard-text-2" class="target-to-copy copy btn btn-lg" title="Clique para copiar o texto acima e cole no seu documento."><i class="fa fa-files-o"></i>
+&nbsp;&nbsp;Clique para copiar o código</button></p>
 
-<p id="ok1"></p>
+<p id="ok1" class="clipb"></p>
 
 <script>
 function Display() {
-    document.getElementById("ok1").innerHTML = "<button class='btn btn-success'><i class='fa fa-check'>&nbsp;Copiado!</button>";
+    document.getElementById("ok1").innerHTML = "<button class='btn btn-success'>&nbsp;<i class='fa fa-check'>&nbsp;</button>";
 }
 </script>
 
