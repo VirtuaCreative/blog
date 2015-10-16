@@ -1,6 +1,12 @@
 
 .highlight {
 	position: relative;
+
+}
+
+pre {
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
 }
 
 code[data-lang]::after {
