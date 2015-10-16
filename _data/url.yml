@@ -1,0 +1,41 @@
+virtua:
+  home: http://www.virtuacreative.com.br/
+  git-home: http://virtuacreative.github.io/
+  git-contact: http://virtuacreative.github.io/git/contact.html
+  blog: http://virtuacreative.github.io/blog/
+  git: http://virtuacreative.github.io/git/
+  twitter: https://twitter.com/virtuacreative
+  youtube: http://www.youtube.com/c/VirtuaCreativeBrWebsites
+  googleplus: https://plus.google.com/+VirtuacreativeBrWebsites/
+  flickr: https://www.flickr.com/photos/virtuacreative
+  github: https://github.com/virtuacreative
+  behance: http://behance.com/virtuacreative
+  facebook: http://www.facebook.com/virtuacreative
+
+git:
+  pages: https://pages.github.com
+  home: https://github.com/
+  desktop: https://desktop.github.com/
+  gfm: https://help.github.com/articles/github-flavored-markdown/
+  mentions: https://github.com/jekyll/jekyll-mentions
+  emoji: http://www.emoji-cheat-sheet.com/
+
+jekyll:
+  home: http://jekyllrb.com/
+  docs: http://jekyllrb.com/docs/home/
+
+markdown:
+  kramdown: http://jekyllrb.com/docs/configuration/#kramdown
+  all: http://daringfireball.net/projects/markdown/basics
+  pygments: http://pygments.org/
+
+ramosmd:
+  home: http://ramosmd.github.io
+  googleplus: https://plus.google.com/+MarciaDiasRamosMD/
+  twitter: https://twitter.com/xmdramos
+  facebook: http://www.facebook.com/marciaramosmdr
+  github: https://github.com/ramosmd
+
+tools:
+  yaml-lint: http://www.yamllint.com/
+
