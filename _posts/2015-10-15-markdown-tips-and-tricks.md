@@ -60,7 +60,7 @@ Our Jekyll `_config.yml` settings are the following:
 ... your settings ...
 
 highlighter: pygments
-markdown: kramdown'
+markdown: kramdown
 
 kramdown:
   input: GFM          # this is a support for GitHub Flavored Markdown
@@ -75,7 +75,7 @@ gems:
 
 The tips provided by this post worked very well using [Kramdown][] and [Pygments][]. Other markdown and highlighters haven't been tested yet, but you are more than invited to give it a try and tell us if works or not! :smiley:
 
-Our build has been made by running `bundle exec jekyll serve --safe` on the command prompt, at the local root folder, as [recommended by GitHub][]. Using the `--safe` mode allows you to build your site locally in the closest way that GitHub will do it, [avoiding building errors][] when uploading files to GitHub.
+Our build has been made by running `bundle exec jekyll serve --safe` on the command prompt, at the local root folder, as [recommended by GitHub][]. Using the `--safe` mode allows you to build your site locally in the closest way that GitHub will do it, [avoiding building errors][] when uploading your files to GitHub.
 
 Our `default.html` file (where the markdown posts are called to) is placed at our `_includes` folder and is a `HTML 5` document. Our styles are written in `CSS 3`.
 
@@ -87,13 +87,13 @@ Our `default.html` file (where the markdown posts are called to) is placed at ou
 
 <br>
 
-Let's begin with new elements. Did you know you can add `HTML elements` to your markdown file? For example, if you need a horizontal line, you can add it as the code below: 
+Let's begin with new elements. Did you know you can add `HTML elements` to your markdown? For example, if you need a horizontal line, you can add it as the code below: 
 
 {% highlight text linenos %}
 Some text here
-				# blank line
+// blank line
 <hr>
-				# blank line
+// blank line
 Something else here
 {% endhighlight %}
 
@@ -105,17 +105,17 @@ Something else here
 <p>Something else here</p>
 {% endhighlight %}
 
-Note that we left the lines `2` and `4` empty, this is a **condition** for `html` elements to be untouched when your markdown is compiled to  file. 
+Note that we left the lines `2` and `4` empty, this is a **condition** for `html` elements to be untouched when your markdown is compiled. 
 
-Now you can freely style your `<hr>` in your `CSS` file. 
+Now you can freely style your `<hr>` in your `CSS`. 
 
-Just to let you know, in this case you can use just a sequence of `----------` onto your markdown and this will produce a `<hr>` tag when compiled to html. But sometimes you can't run from using some `html` tags themselves in order to have the results you want.
+Just to let you know, in this particular case you can use just a sequence of `----------` onto your markdown and it will produce a `<hr>` tag when compiled to html. But sometimes you can't run from using some `html` tags themselves in order to have the results you want.
 
 Feel free to use the tag `<br>` the same way for breaking lines. 
 
 <p class="bkggreen"><i class="fa fa-exclamation" style="color: red;"></i>&nbsp;&nbsp;Don't forget to leave a <strong>blank line</strong> between some regular markdown text and a <strong>html tag</strong>, otherwise you might face errors during files compilation!</p>
 
-Following the same logic, `HTML 5` allows you to add some extra elements, and you are also free to make up your own. For example, as you probably have noticed, some of our titles on this blog are **<mkp-blue>blue</mkp-blue>**. How did we do that? 
+Following the same logic, `HTML 5` allows you to add some extra elements, and you are also free to make up your own. For example, as you might have noticed, some of our titles on this blog are **<mkp-blue>blue</mkp-blue>**. How did we do that? 
 
 This is not a `<span>` tag. Actually, we made a new element up, called `<mkp-blue>`. You can call elements whatever you want. This element has only one propriety defined in our `CSS`, all the others are inherit from its parent element:
 
@@ -161,7 +161,7 @@ Hello! I'm a <mkp-blue>**blue**</mkp-blue> word in a regular markdown text!
 
 ... which probably is not what you want.
 
-That's it, you can add as many existing or non-existing elements to your markdown file, as long as you leave blank lines above and below them.
+That's it, you can add as many default or non-default elements to your markdown file, as long as you leave blank lines above and below them.
 
 <br> 
 
@@ -170,7 +170,7 @@ That's it, you can add as many existing or non-existing elements to your markdow
 
 # **<mkp-blue>Adding HTML Divs</mkp-blue>**
 
-Exactly as we just have done, you can add some **divs** to your markdown files, through the text. And with divs, you can do pretty much anything you like, such as giving classes, ids, transitions, and anything that a regular `<div>` tag supports in `HTML 5`.
+Exactly as we just have done, you can add some **html divs** to your markdown. And with divs, you can do pretty much anything you like, such as giving classes, ids, transitions, and anything that a regular `<div>` tag supports in `HTML 5`.
 
 For example, let's say you want a particular image style at some point, you can just wrap it into a `<div>` and that's it!
 
@@ -210,12 +210,12 @@ And you customize your special image as you want, for example:
 Here is the result:
 
 <div class="example">
-	<img src="/assets/media/blog_poster.png" alt="Some alternative text" style="width: 30%;	border: 1px solid #333;	box-shadow: 2px 2px 5px #999; border-radius: 5px;">
+	<img src="{{ site.baseurl }}/assets/media/blog_poster.png" alt="Some alternative text" style="width: 30%;	border: 1px solid #333;	box-shadow: 2px 2px 5px #999; border-radius: 5px;">
 </div>
 
 <br>
 
-Of course we could have styled the image itself in this case, but sometimes we need nested elements in order to produce the results we want. A very common example is giving an element a `position="relative"` and its nested element a `position="absolute"`. We cannot achieve the same results by playing around just with one of them, we'll need them both!
+Of course we could have styled the image itself in this case, but sometimes we need nested elements in order to produce the results we want. A very common case is giving an element a `position="relative"` and its nested element a `position="absolute"`. We cannot achieve the same results by playing around just with one of them, we'll need them both!
 
 <br>
 
@@ -235,7 +235,7 @@ Hello! I'm a regular textile paragraph written in a markdown file!
 ...
 {% endhighlight %}
 
-... but you are free to write it as a `<p>...</p>` HTML tag, like:
+... you are free to write it as a `<p>...</p>` HTML tag, like:
 
 {% highlight text linenos %}
 ...
@@ -245,7 +245,7 @@ Hello! I'm a regular textile paragraph written in a markdown file!
 ...
 {% endhighlight %}
 
-... and this will be compiled to:
+... and it will be compiled to:
 
 {% highlight html %}
 ...
@@ -317,10 +317,10 @@ Thanks for reading! Stay tuned for the next article (**Markdown Tips and Tricks 
 
 <hr>
 
-### **Credits**
+### **Image Credits**
 
 \- Art work: Virtua Creative
-\- Illustrations downloaded from Freepik: the original [box](http://www.freepik.com/free-vector/vectors_785241.htm) and the original [lamp](http://www.freepik.com/free-vector/vectors_810569.htm).
+\- Illustrations: we have downloaded from Freepik the original [box](http://www.freepik.com/free-vector/vectors_785241.htm) and the original [bulb](http://www.freepik.com/free-vector/vectors_810569.htm).
 
 [How to publish your website on GitHub]: http://virtuacreative.github.io/blog/free-hosting-website-github.html
 [another article]: http://virtuacreative.github.io/blog/free-hosting-website-github.html
