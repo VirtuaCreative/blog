@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="pt">
+{% if page.language %}<html lang="en">{% else %}<html lang="pt_BR">{% endif %}
  {% if page.fb_title %}<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">{% else %}<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# {{ site.fb_app.namespace }}: http://ogp.me/ns/fb/{{ site.fb_app.namespace }}#">{% endif %}
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">

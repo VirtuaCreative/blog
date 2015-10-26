@@ -120,16 +120,31 @@
 			<hr/>
 			<div class="clearfix"></div>
 				<ul class="pager">
-				  {% if page.previous %}
-				  <li class="previous"><a href="{{ site.baseurl }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Anterior</a></li>
-				  {% else %}
-				  <li class="previous disabled"><a>&larr; Anterior</a></li>
-				  {% endif %}
-				  {% if page.next %}
-				  <li class="next"><a href="{{ site.baseurl }}{{ page.next.url }}" title="{{ page.next.title }}">Próximo &rarr;</a></li>
-				  {% else %}
-					<li class="next disabled"><a>Próximo &rarr;</a>
-				  {% endif %}
+				{% if page.language %}
+					{% if page.previous %}
+						<li class="previous"><a href="{{ site.baseurl }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+					{% else %}
+						<li class="previous disabled"><a>&larr; Previous</a></li>
+					{% endif %}
+					<li class="top"><a href="#"><i class="fa fa-arrow-up"></i>&nbsp;&nbsp;Top</a></li>
+					{% if page.next %}
+						<li class="next"><a href="{{ site.baseurl }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+					{% else %}
+						<li class="next disabled"><a>Next &rarr;</a>
+					{% endif %}
+				{% else %}
+					{% if page.previous %}
+						<li class="previous"><a href="{{ site.baseurl }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Anterior</a></li>
+					{% else %}
+						<li class="previous disabled"><a>&larr; Anterior</a></li>
+					{% endif %}
+					<li class="top"><a href="#"><i class="fa fa-arrow-up"></i>&nbsp;&nbsp;Topo</a></li>
+					{% if page.next %}
+						<li class="next"><a href="{{ site.baseurl }}{{ page.next.url }}" title="{{ page.next.title }}">Próximo &rarr;</a></li>
+					{% else %}
+						<li class="next disabled"><a>Próximo &rarr;</a>
+					{% endif %}
+				{% endif %}
 				</ul>
 		<div class="clearfix"></div>
 		<hr />
