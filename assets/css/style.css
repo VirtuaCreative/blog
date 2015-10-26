@@ -517,6 +517,25 @@ mkp-yellow {
 	color: #f1bf00;
 }
 
+.btn-blue {
+	background-color: #6a99da;
+	color: white;
+}
+.btn-blue:hover {
+	background-color: #333;
+	color: white;
+}
+
+.btn-gray {
+	background-color: dimgray;
+	color: white;
+}
+.btn-gray:hover {
+	background-color: #6a99da;
+	color: white;
+}
+
+
 .well {
 	background-color: #FCFCFC !important;
 }
@@ -613,8 +632,26 @@ p.bkgyellow {
 	border-radius: 5px;
 }
 
+div.right {
+	float: right;
+}
+
+.tx-white {
+	color: white;
+}
+.top {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /*@media rules*/
- 
+
+@media screen and (max-width: 695px) {
+	div.right {
+		float: none !important;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	p.clipb {
 		display: none;
