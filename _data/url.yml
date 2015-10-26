@@ -39,3 +39,6 @@ ramosmd:
 tools:
   yaml-lint: http://www.yamllint.com/
 
+articles:
+  tipsntricks: http://virtuacreative.github.io/blog/markdown-tips-and-tricks.html
+
