@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Markdown Tips & Tricks - Part 2
+title: "Markdown Tips & Tricks - Part 2"
 categories: [jekyll, github]
 tags: [markdown, kramdown, jekyll, github, github pages, git]
 meta_keywords: markdown, kramdown, jekyll, github, github pages, git, tips and tricks, dicas e truques
