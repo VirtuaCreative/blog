@@ -1,4 +1,4 @@
-[Virtua Creative Blog](http://virtuacreative.github.io/blog/)
+[Virtua Creative Blog](http://blog.virtuacreative.com.br/)
 =====
 
 
