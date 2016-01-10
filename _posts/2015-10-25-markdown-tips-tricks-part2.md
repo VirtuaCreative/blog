@@ -18,7 +18,7 @@ date: 2015-10-25 23:36:10 UTC
 comments: true
 published: true
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
-language: [en_US, en_UK]
+language: [en_US, en_GB]
 date_update: 2016-01-09 00:22:10 UTC
 copy: true # copy button with javascript  
 codingbox: true # code type on the top-right of code block boxes 
