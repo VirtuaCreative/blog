@@ -6,7 +6,7 @@ tags: [github, free hosting, github tutorials]
 published: True
 imageUrl: https://goo.gl/i4GnJn
 fb_title: How to publish your website on GitHub
-language: [en_US, en_UK]
+language: [en_US, en_GB]
 author_twitter: xmdramos
 image: http://goo.gl/TaiHua
 image_schema: 'http://farm1.staticflickr.com//701//21720695025_f483d1dd95_b.jpg'
