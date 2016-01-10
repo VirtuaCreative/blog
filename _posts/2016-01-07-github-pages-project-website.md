@@ -14,7 +14,7 @@ fb_title: How to Publish Project Websites on GitHub
 fb_type: article
 author_fb: marciaramosmdr
 author_twitter: xmdramos
-date: 2016-01-07 00:32:11 UTC
+date: 2016-01-10 18:21:51 UTC
 comments: true
 published: true
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
