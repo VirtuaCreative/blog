@@ -1,11 +1,7 @@
 - ref: 1
-  title: Jekyll e GitHub Markdown
-  url: http://virtuacreative.github.io/blog/jekyll-github-markdown.html
+  title: O que é GitHub - e porque utilizá-lo
+  url: http://blog.virtuacreative.com.br/introducao-ao-github.html
 
 - ref: 2
-  title: O que é GitHub - e porque utilizá-lo
-  url: http://virtuacreative.github.io/blog/introducao-ao-github.html
-
-- ref: 3
   title: Como hospedar um website gratuitamente no GitHub
-  url: http://virtuacreative.github.io/blog/hospedar-website-gratis-com-github.html
+  url: http://blog.virtuacreative.com.br/hospedar-website-gratis-com-github.html

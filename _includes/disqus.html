@@ -11,5 +11,12 @@
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
+{% if page.language %}
+<script type="text/javascript">
+	var disqus_config = function () { 
+	  this.language = "en";
+};
+</script>
+{% endif %}
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 {% endif %}

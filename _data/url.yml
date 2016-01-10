@@ -1,9 +1,12 @@
 virtua:
   home: http://www.virtuacreative.com.br/
-  git-home: http://virtuacreative.github.io/
-  git-contact: http://virtuacreative.github.io/git/contact.html
-  blog: http://virtuacreative.github.io/blog/
-  git: http://virtuacreative.github.io/git/
+  home_contact: http://virtuacreative.com.br/virtua-contato.php
+  git-home: http://virtuacreative.github.io/ # DO NOT USE THIS
+  git_home: http://virtuacreative.github.io/ # USE THIS
+  git-contact: http://git.virtuacreative.com.br/contact.html # DO NOT USE THIS
+  git_contact: http://git.virtuacreative.com.br/contact.html # USE THIS
+  blog: http://blog.virtuacreative.com.br/
+  git: http://git.virtuacreative.com.br/
   twitter: https://twitter.com/virtuacreative
   youtube: http://www.youtube.com/c/VirtuaCreativeBrWebsites
   googleplus: https://plus.google.com/+VirtuacreativeBrWebsites/
@@ -19,6 +22,8 @@ git:
   gfm: https://help.github.com/articles/github-flavored-markdown/
   mentions: https://github.com/jekyll/jekyll-mentions
   emoji: http://www.emoji-cheat-sheet.com/
+  custom_domain: https://help.github.com/articles/about-custom-domains-for-github-pages-sites/
+  quota: https://help.github.com/articles/what-is-my-disk-quota/
 
 jekyll:
   home: http://jekyllrb.com/
@@ -30,15 +35,27 @@ markdown:
   pygments: http://pygments.org/
 
 ramosmd:
-  home: http://ramosmd.github.io
+  home: http://ramosmd.virtuacreative.com.br
   googleplus: https://plus.google.com/+MarciaDiasRamosMD/
   twitter: https://twitter.com/xmdramos
   facebook: http://www.facebook.com/marciaramosmdr
   github: https://github.com/ramosmd
 
 tools:
-  yaml-lint: http://www.yamllint.com/
+  yaml-lint: http://www.yamllint.com/ # DO NOT USE THIS
+  yaml_lint: http://www.yamllint.com/ # USE THIS
 
 articles:
-  tipsntricks: http://virtuacreative.github.io/blog/markdown-tips-and-tricks.html
+  tipsntricks: http://blog.virtuacreative.com.br/markdown-tips-and-tricks.html
+
+yaml:
+  assemble: http://assemble.io/docs/index.html
+  official: http://www.yaml.org/
+  wiki: https://en.wikipedia.org/wiki/YAML
+
+gitlab:
+  home: http://virtuacreative.gitlab.io
+  youtube_thumbs: http://virtuacreative.gitlab.io/images/youtube
+  images: http://virtuacreative.gitlab.io/images
+  videos: http://virtuacreative.gitlab.io/videos
 

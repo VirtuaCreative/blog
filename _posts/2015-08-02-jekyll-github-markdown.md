@@ -4,11 +4,12 @@ fb_type: article
 fb_section: Tutorials - Jekyll
 title: Jekyll e GitHub Markdown
 fb_title: Jekyll e GitHub Markdown
-categories: [Jekyll, Github, Tutoriais, Blog]
+categories: [jekyll, Github, Tutoriais, Blog]
 tags: [git, jekyll, markdown, kramdown, emoji]
 meta_keywords: git, jekyll, markdown, kramdown, emoji
 description: Lista prática de markdowns do Jekyll e do Github.
 image: https://goo.gl/CbwGMU
+image_schema: 'https://c2.staticflickr.com/4/3826/20355844915_657dc373d8_b.jpg'
 imageUrl: https://www.flickr.com/photos/virtuacreative/20355844915
 author: Marcia Ramos
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
@@ -17,8 +18,8 @@ author_twitter: xmdramos
 authorEmail: virtua.creative@gmail.com
 comments: true
 date: 2015-08-02 17:47:29 UTC
-date_update: 2015-08-17 22:22:46 UTC
-# language: [en_US, en_UK]
+date_update: 2016-01-09 00:47:10 UTC
+# language: [pt_BR]
 ---
 
 ## **Markdown**

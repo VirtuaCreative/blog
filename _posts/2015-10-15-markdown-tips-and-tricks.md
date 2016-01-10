@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Markdown Tips & Tricks - Thinking Outside the Box
-categories: [jekyll, github, tutorials in english]
+categories: [jekyll, github, tutorials in English]
 tags: [markdown, kramdown, jekyll, github, github pages, git]
 meta_keywords: markdown, kramdown, jekyll, github, github pages, git, tips and tricks, dicas e truques
 author: Marcia Ramos
@@ -9,6 +9,7 @@ fb_section: Tutorials - Jekyll
 description: Part 1 - Adding elements & applying classes onto markdown files.
 image: http://goo.gl/UCRjlU
 imageUrl: https://goo.gl/j7q6Az
+image_schema: 'http://farm6.staticflickr.com//5669//22219534621_37cf89d7ce_o.png'
 fb_title: Markdown Tips & Tricks - Thinking Outside the Box - Part 1
 fb_type: article
 author_fb: marciaramosmdr
@@ -18,7 +19,7 @@ comments: true
 published: True
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
 language: [en_US, en_UK]
-# date_update: 
+date_update: 2016-01-08 23:07:00 UTC
 # copy:
 codingbox: true
 related: jekyll
@@ -47,7 +48,7 @@ On the **next post**, we are going to show you how to **embed videos** on your m
 
 For markdown basics, you can check this [GitHub article](https://guides.github.com/features/mastering-markdown/#syntax), which provides us with a bunch of very often applied markup.
 
-All the examples given below were tested on our [Blog] written in [Jekyll][], hosted by [GitHub Pages][], within a `gh-pages` branch for a `project` website. Anyway, feel free to give those tips a try, even if your markdown files haven't the same configuration or compilation. 
+All the examples given below were tested on our [Blog] written in [Jekyll][], hosted by [GitHub Pages][], within a `gh-pages` branch for a `project` website. Depending on your server or on the way your site is build, some of these tips might not work. Anyway, feel free to give them a try, even if your markdown files don't have the same configuration or compilation. 
 
 <br> 
 

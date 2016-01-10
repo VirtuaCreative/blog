@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Markdown Tips & Tricks - Part 2"
-categories: [jekyll, github]
+categories: [jekyll, github, tutorials in English]
 tags: [markdown, kramdown, jekyll, github, github pages, git]
 meta_keywords: markdown, kramdown, jekyll, github, github pages, git, tips and tricks, dicas e truques
 author: Marcia Ramos
@@ -9,6 +9,7 @@ fb_section: Tutorials - Jekyll
 description: Part 2 - Embedding videos.
 image: http://goo.gl/zcwqIN
 imageUrl: https://goo.gl/Kb7R0N
+image_schema: 'http://farm1.staticflickr.com//636//22456839236_a446a2ef25_o.png'
 fb_title: Markdown Tips & Tricks - Part 2
 fb_type: article
 author_fb: marciaramosmdr
@@ -18,10 +19,9 @@ comments: true
 published: true
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
 language: [en_US, en_UK]
-# date_update: 
-copy: true
-codingbox: true
-related: jekyll
+date_update: 2016-01-09 00:22:10 UTC
+copy: true # copy button with javascript  
+codingbox: true # code type on the top-right of code block boxes 
 ---
 
 # **<mkp-blue>Embedding Videos</mkp-blue>**
@@ -36,7 +36,7 @@ As we have explained on the [previous article][], there's only a thing you need 
 
 <p class="bkggreen"><i class="fa fa-exclamation" style="color: red;"></i>&nbsp;&nbsp;You need to leave a <strong>blank line</strong> between some regular markdown text and a <strong>html tag</strong>, otherwise you might face errors during files compilation!</p>
 
-<br>
+<br> <!-- ff -->
 
 <hr>
 
@@ -287,9 +287,21 @@ Thanks for reading! Stay tuned for the next article: follow us on [Twitter]({{ s
     <a href="{{ art.url }}">- {{ art.title }}</a>
   </li>
 {% endfor %}
-</ul>
 
-<p>{{ site.data.artigos.jekyll.title }}</p>
+<!-- 
+NEW WAY
+Related articles (by Jekyll itself) -->
+
+
+<!-- {% for post in site.related_posts limit:3 %}
+{% if post.language contains 'en_US' and post.categories contains 'github' %}
+	<li>
+	  <a href="{{ site.baseurl }}{{ post.url }}">- {{ post.title }}</a>
+	</li>
+{% endif %}
+{% endfor %}  -->
+
+</ul>
 
 <br>
 
@@ -305,10 +317,16 @@ Thanks for reading! Stay tuned for the next article: follow us on [Twitter]({{ s
 \- [Markdown][]
 \- [Kramdown][]
 
+<br>
+
+<hr>
+
 ### **Image Credits**
 
 \- Art work: Virtua Creative
 \- Illustrations: we have downloaded from Freepik the original [box](http://www.freepik.com/free-vector/vectors_785241.htm) and the original [bulb](http://www.freepik.com/free-vector/vectors_810569.htm).
+
+<br>
 
 [How to publish your website on GitHub]: http://virtuacreative.github.io/blog/free-hosting-website-github.html
 [another article]: http://virtuacreative.github.io/blog/free-hosting-website-github.html

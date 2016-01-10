@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to publish your website on GitHub
-categories: [github, github pages, Tutorials in English]
+categories: [github, github pages, tutorials in English]
 tags: [github, free hosting, github tutorials]
 published: True
 imageUrl: https://goo.gl/i4GnJn
@@ -9,6 +9,7 @@ fb_title: How to publish your website on GitHub
 language: [en_US, en_UK]
 author_twitter: xmdramos
 image: http://goo.gl/TaiHua
+image_schema: 'http://farm1.staticflickr.com//701//21720695025_f483d1dd95_b.jpg'
 author: Marcia Ramos
 comments: true
 fb_type: article
@@ -98,8 +99,16 @@ It is quite simple. Please click on the following frame if you wish to **watch o
 
 <br/>
 
-<div class="iframe_container">
-<iframe width="853" height="480" src="http://www.youtube.com/embed/E-ONNjFoOx0" frameborder="0" allowfullscreen="allowfullscreen"> </iframe> </div>
+<div class="iframe_container" itemprop="video" itemscope="" itemtype="http://schema.org/VideoObject">
+	<iframe width="853" height="480" src="http://www.youtube.com/embed/E-ONNjFoOx0" frameborder="0" allowfullscreen="allowfullscreen"> </iframe> 
+	<meta itemprop="contentURL" content="https://youtu.be/E-ONNjFoOx0" />
+  	<meta itemprop="embedURL" content="http://www.youtube.com/embed/E-ONNjFoOx0" />
+  	<meta itemprop="thumbnailUrl" content="{{ site.data.url.gitlab.youtube_thumbs }}/publish-website-github-EN_GB.jpg" />
+  	<meta itemprop="name" content="How to publish your website on GitHub" />
+  	<meta itemprop="description" content="Learn how to create your own website hosting it on GitHub for free!" />
+  	<meta itemprop="duration" content="T3M07S" />
+  	<meta itemprop="uploadDate" content="{{ page.date | date_to_xmlschema }}" />
+</div>
 
 <br/>
 
@@ -166,8 +175,16 @@ Please click on the following frame if you wish to **watch our video tutorial** 
 
 <br/>
 
-<div class="iframe_container">
-<iframe width="853" height="480" src="http://www.youtube.com/embed/fayd6VWdzmU" frameborder="0" allowfullscreen="allowfullscreen"> </iframe> </div>
+<div class="iframe_container" itemprop="video" itemscope="" itemtype="http://schema.org/VideoObject">
+	<iframe width="853" height="480" src="http://www.youtube.com/embed/fayd6VWdzmU" frameborder="0" allowfullscreen="allowfullscreen"> </iframe> 
+	<meta itemprop="contentURL" content="https://youtu.be/fayd6VWdzmU" />
+  	<meta itemprop="embedURL" content="http://www.youtube.com/embed/fayd6VWdzmU" />
+  	<meta itemprop="thumbnailUrl" content="{{ site.data.url.gitlab.youtube_thumbs }}/add-img-folder-git-english.jpg " />
+  	<meta itemprop="name" content="How to add images folder to your website on GitHub" />
+  	<meta itemprop="description" content="Learn how to add images folder to your website hosted on GitHub" />
+  	<meta itemprop="duration" content="T3M11S" />
+  	<meta itemprop="uploadDate" content="{{ page.date | date_to_xmlschema }}" />
+</div>
 
 <br/>
 
@@ -191,7 +208,15 @@ Please click on the following frame if you wish to **watch our video tutorial** 
 
 <br/>
 
-That's all for now folks! I hope this article have been useful for you! :smiley:
+# **How to create Project Websites**
+
+<br/>
+
+Read the full tutorial and watch the video on the article **[How to publish Project Websites on GitHub][]**
+
+<br/>
+
+That's all for now folks! I hope this article were useful for you! :smiley:
 
 <br/>
 
@@ -216,3 +241,4 @@ Add our [Blog][] to your [news feed]!
 [news feed]: http://virtuacreative.github.io/blog/feed.xml
 [GitHub Pages]: https://pages.github.com/
 [here]: https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/
+[How to publish Project Websites on GitHub]: {{ site.data.url.virtua.blog }}github-pages-project-website.html

@@ -11,7 +11,7 @@ tagline: Encontre artigos por tag (palavra-chave)
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign tag_words = site_tags | split:',' | sort %}
 
-<div class="col-md-8 col-sm-12 col-xs-12">
+<div class="content-box-virtua col-md-8 col-sm-12 col-xs-12">
 	<div>
     		<ul class="nav nav-tabs-vertical">
     		{% for item in (0..site.tags.size) %}{% unless forloop.last %}

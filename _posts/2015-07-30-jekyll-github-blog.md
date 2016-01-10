@@ -9,6 +9,7 @@ tags: [jekyll, git, blog]
 meta_keywords: jekyll, git, blog
 description: Como criar blogs com Jekyll no Windows e publicar com o GitHub Pages.
 image: https://goo.gl/R3kHKk
+image_schema: 'https://c1.staticflickr.com/1/311/20329582166_7a11e1a308_b.jpg'
 imageUrl: https://www.flickr.com/photos/virtuacreative/20329582166
 author: Marcia Ramos
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
@@ -17,8 +18,8 @@ author_twitter: xmdramos
 authorEmail: virtua.creative@gmail.com
 comments: true
 date: 2015-07-30 22:05:45 UTC
-date_update: 2015-08-17 22:22:26 UTC
-# language: [en_US, en_UK]
+date_update: 2016-01-09 02:49:49 UTC
+# language: [pt_BR]
 ---
 
 # **Jekyll**
@@ -135,7 +136,7 @@ Se por algum motivo você quiser parar a compilação do Jekyll, vá ao prompt d
 
 <br>
 
-Agora que temos um projeto, e partido do pressuporto que você queira hospedá-lo no [GitHub Pages][github-pages], temos que fazer com que o Jekyll converse com o GitHub. Partimos do princípio que você já tenha um gh-pages pronto para receber seu blog. Para fazer o setup do GitHub Pages, precisaremos escrever um novo artigo, em breve você encontrará aqui um um link para ele. Siga-nos no [Twitter]() para ver nossos artigos em primeira mão!
+Agora que temos um projeto, e partido do pressuposto que você queira hospedá-lo no [GitHub Pages][github-pages], temos que fazer com que o Jekyll "converse" com o GitHub. Partimos do princípio que você já tenha um repositório pronto para receber seu blog. Para fazer o setup do GitHub Pages, veja o artigo [Como publicar seu website no GitHub][]. Siga-nos no [Twitter]() para ver nossos artigos em primeira mão!
 
 <br>
 
@@ -143,14 +144,21 @@ Agora que temos um projeto, e partido do pressuporto que você queira hospedá-l
 
 Na pasta raiz do seu projeto, encontre o arquivo de configuração `_config.yml`. Este é o arquivo chave do seu projeto. Nele vão todas as configurações do website, por exemplo: título, autor, email do autor, facebook do autor e todas as outras variáveis que você aprenderá a definir conforme for lendo sobre o assunto. 
 
-Para publicar no GitHub Pages, você precisa definir algumas variáveis importantíssimas neste arquivo, como markdown, highlighter e baseurl. Para efeitos de GitHub, o que é fundamental é que você avise ao git onde fica sua pasta que hospedará seu site (baseurl). Portanto, informe o seguinte:
+Para publicar no GitHub Pages, você precisa definir algumas variáveis importantíssimas neste arquivo, como markdown, highlighter e baseurl. Para efeitos de GitHub, o que é fundamental é que você avise ao git onde fica sua "pasta" que hospedará seu site (baseurl). Portanto, informe o seguinte:
+
+Caso 1: Website de usuário ou organização:
+{% highlight html %}
+baseurl: http://usuario.github.io
+{% endhighlight %}
+
+Caso 2: Website de projetos
 {% highlight html %}
 baseurl: http://usuario.github.io/seurepositorio
 {% endhighlight %}
 
-Esta pasta deverá ser a mesma pasta que você configurou no seu gh-pages, conforme documentado nas instruções do [Jekyll](http://jekyllrb.com/docs/github-pages/) para `baseurl`.
+O nome desta "pasta" deverá ser o mesmo nome do seu repositório, conforme documentado nas instruções do [Jekyll](http://jekyllrb.com/docs/github-pages/) para `baseurl`.
 
-Isso significa que seu site ou blog morará dentro do branch gh-pages, dentro do seu repositório `seuprojeto` e que o index será acessado via `http://usuario.github.io/seurepositorio`.
+Caso seja um website de projeto, isso significa que seu site ou blog morará dentro do branch `gh-pages`, dentro do seu repositório `seuprojeto` e que o index será acessado via `http://usuario.github.io/seurepositorio`. Caso seja um website de usuário/organização, o repositório deverá ser nomeado `usuario.github.io` e o seu blog morará no branch `master` e sua home page (index.html) será acessada via `http://usuario.github.io`. Você poderá ainda redirecionar seu website para um domínio próprio, como `suaempresa.com.br`.
 
 Caso você utilize o Jekyll no seu próprio domínio, o `baseurl` deverá estar de acordo com sua pasta raiz:
 
@@ -158,20 +166,30 @@ Caso você utilize o Jekyll no seu próprio domínio, o `baseurl` deverá estar 
 baseurl: http://www.seudominio.com
 {% endhighlight %}
 
-Note que há um espaço entre os dois pontos `:` e a url. Mantenha desta forma. Bagunçar com os espaços nos seus arquivos `.yml` pode gerar erros na compilação que você ficará louco até encontrar. Portanto, recomendo que não deixe de respeitar os espaços e a pontuação nos seus arquivos Yaml!
+Note que há apenas um espaço entre os dois pontos `:` e a url. Mantenha desta forma. Bagunçar com os espaços nos seus arquivos `.yml` pode gerar erros na compilação que você ficará louco até encontrar. Portanto, recomendo que não deixe de respeitar os espaços e a pontuação nos seus arquivos Yaml!
 
 <br>
 
 #### <mkp-blue>Gerando o</mkp-blue> **<mkp-blue>Gemfile</mkp-blue>**
 
-Segundo as [instruções do GitHub](https://help.github.com/articles/using-jekyll-with-pages/), será necessário gerar um "Gemfile" no seu diretório do gh-pages:
+Segundo as [instruções do GitHub](https://help.github.com/articles/using-jekyll-with-pages/), será necessário gerar um "Gemfile" no seu repositório:
 
-1. Abra seu editor de html e crie um novo documento na pasta raíz do seu projeto. Este arquivo deverá se chamar "Gemfile". Não dê a ele nenhuma extensão.
-2. Escreva dentro dele: `gem 'github-pages'`  (obs: há outras opções para o GemFile, mas esta foi a melhor que encontrei até agora.) 
-3. Com o prompt de comando **aberto na pasta raíz do seu projeto**, escreva: `bundle install`. Pronto. Assim o seu Gemfile vai ganhar uma nova cara. Se o novo Gemfile não tiver substituído o que você criou, você deverá apagar o antigo e deixar o novo criado pelo bundler.
-4. Agora você precisa dar o seguinte comando: `bundle exec jekyll serve --watch --baseurl ""`.  Isso permitirá que você rode o site no seu localhost novamente, mas sem alterar a definição do `baseurl` que tínhamos feito anteriormente.
+\- 1. Abra seu editor de html e crie um novo documento na pasta raíz do seu projeto. Este arquivo deverá se chamar "Gemfile". Não dê a ele nenhuma extensão. Ele serve para adiocionar as `gems` necessárias a seu projeto.
 
-Se aparecer alguma mensagem de erro, você poderá fazer o update de todos os gems:
+\- 2. Escreva dentro dele: 
+
+{% highlight ruby %}
+source 'https://rubygems.org'
+gem 'github-pages'
+{% endhighlight %}
+
+Nota: há outras `gems` que poderão ser inseridas conforme sua necessidade. 
+
+\- 3. Com o prompt de comando **aberto na pasta raíz do seu projeto**, escreva: `bundle install`. Pronto. Assim o seu Gemfile vai ganhar uma nova cara. Se o novo Gemfile não tiver substituído o que você criou, você deverá apagar o antigo e deixar o novo criado pelo bundler.
+
+\- 4. Agora você precisa dar o seguinte comando: `bundle exec jekyll serve --safe --watch --baseurl ""`.  Isso permitirá que você rode o site no seu localhost novamente, mas sem alterar a definição do `baseurl` que tínhamos feito anteriormente. O comando `--safe` é necessário para que você monte seu website localmente exatamente como o GitHub montará. 
+
+Se aparecer alguma mensagem de erro, você poderá fazer o update de todos as gems:
 
 {% highlight ruby %}
 gem update
@@ -186,6 +204,8 @@ bundle update github-pages
 gem update github-pages
 {% endhighlight %}
 
+Caso haja algum erro ao montar o site, em qualquer momento do seu desenvolvimento,  você poderá executar o comando `jekyll --trace` para mais informações sobre o erro.
+
 Depois de fazer todos os updates, insira novamente o comando `bundle exec jekyll serve --watch --baseurl ""`. Deve funcionar. Caso não funcione, recomendo que volte ao artigo do [Yi Zeng][how-to-jekyll] para tentar encontrar o erro e corrigi-lo.
 
 Pronto! Seu website deverá estar pronto para que você insira seu conteúdo!  :clap:   :clap:
@@ -194,7 +214,7 @@ Pronto! Seu website deverá estar pronto para que você insira seu conteúdo!  :
 
 #### **<mkp-blue>Posts</mkp-blue>**
 
-Este artigo já está muito longo, por isso não será detalhado aqui como funciona a estrutura de pastas do projeto. Apenas para oferecer uma pequena introdução, fique atento ao seguinte: a primeira parte de todos os arquivos traz o cabeçalho de configuração do arquivo. Esta parte fica sempre no topo, separada do corpo pelos três traços, conforme abaixo:
+Este artigo já está muito longo, por isso não será detalhado aqui como funciona a estrutura de pastas do projeto. Apenas para oferecer uma pequena introdução, fique atento ao seguinte: a primeira parte de todos os arquivos traz o cabeçalho de configuração do arquivo (originalmente chamada `Yaml frontmatter`). Esta parte fica sempre no topo, separada do corpo pelos três traços, conforme abaixo:
 
 {% highlight text %}
 ---
@@ -206,7 +226,7 @@ Texto post
 
 No cabeçalho de configuração, você poderá listar tudo que faz parte do post, como: layout, título, descrição, autor, categorias, tags, e tudo que você desejar inserir como padrão.
 
-Para exemplificar, veja abaixo como ficou o cabeçalho deste post:
+Para exemplificar, veja abaixo como ficou parte do cabeçalho deste artigo:
 
 {% highlight text %}
 ---
@@ -234,13 +254,13 @@ Estas informações poderão ser recuperadas por todo o site, utilizando tags, o
 
 Estes são apenas exemplos simples. Aprofundaremos os detalhes da escrita em Liquid futuramente, em outros artigos. 
 
-O único arquivo que não trará o cabeçalho se configuração será o seu `default.html` da pasta `_includes`. Este arquivo será o padrão para seu html. Nele serão inseridas as tags `<html>`, `<head>` e o `<body>` de todas as páginas, que terão seus conteúdos inseridos dinamicamente através da chamada `{% raw %}{{ content }}{% endraw %}`. Este tipo de objeto faz parte da estrutura Liquid, que deixaremos para discutir em outros artigos. Para ter um panorama introdutório a este assunto, veja nosso artigo ["O que é Jekyll - e para que ele serve"]({{ site.baseurl }}{% post_url 2015-08-17-jekyll-for-beginners-introduction %}). 
+Os únicos arquivos que não trarão o cabeçalho se configuração serão os arquivos da pasta `_includes`. Estes arquivos terão seus conteúdos inseridos dinamicamente através da chamada `{% raw %}{{ content }}{% endraw %}` ou `{% raw %}{% include %}{% endraw %}`. Este tipo de objeto faz parte da estrutura Liquid, que deixaremos para discutir em outros artigos. Para ter um panorama introdutório a este assunto, veja nosso artigo ["O que é Jekyll - e para que ele serve"]({{ site.baseurl }}{% post_url 2015-08-17-jekyll-for-beginners-introduction %}). 
 
 <br>
 
 #### **<mkp-blue>Estilizando seu projeto</mkp-blue>**
 
-O projeto padrão do Jekyll (obtido com o comando `jekyll new meuprojeto` explicado [acima](#new-project)) já traz um design interessante. Muitas pessoas não perdem muito tempo estilizando suas páginas, usam o próprio projeto padrão e se aprofundam apenas em seus conteúdos. De qualquer forma, para saber o que é o que, você pode usar o `Inspecionar Elemento` do seu navegador para interagir com o css e personalizá-lo. Se você não está familiarizado com esta ferramenta, poderá ver este [artigo](http://www.gerenciandoblog.com.br/2013/10/como-usar-inspecionar-elemento-google-chrome.html), no qual o autor descreve detalhadamente como utilizá-la. Nesse artigo, o rapaz explica como o  "Inpecionar elemento" funciona no Google Chrome, mas no Mozilla Firefox você poderá acessá-la da mesma forma.
+O projeto padrão do Jekyll (obtido com o comando `jekyll new meuprojeto` explicado [acima](#new-project)) já traz um design interessante. Muitas pessoas não perdem muito tempo estilizando suas páginas, usam o próprio projeto padrão e se aprofundam apenas em seus conteúdos. De qualquer forma, para saber o que é o que, você pode usar o `Inspecionar Elemento` do seu navegador para interagir com o css e personalizá-lo. Se você não está familiarizado com esta ferramenta, poderá ver este [artigo](http://www.gerenciandoblog.com.br/2013/10/como-usar-inspecionar-elemento-google-chrome.html), no qual o autor descreve detalhadamente como utilizá-la. Nesse artigo, o rapaz explica como o  "Inpecionar elemento" funciona no Google Chrome, mas no Mozilla Firefox você poderá acessá-la da mesma forma. Há ainda diversos temas gratuitos disponíveis no site [Jekyll Themes](http://jekyllthemes.io/).
 
 
 <br>
@@ -257,11 +277,11 @@ O projeto padrão do Jekyll (obtido com o comando `jekyll new meuprojeto` explic
 
 <br>
 
-Infelizmente, para quem está acostumado com a liguagem html/css sem markdowns, o Jekyll pode exigir um certo tempo para aprendizagem, mas todo desenvolvedor web poderá entender rapidamente e aprender a curtir! Há desenvolvedores que utilizam outros geradores de sites estáticos (Static Site Generators - SSGs), em razão das limitações impostas pelo Jekyll. Neste [link](https://staticsitegenerators.net/), você poderá encontrar uma lista de todos os SSGs que estão rolando por aí. De longe, o Jekyll é o mais utilizado. 
+Infelizmente, para quem está acostumado com a liguagem html/css sem markdown, o Jekyll pode exigir um certo tempo para aprendizagem, mas todo desenvolvedor web poderá entender rapidamente e aprender a curtir! Há desenvolvedores que utilizam outros geradores de sites estáticos (Static Site Generators - SSGs), em razão das limitações impostas pelo Jekyll. Neste [link](https://staticsitegenerators.net/), você poderá encontrar uma lista de todos os SSGs que estão rolando por aí. De longe, o Jekyll é o mais utilizado. 
 
 Para quem precisa de websites mais elaborados com páginas de login, com CMS, com formulários de cadastro, ou mesmo sites que precisem de atualizações constantes, não costuma-se recomendar nem o Jekyll e nem o GitHub Pages. Eles não têm este propósito e nem permitem estas funcionalidades. Ou melhor, há usuários avançados que fazem verdadeiros milagres com o Jekyll, mas se você ainda é um iniciante em Jekyll, tente primeiro entender todas as funções básicas para depois explorar as avançadas. 
 
-De qualquer forma, dependendo da complexidade que você queira atingir, não é possível fugir da programação baseada em linguagem de servidor, como o **php** faz muito bem. E neste caso, você não poderia utilizar o GitHub pages, que não suporta php.
+De qualquer forma, dependendo da complexidade que você queira atingir, não é possível fugir da programação baseada em linguagem de servidor, como o **php** faz muito bem. E neste caso, você não poderia utilizar o GitHub Pages, que não suporta php.
 
 <br>
 
@@ -270,7 +290,6 @@ De qualquer forma, dependendo da complexidade que você queira atingir, não é 
 
 Para quem entende Inglês, sugiro que siga os tutoriais em vídeo da série Jekyll do [Thomas Bradley][jekyll-youtube1]. Ficará mais fácil compreender como utilizar a estrutura de pastas, as ferramentas e os arquivos em  markdown `.md` do Jekyll.
 
-
 Recomendo também a leitura do artigo (em Inglês) [The joy and pain of using Jekyll][pain-jekyll], que explica melhor quais são as maiores vantagens e desvantagens de usar o Jekyll.
 
 Há uma outra fonte de prós e contras do Jekyll com o Travis Nielson, em que ele argumenta com seu amigo Jon, ambos designers. O título do vídeo é ["Jon doesn't like Jekyll"][devtips-not-jekyll].
@@ -278,6 +297,35 @@ Há uma outra fonte de prós e contras do Jekyll com o Travis Nielson, em que el
 Você poderá acessar a documentação do Jekyll no [Jekyll docs][jekyll]. Se você precisar reportar bugs e novas implementações, poderá fazê-lo no [Jekyll’s GitHub repo][jekyll-gh]. Se você tiver dúvidas, eles recomendam que os procure no [Jekyll’s Help repo][jekyll-help].
 
 Ficaremos muito felizes se puder deixar seu comentário com sugestões e dicas que ajudem a comunidade web!
+
+
+<br>
+
+---------------
+
+### **Artigos Relacionados**
+
+<ul>
+{% for art in site.data.artigos.jekyll %}
+  <li>
+    <a href="{{ art.url }}">- {{ art.title }}</a>
+  </li>
+{% endfor %}
+{% for art in site.data.artigos.github %}
+  <li>
+    <a href="{{ art.url }}">- {{ art.title }}</a>
+  </li>
+{% endfor %}					 
+{% for art in site.data.artigos.markdown %}
+  <li>
+    <a href="{{ art.url }}">- {{ art.title }}</a>
+  </li>
+{% endfor %}
+</ul>
+
+<br>
+
+<hr>
 
 
 [jekyll]:      http://jekyllrb.com
@@ -302,3 +350,4 @@ Ficaremos muito felizes se puder deixar seu comentário com sugestões e dicas q
 [git-power]: https://git-scm.com/book/be/v2/Git-in-Other-Environments-Git-in-Powershell
 [wdm]: https://rubygems.org/gems/wdm/versions/0.1.0
 [rdisc]: https://rubygems.org/gems/rdiscount/versions/2.1.8
+[Como publicar seu website no GitHub]: {{ site.data.url.virtua.blog }}hospedar-website-gratis-com-github.html

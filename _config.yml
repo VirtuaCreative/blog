@@ -3,7 +3,7 @@ paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
 highlighter: pygments
 markdown: kramdown
-disqus: virtuacreative
+disqus: virtuacreative # blog post comments
 permalink: /:title.html
 timezone: America/Sao_Paulo
 
@@ -15,10 +15,16 @@ defaults:
       title: Virtua Creative Blog
 
 description: Virtua Creative Blog
-fb_description: Tutoriais e dicas para desenvolvimento de websites, web design e artes gráficas.
+fb_description: "Tutoriais e dicas para desenvolvimento de websites, web design e artes gráficas."
 meta_keywords: blog, tutoriais, tutorials, jekyll, github, sass, html5, php, websites, web development, web design, artes gráficas, dreamweaver, criação de websites
-share_image: http://goo.gl/JsefHX
-logo_image: http://goo.gl/mXXyFH
+share_image: http://goo.gl/JsefHX # fb feed
+logo_image: http://goo.gl/mXXyFH # logo sidebar
+organization:
+  name: Virtua Creative Technology
+  url: http://www.virtuacreative.com.br
+  logo: http://virtuacreative.com.br/images/LOGO-virtuacreative-60x72-gray.png # http://goo.gl/XzUou0
+  logo_width: 72px
+  logo_height: 60px
 fb_app:
   namespace: virtuacreative
   app_id: 1634907943429790
@@ -31,7 +37,8 @@ author:
   flickr: virtuacreative
   linkedin:
   facebook: virtuacreative
-  googleplus: VirtuacreativeBrWebsites/
+  googleplus: VirtuacreativeBrWebsites/ # DO NOT REMOVE - schema tags
+  youtube: VirtuacreativeBrWebsites # DO NOT REMOVE - schema tags
   bio: Virtua Creative Technology
   email_md5: 6fa7e8a0b8a820fa63c7cfd1833b1be4 # gravatar
 

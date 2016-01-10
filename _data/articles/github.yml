@@ -1,3 +1,7 @@
 - ref: 1
   title: How to publish your website on GitHub
-  url: http://virtuacreative.github.io/blog/free-hosting-website-github.html
+  url: http://blog.virtuacreative.com.br/free-hosting-website-github.html
+
+- ref: 2
+  title: How to publish Project Websites on GitHub
+  url: http://blog.virtuacreative.com.br/github-pages-project-website.html

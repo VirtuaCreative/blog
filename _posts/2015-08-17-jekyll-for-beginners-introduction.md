@@ -4,11 +4,12 @@ fb_type: article
 fb_section: Tutorials - Jekyll
 title: O que é Jekyll - e para que ele serve
 fb_title: O que é Jekyll - e para que ele serve
-categories: [Jekyll, Github, Blog, Tutoriais]
+categories: [jekyll, Github, Blog, Tutoriais]
 tags: [jekyll, git, blog, markdown]
 meta_keywords: jekyll, git, blog, blogs, markdown
 description: Entenda o que é Jekyll e porque tem tanta gente que usa.
 image: https://goo.gl/OhXc4z
+image_schema: 'https://c1.staticflickr.com/1/750/20337135198_51ac94d762_b.jpg'
 imageUrl: https://goo.gl/loSOe4
 author: Marcia Ramos
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
@@ -17,7 +18,7 @@ author_twitter: xmdramos
 authorEmail: virtua.creative@gmail.com
 comments: true
 date: 2015-08-17 22:32:11 UTC
-date_update: 2015-08-28 17:12:18 UTC
+date_update: 2016-01-09 00:16:02 UTC
 # language: [en_US, en_UK]
 ---
 

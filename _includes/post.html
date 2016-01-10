@@ -7,20 +7,35 @@
   	<meta itemprop="headline" content="{{ page.description }}" />
 	<meta itemprop="keywords" content="{{ page.tags | join: ',' }}" />
 	<meta itemprop="url" content="{{ site.baseurl }}{{ page.url }}" />
-	{% if page.date_update %}<meta itemprop="dateModified" content="{{ page.date_update | date_to_xmlschema }}" />{% endif %}
+	<meta itemprop="mainEntityOfPage" content="{{ site.baseurl }}{{ page.url }}" />
+	{% if page.date_update %}<meta itemprop="dateModified" content="{{ page.date_update | date_to_xmlschema }}" />{% else %}<meta itemprop="dateModified" content="{{ page.date | date_to_xmlschema }}" />{% endif %}
 	<meta itemprop="description" content="{{ page.description }}" />
-	<div itemprop="author" itemscope itemtype="http://schema.org/Person" >
+	<div itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject" >
+	    {% if page.image_schema %}<meta itemprop="url" rel="image" content="{{ page.image_schema }}" />{% else %}<meta itemprop="url" rel="image" content="{{ page.image }}" />{% endif %}
+	    <meta itemprop="width" rel="image" content="1600px" />
+	    <meta itemprop="height" rel="image" content="840px" />
+    </div>
+    <div itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization" >
+	    <meta itemprop="url" rel="publisher" content="{{ site.organization.url }}" />
+	    <meta itemprop="name" rel="publisher" content="{{ site.organization.name }}" />
+	    <div itemprop="logo" itemscope itemtype="http://schema.org/ImageObject" >
+	    	<meta itemprop="url" rel="logo" content="{{ site.organization.logo }}" />
+	    	<meta itemprop="width" rel="logo" content="{{ site.organization.logo_width }}" />
+	    	<meta itemprop="height" rel="logo" content="{{ site.organization.logo_height }}" />
+	    </div>	    
+    </div>
+	<div itemprop="author" itemscope="" itemtype="http://schema.org/Person" >
 		<meta itemprop="name" content="{{ page.author }}" />
 		<meta itemprop="url" rel="author" content="{{ page.authorUrl }}" />
 		<meta itemprop="email" rel="author" content="{{ page.authorEmail }}" />	
 	</div>
 	<div itemprop="isPartOf" itemscope="" itemtype="http://schema.org/Blog">
 		<meta itemprop="name" content="Virtua Creative Blog" />
-		<meta itemprop="url" content="http://virtuacreative.github.io/blog/" />
-		<meta itemprop="description" content="Tutoriais e dicas de desenvolvimento de websites, web design, arte e fotografia!" />
+		<meta itemprop="url" content="http://blog.virtuacreative.com.br" />
+		<meta itemprop="description" content="{{ site.fb_description }}" />
 		<div itemprop="isPartOf" itemscope="" itemtype="http://schema.org/Website">
 			<meta itemprop="name" content="Virtua Creative & GitHub" />
-			<meta itemprop="url" content="http://virtuacreative.github.io/git/" />
+			<meta itemprop="url" content="http://git.virtuacreative.com.br/" />
 		</div>
 	</div>	
 	<div class="col-sm-10 animated item1 fadeIn">
@@ -61,7 +76,11 @@
 		&nbsp;&nbsp;<span class="post-date" style="float: right">Por <a rel="nofollow" target="_blank" href="{{ page.authorUrl }}">{{ page.author }}</a></span>
 		{% endif %}
 		<div class="article_body" itemprop="articleBody">
-			<a rel="nofollow" title="Ver imagem na galeria" href="{{ page.imageUrl }}" target="_blank"><img itemprop="image" class="article-top" src="{{ page.image }}" alt="{{ page.title }}"></a>
+			{% if page.language %}
+			<a rel="nofollow" title="Go to Image Gallery" href="{{ page.imageUrl }}" target="_blank"><img class="article-top" src="{{ page.image }}" alt="{{ page.title }}"></a>
+			{% else %}
+			<a rel="nofollow" title="Ver imagem na galeria" href="{{ page.imageUrl }}" target="_blank"><img class="article-top" src="{{ page.image }}" alt="{{ page.title }}"></a>
+			{% endif %}
 		  	{{ content }}
 		  	{% if page.date_update %}
 				{% if page.language %}

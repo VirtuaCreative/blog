@@ -10,6 +10,7 @@ description: Entenda o que é o GitHub - e como você poderá aproveitá-lo
 published: True
 imageUrl: https://goo.gl/pqENyT
 image: http://goo.gl/MqEtlk
+image_schema: 'http://c1.staticflickr.com//1//695//20806891933_94f7b97aae_h.jpg'
 author: Marcia Ramos
 author_twitter: xmdramos
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
@@ -17,7 +18,7 @@ author_fb: marciaramosmdr
 fb_section: Tutorials - GitHub
 comments: true
 date: 2015-09-14 23:41:41 UTC
-date_update: 2015-10-01 00:34:50 UTC
+date_update: 2016-01-09 00:23:31 UTC
 # language: [en_US, en_UK]
 ---
 
@@ -73,7 +74,7 @@ Uma das possibilidades mais interessantes do GitHub para não-programadores é a
 
 ### **<mkp-blue>Como funciona a hospedagem gratuita do GitHub</mkp-blue>**
 
-Para hospedar seu website, você precisará criar uma conta no GitHub e criar um repositório. Há certas especificações e passos a serem seguidos, e você poderá encontrá-los no artigo **[Como hospedar um website gratuitamente no GitHub](http://virtuacreative.github.io/blog/hospedar-website-gratis-com-github.html)**.
+Para hospedar seu website, você precisará criar uma conta no GitHub e criar um repositório. Há certas especificações e passos a serem seguidos, e você poderá encontrá-los no artigo **[Como hospedar um website gratuitamente no GitHub]({{ site.baseurl }}/hospedar-website-gratis-com-github.html)**.
 
 Seu website poderá ser acessado através de um subdomínio do GitHub `suaempresa.github.io` ou através do seu próprio domínio, `www.suaempresa.com`. Veja exemplos: [http://virtuacreative.github.io](http://virtuacreative.github.io) e [https://jekyllrb.com/](https://jekyllrb.com/)
 
@@ -95,7 +96,7 @@ Para ver um exemplo prático, veja que nosso website [http://virtuacreative.gith
 
 O GitHub suporta apenas **websites estáticos** construídos em linguagem de _web browsers_ (navegadores) e não em linguagem de servidor. Portanto, o seu website deverá ser publicado em **html**, **css** e **js**. Arquivos em php não são permitidos pelo GitHub para hospedagem, e nem o uso de base de dados - em MySQL por exemplo. 
 
-Para desenvolvedores web que utilizam o `php` para criar websites dinâmicos, há uma ferramenta extremamente útil que poderá simular os `php includes`: o **Jekyll** - criador de websites estáticos a partir de escrita dinâmica. Para saber mais, recomendamos a leitura dos nossos artigos: "[O que é o Jekyll - e para que ele serve](http://virtuacreative.github.io/blog/jekyll-for-beginners-introduction.html)" e "[Criando blogs com Jekyll no Windows](http://virtuacreative.github.io/blog/jekyll-github-blog.html)".  
+Para desenvolvedores web que utilizam o `php` para criar websites dinâmicos, há uma ferramenta extremamente útil que poderá simular os `php includes`: o **Jekyll** - criador de websites estáticos a partir de escrita dinâmica. Para saber mais, recomendamos a leitura dos nossos artigos: "[O que é o Jekyll - e para que ele serve]({{ site.baseurl }}/jekyll-for-beginners-introduction.html)" e "[Criando blogs com Jekyll no Windows]({{ site.baseurl }}/jekyll-github-blog.html)".  
 
 <br>
 
@@ -158,7 +159,7 @@ Existem algumas formas de inserir arquivos ao seu repositório:
 
 	Note que a cada alteração de qualquer arquivo você vai precisar fazer um `commit`, independente de qual plataforma você estiver utilizando (prompt, GitHub Desktop ou web). É bastante útil detalhar as informações de alteração de arquivos a cada _commit_, principalmente se você estiver trabalhando em grupo. Desta forma, cada um dos seus colegas saberá exatamente o que foi alterado no arquivo a cada passo. Mesmo se estiver trabalhando sozinho, é uma forma de "comentar" cada alteração em seus arquivos, evitando assim que você se perca em seu próprio fluxo de _updates_.
 
-	Note também que, via de regra, todo repositório começa com um arquivo chamado `README.md`. Neste arquivo você deve escrever do que se trata o repositório. Não é obrigatória a presença deste arquivo, mas esta prática é comum à maioria dos usuários do GitHub. Arquivos com a extensão `.md` ou `.markdown` são escrito em Markdown, uma linguagem amplamente utilizada no GitHub para publicação de arquivos de texto. Por exemplo, neste link você poderá ver o repositório do Jekyll e como ele utiliza o arquivo `README` para explicar do que se trata:  [https://github.com/jekyll/jekyll](https://github.com/jekyll/jekyll). Veja nosso artigo ["Jekyll e GitHub Markdown"](http://virtuacreative.github.io/blog/jekyll-github-markdown.html) para saber como escrever em Markdown.
+	Note também que, via de regra, todo repositório começa com um arquivo chamado `README.md`. Neste arquivo você deve escrever do que se trata o repositório. Não é obrigatória a presença deste arquivo, mas esta prática é comum à maioria dos usuários do GitHub. Arquivos com a extensão `.md` ou `.markdown` são escrito em Markdown, uma linguagem amplamente utilizada no GitHub para publicação de arquivos de texto. Por exemplo, neste link você poderá ver o repositório do Jekyll e como ele utiliza o arquivo `README` para explicar do que se trata:  [Jekyll no GitHub](https://github.com/jekyll/jekyll). Veja nosso artigo ["Jekyll e GitHub Markdown"]({{ site.baseurl }}/jekyll-github-markdown.html) para saber como escrever em Markdown.
 
 <br>
 
@@ -170,7 +171,7 @@ Todo repositório público poderá ser acessado via url escrita neste formato: `
 2. no formato `nome-do-usuario.github.io` - levará ao website do usuário ou organização;
 3. no formato `nome-do-usuario.github.io/nome-do-repositorio/` - levará ao website do projeto.
 
-Entenda a diferença entre os tipos de website (usuário/organização e projeto) no artigo **[Como hospedar um website gratuitamente no GitHub](http://virtuacreative.github.io/blog/hospedar-website-gratis-com-github.html)**. Siga-nos no [Twitter][] para receber a chamada em primeira mão!
+Entenda a diferença entre os tipos de website (usuário/organização e projeto) no artigo **[Como hospedar um website gratuitamente no GitHub]({{ site.baseurl }}/hospedar-website-gratis-com-github.html)**. Siga-nos no [Twitter][] para receber a chamada em primeira mão!
 
 <br>
 
@@ -178,7 +179,7 @@ Entenda a diferença entre os tipos de website (usuário/organização e projeto
 
 Este artigo descreveu brevemente uma introdução ao uso do GitHub. Outras funcionalidades podem ser atingidas, como, por exemplo, o trabalho com diferentes tipos de `branches` - são tipos de conteúdos dentro dos repositórios, ou ainda, o comando `fork`, que permite a criação de um projeto sobre outro já existente, ou ainda a função `contribute` que permite que várias pessoas trabalhem no mesmo repositório, entre outras funcionalidades avançadas que não convém serem detalhadas em artigos introdutórios como este.
 
-Nosso artigo **[Como hospedar um website gratuitamente no GitHub](http://virtuacreative.github.io/blog/hospedar-website-gratis-com-github.html)** cobre os aspectos do uso do GitHub para hospedagem de websites, caso seu interesse no GitHub seja este. Por isso este tema não foi detalhado no presente artigo.
+Nosso artigo **[Como hospedar um website gratuitamente no GitHub]({{ site.baseurl }}/hospedar-website-gratis-com-github.html)** cobre os aspectos do uso do GitHub para hospedagem de websites, caso seu interesse no GitHub seja este. Por isso este tema não foi detalhado no presente artigo.
 
 Esperamos que este artigo tenha sido útil para você, no sentido de dar uma visão geral sobre o uso do GitHub e das funcionalidades que ele oferece.
 
@@ -206,6 +207,6 @@ _Siga Virtua Creative no **[Twitter][]** para receber nossos artigos em primeira
 [3]: http://virtuacreative.github.io/git/img/git_new_folder_file.PNG
 [4]: http://virtuacreative.github.io/git/img/git_new_commit.png
 [prompt]: https://github.com/fernandomayer/git-rautu/blob/master/1_comandos-basicos.md
-[Twitter]: https://twitter.com/virtuacreative
-[Virtua Creative & GitHub]: http://virtuacreative.github.io/git/
-[Blog]: http://virtuacreative.github.io/blog/ 
+[Twitter]: {{ site.data.url.virtua.twitter }}
+[Virtua Creative & GitHub]: {{ site.data.url.virtua.git }}
+[Blog]: {{ site.data.url.virtua.blog }}

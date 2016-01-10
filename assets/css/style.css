@@ -1,18 +1,60 @@
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext);
+/*
+Styles Master Sheet
+
+Project: Virtua Creative Blog
+URL: http://blog.virtuacreative.com.br
+Version: 1.2
+Original Theme: http://jekyllthemes.io/theme/14398159/dbyll
+Development and re-Design: Virtua Creative Technology
+Creator: Marcia Dias Ramos (RamosMD)
+Creator URL: ramosmd.virtuacreative.com.br
+Creator Profile: https://plus.google.com/+MarciaDiasRamosMD/
+Copyright notice: http://blog.virtuacreative.com.br/copyright.html
+
+*/
+
+/* Color Scheme - Virtua Creative Blog
+
+main background: #fff -white
+sidebar background: #333 -dark-gray
+link: #477eca -blue
+link:hover: #f19600 -orange
+link:visited: #614fcf -purple
+alerts: red 
+warning boxes:
+-blue: 
+--background: rgba(106,153,218,.1)
+--border: rgba(106,153,218,.9)
+-green: 
+--background: rgba(0,155,120,.1)
+--border: rgba(0,155,120,.9)
+
+*/
+
+/* Typography - Virtua Creative Blog 
+
+- titles: Kaushan Script
+- body: Raleway
+- code: Monaco,Menlo,Consolas,"Courier New",monospace
+- sidebar bio: Spinnaker
+
+*/
+
+/*@import url(http://fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext);*/
 @import url(http://fonts.googleapis.com/css?family=Kaushan+Script&subset=latin,latin-ext);
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,600);
-@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700,300&subset=latin,latin-ext);
+/*@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700,300&subset=latin,latin-ext);*/
 @import url(http://fonts.googleapis.com/css?family=Spinnaker&subset=latin,latin-ext);
 
 body{
 	color: #333;
 	  -webkit-font-smoothing: antialiased;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
+	word-wrap: break-word; /* by VirtuaCreative */
+	overflow-wrap: break-word; /* by VirtuaCreative */
 }
 
 .schema-tags {
-	display: none;
+	display: none; /* by VirtuaCreative */
 }
 
 .sidebar {
@@ -106,7 +148,7 @@ article .share .gplus:hover {
 .page-header {
 	color: #333;
 	text-shadow: 2px 2px 4px rgba(51, 51, 51, 0.5);
-	padding-bottom: 33px;
+	padding: 0 5% 33px 5%;
 }
 
 article {
@@ -403,6 +445,8 @@ button:hover.navbar-toggle.collapsed {
 	padding-top: 6px;
 }
 
+/* virtua styles */
+
 .navbar-toggle {
 	margin-right: 10px !important;
 }
@@ -614,6 +658,10 @@ p.bkgblue {
 	background-color: rgba(106,153,218,.1);
 	padding: 1em;
 	border-radius: 5px;
+	box-shadow: 2px 2px 4px rgba(0,0,0,.2);
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 1px solid rgba(106,153,218,.9);
 }
 
 p.bkggreen {
@@ -624,6 +672,21 @@ p.bkggreen {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	border: 1px solid rgba(0,155,120,.9);
+}
+p.bkgblue>a {
+	color: rgba(106,153,218,.9);
+}
+
+p.bkgblue>a:hover {
+	color: #f19600;
+}
+
+p.bkggreen>a {
+	color: red;
+}
+
+p.bkggreen>a:hover {
+	color: #f19600;
 }
 
 p.bkgyellow {
@@ -639,12 +702,17 @@ div.right {
 .tx-white {
 	color: white;
 }
+
 .top {
 	margin-left: auto;
 	margin-right: auto;
 }
 
-/*@media rules*/
+.content-box-virtua {
+	padding: 1% 5% 1% 5%;
+}
+
+/* virtua @media rules*/
 
 @media screen and (max-width: 695px) {
 	div.right {
@@ -759,5 +827,13 @@ div.right {
 	}
 	.pager li>a, .pager li>span {
 		padding: 4px 10px;
+	}
+}
+
+/* css rules for mozilla firefox only: */
+
+@-moz-document url-prefix() {
+	.btn .badge {
+		top: -19px !important;
 	}
 }

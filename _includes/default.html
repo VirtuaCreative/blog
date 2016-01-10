@@ -3,7 +3,6 @@
  {% if page.fb_title %}<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">{% else %}<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# {{ site.fb_app.namespace }}: http://ogp.me/ns/fb/{{ site.fb_app.namespace }}#">{% endif %}
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="google-site-verification" content="EwdXtwSaGRqlL1wY8IKNQe2HJCgxEAeR-FkEXalVjLs" /><!-- proprietario: VirtuaCreative -->
 	<title>{{ page.title }}</title>
 	{% if page.description %}<meta name="description" content="{{ page.description }}">{% else %}<meta name="description" content="{{ site.fb_description }}">{% endif %}
 	{% if page.author %}<meta name="author" content="{{ page.author }}">{% else %}<meta name="author" content="{{ site.author.name }}">{% endif %}
@@ -16,7 +15,8 @@
 	{% if page.fb_type %}<meta property="og:type" content="article">{% else %}<meta property="og:type" content="{{ site.fb_app.namespace }}:blog">{% endif %}
 	{% if page.description %}<meta property="og:description" content="{{ page.description }}">{% else %}<meta property="og:description" content="{{ site.fb_description }}">{% endif %}
 	{% if page.fb_title %}<meta property="og:url" content="{{ site.baseurl }}{{ page.url }}">{% else %}<meta property="og:url" content="{{ site.baseurl | replace: 'index.html','' }}/">{% endif %}	
-	{% if page.language %}<meta property="og:locale" content="pt_BR" />{% for language in page.language %}<meta property="og:locale:alternate" content="{{ language }}" />{% endfor %}{% else %}<meta property="og:locale" content="pt_BR" />{% endif %}
+	<meta property="og:locale" content="pt_BR" />
+	{% if page.language %}{% for language in page.language %}<meta property="og:locale:alternate" content="{{ language }}" />{% endfor %}{% endif %}
 	{% if page.date %}<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
 	<meta property="article:publisher" content="{{ site.baseurl | replace: 'index.html','' }}/" />{% endif %}
 	{% if page.date_update %}<meta property="article:modified_time" content="{{ page.date_update | date_to_xmlschema }}">{% endif %}
@@ -55,7 +55,7 @@
 	-->
 	<link rel="canonical" title="{{ site.description }}" href="{{ site.baseurl | replace:'index.html','' }}/">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.baseurl }}/feed.xml">
-	<link rel="shortcut icon" href="http://virtuacreative.github.io/git/img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="http://git.virtuacreative.com.br/img/favicon.ico" type="image/x-icon">
 	<link rel="author, nofollow" href="https://plus.google.com/+{{ site.author.googleplus }}">
 	{% if page.codingbox %}
 	<link href="{{ site.baseurl }}/assets/css/code-custom-css.css" rel="stylesheet">
@@ -138,9 +138,9 @@
 				<li><a href="{{ site.baseurl }}/{{ site.tags_path }}">Tags</a></li>
 				<li><a href="{{ site.baseurl }}/{{ site.copyright_path }}">Termos</a></li>			
 				<li class="divider-1"></li>
-				<li><a href="http://virtuacreative.github.io/git/">Home</a></li>
-				<li><a href="http://virtuacreative.github.io/git/about.html">Sobre</a></li>
-				<li><a href="http://virtuacreative.github.io/git/contact.html">Contato</a></li>
+				<li><a href="http://git.virtuacreative.com.br/">Home</a></li>
+				<li><a href="http://git.virtuacreative.com.br/about.html">Sobre</a></li>
+				<li><a href="http://git.virtuacreative.com.br/contact.html">Contato</a></li>
 				<li><a href="http://www.virtuacreative.com.br/">Oficial</a></li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
@@ -156,9 +156,9 @@
 			<li><a href="{{ site.baseurl }}/{{ site.tags_path }}"><i class="fa fa-tags"></i>&nbsp;&nbsp;Tags</a></li>
 			<li><a href="{{ site.baseurl }}/{{ site.copyright_path }}"><i class="fa fa-info"></i>&nbsp;&nbsp;Termos</a></li>	
 			<li class="divider"></li>
-			<li><a href="http://virtuacreative.github.io/git/"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a></li>
-			<li><a href="http://virtuacreative.github.io/git/about.html"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Sobre</a></li>
-			<li><a href="http://virtuacreative.github.io/git/contact.html"><i class="fa fa-envelope-o"></i>&nbsp;&nbsp;Contato</a></li>
+			<li><a href="http://git.virtuacreative.com.br/"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a></li>
+			<li><a href="http://git.virtuacreative.com.br/about.html"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Sobre</a></li>
+			<li><a href="http://git.virtuacreative.com.br/contact.html"><i class="fa fa-envelope-o"></i>&nbsp;&nbsp;Contato</a></li>
 			<li><a href="http://www.virtuacreative.com.br/"><i class="fa fa-star"></i>&nbsp;&nbsp;Oficial</a></li>
 			<li class="divider"></li>
 			<li><a href="#"><i class="fa fa-arrow-up"></i>&nbsp;&nbsp;Topo da Página</a></li>
@@ -172,10 +172,10 @@
 	<div class="header-color col-sm-9 col-sm-offset-3 animated fadeIn">
 		{{ content }}
 
-		<footer>
+		<footer class="content-box-virtua">
 			<hr/>
 			<p style="text-align: center">
-				&copy; {{ site.time | date: '%Y' }} <a href="{{ site.baseurl }}/{{ site.copyright_path }}" title="Copyright Notice">{{ site.author.name }}</a>. <a href="http://www.virtuacreative.com.br/">Virtua Creative Technology</a> by <a href="https://plus.google.com/u/0/+MarciaDiasRamosMD/posts">RamosMD</a>. All rights reserved. Code only under <a href="http://opensource.org/licenses/MIT">MIT</a> License. Brands here exposed for <a href="{{ site.baseurl }}/{{ site.copyright_path }}" title="Termos e Condições">illustration purposes</a> only.
+				&copy; {{ site.time | date: '%Y' }} <a href="{{ site.baseurl }}/{{ site.copyright_path }}" title="Copyright Notice">{{ site.author.name }}</a>. <a href="http://www.virtuacreative.com.br/">Virtua Creative Technology</a> by <a href="https://plus.google.com/u/0/+MarciaDiasRamosMD/posts">RamosMD</a>. All rights reserved.<br><small>Code only under <a href="http://opensource.org/licenses/MIT">MIT</a> License: <a href="https://github.com/dbtek/dbyll/archive/master.zip">download it here</a>. Brands are here exposed for <a href="{{ site.baseurl }}/{{ site.copyright_path }}" title="Termos e Condições">illustration purposes</a> only.</small>
 			</p>
 		</footer>
 	</div>
@@ -198,9 +198,14 @@
 	    "http://www.twitter.com/virtuacreative",
 	    "https://github.com/VirtuaCreative",
 	    "https://www.flickr.com/photos/virtuacreative/",
+	    "http://git.virtuacreative.com.br/",
+	    "http://blog.virtuacreative.com.br/",
 	    "http://virtuacreative.github.io/git/",
 	    "http://virtuacreative.github.io/blog/",
-	    "http://plus.google.com/+VirtuacreativeBrWebsites/"]        
+	    "http://virtuacreative.github.io/",
+	    "http://virtuacreative.gitlab.io/",
+	    {% if site.author.youtube %}"https://www.youtube.com/c/{{ site.author.youtube }}",{% endif %}
+	    {% if site.author.googleplus %}"https://plus.google.com/+{{ site.author.googleplus }}"]{% endif %}      
    }
 	</script>
 </body>

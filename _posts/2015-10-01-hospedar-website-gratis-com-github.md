@@ -10,6 +10,7 @@ description: Aprenda a publicar seu website gratuitamente com o GitHub
 published: True
 imageUrl: https://goo.gl/DDWMXz
 image: http://goo.gl/YqKqpe
+image_schema: 'http://c1.staticflickr.com//1//738//21709156692_7a6a2b42eb_b.jpg'
 author: Marcia Ramos
 author_twitter: xmdramos
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
@@ -17,7 +18,7 @@ author_fb: marciaramosmdr
 fb_section: Tutoriais - GitHub
 comments: true
 date: 2015-10-01 00:19:58 UTC
-date_update: 2015-10-13 19:44:27 UTC
+date_update: 2016-01-08 23:07:09 UTC
 # language: [en_US, en_UK]
 copy: true
 codingbox: true
@@ -137,7 +138,16 @@ O vídeo a seguir mostra como fazer o processo inteiro. Caso prefira, logo abaix
 
 <br>
 
-<div class="iframe_container"><iframe width="853" height="480" src="http://www.youtube.com/embed/A4-yOP6JDA8" frameborder="0" allowfullscreen="allowfullscreen"> </iframe></div>
+<div class="iframe_container" itemprop="video" itemscope="" itemtype="http://schema.org/VideoObject">
+	<iframe width="853" height="480" src="http://www.youtube.com/embed/A4-yOP6JDA8" frameborder="0" allowfullscreen="allowfullscreen"> </iframe>
+	<meta itemprop="contentURL" content="https://youtu.be/A4-yOP6JDA8" />
+  	<meta itemprop="embedURL" content="http://www.youtube.com/embed/A4-yOP6JDA8" />
+  	<meta itemprop="thumbnailUrl" content="{{ site.data.url.gitlab.youtube_thumbs }}/publish-website-github-PT_BR.jpg" />
+  	<meta itemprop="name" content="Como publicar seu website no GitHub" />
+  	<meta itemprop="description" content="Aprenda como hospedar gratuitamente seu website com o GitHub Pages!" />
+  	<meta itemprop="duration" content="T3M06S" />
+  	<meta itemprop="uploadDate" content="{{ page.date | date_to_xmlschema }}" />
+</div>
 
 <br>
 
@@ -208,7 +218,16 @@ Para criar uma pasta e adicionar imagens a ela para que você possa inserí-las 
 
 <br>
 
-<div class="iframe_container"><iframe width="853" height="480" src="http://www.youtube.com/embed/nwJkFACNSG4" frameborder="0" allowfullscreen="allowfullscreen"> </iframe></div>
+<div class="iframe_container" itemprop="video" itemscope="" itemtype="http://schema.org/VideoObject">
+	<iframe width="853" height="480" src="http://www.youtube.com/embed/nwJkFACNSG4" frameborder="0" allowfullscreen="allowfullscreen"> </iframe>
+		<meta itemprop="contentURL" content="https://youtu.be/nwJkFACNSG4" />
+	  	<meta itemprop="embedURL" content="http://www.youtube.com/embed/nwJkFACNSG4" />
+	  	<meta itemprop="thumbnailUrl" content="{{ site.data.url.gitlab.youtube_thumbs }}/add-images-folder-git.jpg" />
+	  	<meta itemprop="name" content="Como criar uma pasta de imagens para seu website no GitHub " />
+	  	<meta itemprop="description" content="Aprenda como adicionar imagens a uma pasta para seu website gratuitamente hospedado no GitHub" />
+	  	<meta itemprop="duration" content="T3M10S" />
+	  	<meta itemprop="uploadDate" content="{{ page.date | date_to_xmlschema }}" />
+</div>
 
 <br>
 
@@ -253,11 +272,15 @@ function Display() {
 
 <br>
 
-### **<mkp-blue>Criar websites de projetos no GitHub</mkp-blue>**
+--------------------------------------
 
-Caso você precise criar um [website de projeto](#projetos), conforme explicamos acima, por favor pedimos que volte mais tarde, pois estamos preparando um tutorial em vídeo para este passo. Quando estiver pronto, incluiremos o video aqui. Adicione nosso [Blog ao seu feed][news feed], siga-nos no [Twitter] e/ou inscreva-se no nosso [Canal do YouTube] para receber em primeira mão!  
+## **Como criar websites de projetos no GitHub**
+
+Caso você precise criar um [website de projeto](#projetos), conforme explicamos acima, por favor pedimos que volte mais tarde, pois estamos preparando um tutorial em vídeo para este passo. Já temos um [novo tutorial em Inglês][]. Quando o mesmo estiver pronto em Português, incluiremos o link aqui. Adicione nosso [Blog ao seu feed][news feed], siga-nos no [Twitter][] e/ou inscreva-se no nosso [Canal do YouTube][] para receber em primeira mão!  
 
 <br>
+
+------------------------------------
 
 ### **<mkp-blue>Isso é tudo, pessoal!</mkp-blue>**
 
@@ -300,3 +323,4 @@ Obrigada e até o próximo artigo!
 [news feed]: http://virtuacreative.github.io/blog/feed.xml
 [GitHub Pages]: https://pages.github.com/
 [here]: https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/
+[novo tutorial em Inglês]: {{ site.data.url.virtua.blog }}github-pages-project-website.html
