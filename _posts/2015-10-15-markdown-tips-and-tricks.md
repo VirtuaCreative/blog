@@ -18,7 +18,7 @@ date: 2015-10-15 20:36:10 UTC
 comments: true
 published: True
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
-language: [en_US, en_UK]
+language: [en_US, en_GB]
 date_update: 2016-01-08 23:07:00 UTC
 # copy:
 codingbox: true
