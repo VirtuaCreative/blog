@@ -281,7 +281,7 @@ Adicione 4 espaços em branco antes de qualquer texto que este aparecerá em blo
  
 #### <a name="arroba"></a>**Links para Usuários**
 
-Se você achou que este artigo foi útil, poderá dar uma :star: para @VirtuaCreative!
+Se você achou que este artigo foi útil, poderá dar uma :star: para @virtuacreative !
 
 O link para o perfil de Virtua Creative no Github na frase acima foi adicionado com um simples arroba na frente do meu nome de usuário.
 
