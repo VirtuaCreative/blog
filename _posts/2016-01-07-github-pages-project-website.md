@@ -29,7 +29,7 @@ related: github
 
 <br>
 
-## <mkp-blue> Quick overview: User/Organization Website</mkp-blue> _vs_ <mkp-blue>Project Website</mkp-blue>
+### <mkp-blue> Quick overview: User/Organization Website</mkp-blue> _vs_ <mkp-blue>Project Website</mkp-blue>
 
 <br>
 
@@ -49,7 +49,7 @@ Note: If you are new to GitHub Pages and need a full oveview on this subject, or
 
 <br>
 
-## <mkp-blue>Deciding between the options 1 and 2 above</mkp-blue>
+### <mkp-blue>Deciding between the options 1 and 2 above</mkp-blue>
 
 <br>
 
