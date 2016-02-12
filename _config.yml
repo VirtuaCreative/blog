@@ -15,9 +15,6 @@ gems:
   - jekyll-mentions
   - jekyll-paginate
 
-jekyll-mentions:
-  base_url: https://twitter.com
-
 rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
