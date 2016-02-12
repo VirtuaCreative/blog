@@ -19,7 +19,7 @@ fb_section: Tutorials - GitHub
 comments: true
 date: 2015-09-14 23:41:41 UTC
 date_update: 2016-01-09 00:23:31 UTC
-# language: [en_US, en_UK]
+# language: [en_US, en_GB]
 ---
 
 # **O que é GitHub**
@@ -88,7 +88,7 @@ Seu website poderá ser acessado através de um subdomínio do GitHub `suaempres
 
 Embora não haja limite de arquivos armazenados, **o GitHub recomenda que os repositórios não ultrapassem o limite de 1 GB**. Dificilmente este limite será excedido em um website comum. Porém, caso seu website ultrapasse esse limite, o que você poderá fazer para contornar este problema de forma simples, é criar outro repositório para armazenamento de mais arquivos, e adicionar links diretos entre ambos. 
 
-Para ver um exemplo prático, veja que nosso website [http://virtuacreative.github.io](http://virtuacreative.github.io), que "mora" no repositório `virtuacreative.github.io` dá acesso ao nosso website [Virtua Creative & GitHub][] `http://virtuacreative.github.io/git/`, que "mora" no repositório `git` e a este [Blog][] `http://virtuacreative.github.io/blog/`, que "mora" no repositório `blog`. Ambos têm links um para o outro. Não é o caso, mas cada um deles poderia suportar até 1GB de armazenamento cada, totalizando 3GB para um único subdomínio `virtuacreative.github.io`
+Para ver um exemplo prático, veja que nosso website [http://virtuacreative.github.io](http://virtuacreative.github.io), que "mora" no repositório `virtuacreative.github.io` dá acesso ao nosso website [Virtua Creative & GitHub][] `http://virtuacreative.github.io/git/`, que "mora" no repositório `git` e a este [Blog][] `http://virtuacreative.github.io/blog/`, que "mora" no repositório `blog`. Ambos têm links um para o outro. Não é o caso, mas cada um deles poderia suportar até 1GB de armazenamento cada, totalizando 3GB para um único subdomínio `virtuacreative.github.io`.
 
 <br>
 

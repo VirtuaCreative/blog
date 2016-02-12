@@ -19,13 +19,11 @@ comments: true
 published: true
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
 language: [en_US, en_GB]
-# date_update: 
+date_update: 2016-02-12 19:11:52 UTC
 # copy: true # copy button with javascript
 # codingbox: true # code type on the top-right of code block boxes
 related: github
 ---
-
-<br>
 
 # **How to create a project website on GitHub**
 
@@ -141,7 +139,7 @@ For publishing a project website you will need to follow a few steps. Watch this
 
 GitHub allows you to use **custom domain names** for both user/organization and project websites. You can configure as many domain names as you want when you have multiple websites. For example, if you are a web developer or a web designer, with only one GitHub account you can host unlimited numbers of websites, and you can configure a different domain or subdomain name to each website you have. 
 
-When you configure your user/organization website for a custom domain like `mydomain.com`, if you create project websites they will be automatically redirected to `mydomain.com/projectname/`. If you want to change this, it's easily done by adding a CNAME file to your `gh-pages` branch (project website root), redirecting to another domain or subdomain you want.
+When you configure your user/organization website for a custom domain like `mydomain.com`, if you create project websites they will be automatically redirected to `mydomain.com/projectname/`. If you want to change this, it's easily done by adding a `CNAME` file to your `gh-pages` branch (project website root), redirecting to another domain or subdomain you want.
 
 If you need an overview for configuring your custom domain with GitHub Pages, stay tuned to Virtua Creative Blog! Our next article _"How to add custom domain to your website hosted by GitHub"_ will fully cover this subject. Follow us on [Twitter][] or subscribe to our [YouTube Channel][] for updates!
 

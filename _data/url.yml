@@ -1,6 +1,6 @@
 virtua:
   home: http://www.virtuacreative.com.br/
-  home_contact: http://virtuacreative.com.br/virtua-contato.php
+  home_contact: http://virtuacreative.com.br/en/contacts/
   git-home: http://virtuacreative.github.io/ # DO NOT USE THIS
   git_home: http://virtuacreative.github.io/ # USE THIS
   git-contact: http://git.virtuacreative.com.br/contact.html # DO NOT USE THIS
@@ -33,6 +33,10 @@ markdown:
   kramdown: http://jekyllrb.com/docs/configuration/#kramdown
   all: http://daringfireball.net/projects/markdown/basics
   pygments: http://pygments.org/
+  kramdown_syntax: http://kramdown.gettalong.org/syntax.html
+  rouge_gem: https://rubygems.org/gems/rouge/
+  rouge_lang: https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
+  kramdown_cheat: http://kramdown.gettalong.org/quickref.html
 
 ramosmd:
   home: http://ramosmd.virtuacreative.com.br

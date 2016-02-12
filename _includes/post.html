@@ -76,11 +76,13 @@
 		&nbsp;&nbsp;<span class="post-date" style="float: right">Por <a rel="nofollow" target="_blank" href="{{ page.authorUrl }}">{{ page.author }}</a></span>
 		{% endif %}
 		<div class="article_body" itemprop="articleBody">
+			<figure class="post_cover_img">
 			{% if page.language %}
 			<a rel="nofollow" title="Go to Image Gallery" href="{{ page.imageUrl }}" target="_blank"><img class="article-top" src="{{ page.image }}" alt="{{ page.title }}"></a>
 			{% else %}
 			<a rel="nofollow" title="Ver imagem na galeria" href="{{ page.imageUrl }}" target="_blank"><img class="article-top" src="{{ page.image }}" alt="{{ page.title }}"></a>
 			{% endif %}
+			</figure>
 		  	{{ content }}
 		  	{% if page.date_update %}
 				{% if page.language %}
@@ -113,7 +115,7 @@
 		</ul>
 		{% endunless %}  
 			{% unless page.tags == empty %}
-			<ul class="list-inline">
+			<ul class="tag_box list-inline">
 				<li><i class="fa fa-tags"></i></li>
 			  	{% assign tags_list = page.tags %}
 			  	{% if tags_list.first[0] == null %}
@@ -170,9 +172,9 @@
 		<div class="post-footer clearfix">
 		  	<section class="share col-sm-6">		  
 				{% if page.language %}
-				<h4 class="section-title" style="font-family:'Raleway', sans-serif">Share</h4>
+				<h4 class="section-title">Share</h4>
 				{% else %}
-				<h4 class="section-title" style="font-family:'Raleway', sans-serif">Compartilhar</h4>
+				<h4 class="section-title">Compartilhar</h4>
 				{% endif %}
 				<a rel="nofollow" class="btn btn-default btn-sm2 twitter" href="http://twitter.com/share?text={{page.title | encode}}{% if site.author.twitter%}&via={{site.author.twitter}}{% endif %}"
 			   		onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">

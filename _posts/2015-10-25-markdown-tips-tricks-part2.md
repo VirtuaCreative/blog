@@ -19,12 +19,12 @@ comments: true
 published: true
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
 language: [en_US, en_GB]
-date_update: 2016-01-09 00:22:10 UTC
+date_update: 2016-02-12 19:00:48 UTC
 copy: true # copy button with javascript  
 codingbox: true # code type on the top-right of code block boxes 
 ---
 
-# **<mkp-blue>Embedding Videos</mkp-blue>**
+# **<mkp-blue>Embedding Videos in Markdown</mkp-blue>**
 
 <br>
 
@@ -36,8 +36,6 @@ As we have explained on the [previous article][], there's only a thing you need 
 
 <p class="bkggreen"><i class="fa fa-exclamation" style="color: red;"></i>&nbsp;&nbsp;You need to leave a <strong>blank line</strong> between some regular markdown text and a <strong>html tag</strong>, otherwise you might face errors during files compilation!</p>
 
-<br> <!-- ff -->
-
 <hr>
 
 ### **<i class="fa fa-youtube"></i>&nbsp;&nbsp;Case A: `<iframe>` Tags** - Embedding YouTube Videos
@@ -48,13 +46,13 @@ All right. Let's begin by showing you how to embed **YouTube videos**, as found 
 
 <br>
 
-<div class="iframe_container">
+<figure class="iframe_container">
 	<iframe width="853" height="480" src="http://www.youtube.com/embed/E-ONNjFoOx0" frameborder="0" allowfullscreen="allowfullscreen"> </iframe> 
-</div>
+</figure>
 
 <br>
 
-<p class="bkggreen"><i class="fa fa-exclamation" style="color: red;"></i>&nbsp;&nbsp;We'll need to copy the code given by <strong>YouTube</strong> and paste it onto your markdown file, and from that <strong>we'll need to make a few corrections</strong> in order to make it work properly, according to step-by-step section below.</p>
+<p class="bkggreen"><i class="fa fa-exclamation" style="color: red;"></i>&nbsp;&nbsp;We'll need to copy the code given by <strong>YouTube</strong> and paste it onto your markdown file, and from that we'll need to <strong>make a few corrections</strong> in order to make it work properly, according to step-by-step section below.</p>
 
 <br>
 
@@ -64,30 +62,25 @@ All right. Let's begin by showing you how to embed **YouTube videos**, as found 
 
 <br>
 
-<div id="iframe-video" class="video_container">
+<figure id="iframe-video" class="video_container">
 	<video controls="controls" allowfullscreen="true" poster="{{ site.baseurl }}/assets/media/embed-youtube-poster.png">
   		<source src="{{ site.baseurl }}/assets/media/embed-youtube.mp4" type="video/mp4">
 	</video> 
-</div>
-
+</figure>
 
 <br>
 
 **Second:** paste the `<iframe>` into a `<div>` tag:
 
-<br>
-
-{% highlight text %}
+{% highlight markdown %}
 .... <!-- post content -->
 
 <div class="iframe_container">
-	<iframe width="560" height="315" src="http://www.youtube.com/embed/E-ONNjFoOx0" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="http://www.youtube.com/embed/E-ONNjFoOx0" frameborder="0" allowfullscreen></iframe>
 </div>
 
 .... <!-- post content -->
 {% endhighlight %}
-
-<br>
 
 **Third:** instead of leaving the atribute `allowfullscreen` with no value, give it a value of "allowfullscreen": `allowfullscreen="allowfullscreen"`. 
 
@@ -101,11 +94,11 @@ Now your code will look like that:
 
 <div name="clipboard-text" id="clipboard-text-1">
 
-{% highlight text %}
+{% highlight markdown %}
 .... <!-- post content -->
 
 <div class="iframe_container">
-	<iframe src="http://www.youtube.com/embed/E-ONNjFoOx0" frameborder="0" allowfullscreen="allowfullscreen"> </iframe>
+  <iframe src="http://www.youtube.com/embed/E-ONNjFoOx0" frameborder="0" allowfullscreen="allowfullscreen"> </iframe>
 </div>
 
 .... <!-- post content -->
@@ -175,17 +168,15 @@ Now, if you have videos that you don't want to publish on YouTube and want them 
 
 Adding a `<video>` tag is very straight forward, exactly as we did for `<div>` or `<hr>` tags on the [previous article][]. Just add a `<video>` tag to your markdown text and you are good to go! 
 
-<br>
-
 <div name="clipboard-text" id="clipboard-text-3">
 
-{% highlight text %}
+{% highlight markdown %}
 .... <!-- post content -->
 
 <div class="video_container">
-	<video controls="controls" allowfullscreen="true" poster="path/to/poster_image.png">
-  		<source src="path/to/video.mp4" type="video/mp4">
-	</video> 
+  <video controls="controls" allowfullscreen="true" poster="path/to/poster_image.png">
+    <source src="path/to/video.mp4" type="video/mp4">
+  </video> 
 </div>
 
 .... <!-- post content -->
@@ -209,14 +200,12 @@ function nDisplay() {
 
 Let's see a live example with the code above, using a video we have in our blog assets:
 
-<br>
-
-<div id="iframe-video" class="video_container">
+<figure id="iframe-video" class="video_container">
 	<video controls="controls" allowfullscreen="true" poster="{{ site.baseurl }}/assets/media/blog_poster.png">
   		<source src="{{ site.baseurl }}/assets/media/blog.mp4" type="video/mp4">
 
 	</video> 
-</div>
+</figure>
 
 <br>
 

@@ -214,11 +214,11 @@ Please click on the following frame if you wish to **watch our video tutorial** 
 
 Read the full tutorial and watch the video on the article **[How to publish Project Websites on GitHub][]**
 
-<br/>
-
 That's all for now folks! I hope this article were useful for you! :smiley:
 
 <br/>
+
+--------------
 
 #### **<mkp-blue>Stay tuned!</mkp-blue>** 
 

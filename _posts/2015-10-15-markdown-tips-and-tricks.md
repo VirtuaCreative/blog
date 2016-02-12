@@ -19,7 +19,7 @@ comments: true
 published: True
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
 language: [en_US, en_GB]
-date_update: 2016-01-08 23:07:00 UTC
+date_update: 2016-02-12 18:54:36 UTC
 # copy:
 codingbox: true
 related: jekyll
@@ -38,9 +38,9 @@ On this article, you will learn how to **[add new `HTML` elements](#mkp-blueaddi
 
 <br>
 
-#### _Markdown Tips & Tricks - Part 2_  
+#### _[Markdown Tips & Tricks - Part 2](/markdown-tips-tricks-part2.html)_  
 
-On the **next post**, we are going to show you how to **embed videos** on your markdown files. This second part will be published at October 25th.
+On the **next post**, we are going to show you how to **embed videos** on your markdown files. This second part will be published at October 26th.
 
 <br>
 
@@ -58,11 +58,10 @@ Our Jekyll `_config.yml` settings are the following:
 
 {% highlight yaml %}
 ---
-... your settings ...
+# your settings ...
 
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
-
 kramdown:
   input: GFM          # this is a support for GitHub Flavored Markdown
 
@@ -70,11 +69,11 @@ gems:
   - jemoji            # this is a support for emoticons
   - jekyll-mentions   # this is a support for GitHub user's mentions by adding @ before their names
 
-... your settings ...
+# your settings ...
 ---
 {% endhighlight %}
 
-The tips provided by this post worked very well using [Kramdown][] and [Pygments][]. Other markdown and highlighters haven't been tested yet, but you are more than invited to give it a try and tell us if works or not! :smiley:
+The tips provided by this post worked very well using [Kramdown][] with [GFM][] and [Rouge][]. It works fine when replacing `rouge` for `pygments` too. Other markdown and highlighters haven't been tested yet, but you are more than invited to give it a try and tell us if works or not! :smiley:
 
 Our build has been made by running `bundle exec jekyll serve --safe` on the command prompt, at the local root folder, as [recommended by GitHub][]. Using the `--safe` mode allows you to build your site locally in the closest way that GitHub will do it, [avoiding building errors][] when uploading your files to GitHub.
 
@@ -90,13 +89,11 @@ Our `default.html` file (where the markdown posts are called to) is placed at ou
 
 Let's begin with new elements. Did you know you can add `HTML elements` to your markdown? For example, if you need a horizontal line, you can add it as the code below: 
 
-{% highlight text linenos %}
-Some text here
+{% highlight markdown linenos %} Some text here
 // blank line
 <hr>
 // blank line
-Something else here
-{% endhighlight %}
+Something else here {% endhighlight %}
 
 ...and will be compiled to...
 
@@ -116,7 +113,11 @@ Feel free to use the tag `<br>` the same way for breaking lines.
 
 <p class="bkggreen"><i class="fa fa-exclamation" style="color: red;"></i>&nbsp;&nbsp;Don't forget to leave a <strong>blank line</strong> between some regular markdown text and a <strong>html tag</strong>, otherwise you might face errors during files compilation!</p>
 
-Following the same logic, `HTML 5` allows you to add some extra elements, and you are also free to make up your own. For example, as you might have noticed, some of our titles on this blog are **<mkp-blue>blue</mkp-blue>**. How did we do that? 
+<br>
+
+### Custom Elements 
+
+Following the same logic, `HTML 5` allows you to add some extra elements, and you are also free to make up your own. We have added a few custom elements to this blog. For example, as you might have noticed, some of our titles on this blog are **<mkp-blue>blue</mkp-blue>**. How did we do that? 
 
 This is not a `<span>` tag. Actually, we made a new element up, called `<mkp-blue>`. You can call elements whatever you want. This element has only one propriety defined in our `CSS`, all the others are inherit from its parent element:
 
@@ -130,7 +131,7 @@ mkp-blue {
 
 We can use these new elements combined with markup, for example, this line:
 
-{% highlight text %}
+{% highlight markdown %}
 Hello! I'm a **<mkp-blue>blue</mkp-blue>** word in a regular markdown text!
 {% endhighlight %}
 
@@ -146,7 +147,7 @@ Hello! I'm a **<mkp-blue>blue</mkp-blue>** word in a regular markdown text!
 
 **BUT**, you **can't** do the opposite, using a markup within an html tag, like:
 
-{% highlight text %}
+{% highlight markdown %}
 Hello! I'm a <mkp-blue>**blue**</mkp-blue> word in a regular markdown text!
 {% endhighlight %}
 
@@ -164,6 +165,18 @@ Hello! I'm a <mkp-blue>**blue**</mkp-blue> word in a regular markdown text!
 
 That's it, you can add as many default or non-default elements to your markdown file, as long as you leave blank lines above and below them.
 
+**ATTENTION**
+
+Making up your own custom elements is not recommended when you want to stick to the standards. Also, they haven't cross-browser compatibility. There is an [article](http://www.html5rocks.com/en/tutorials/webcomponents/customelements/#fromtemplate) where the author goes deep into this subject. The [minimum recommendation](http://stackoverflow.com/questions/2802687/is-there-a-way-to-create-your-own-html-tag-in-html5/#answer-11467718) is adding this code to the site `<head>` when you use them:
+
+{% highlight html %}
+<!--[if lt IE 9]> 
+<script> document.createElement("element_name"); </script>
+<![endif]-->
+{% endhighlight %}
+
+This will create a new element when the http request to your site is comming from _Internet Explorer 9_. 
+
 <br> 
 
 <hr>
@@ -175,7 +188,7 @@ Exactly as we just have done, you can add some **html divs** to your markdown. A
 
 For example, let's say you want a particular image style at some point, you can just wrap it into a `<div>` and that's it!
 
-{% highlight text %}
+{% highlight markdown %}
 ...
 
 <div class="example">
@@ -230,7 +243,7 @@ When I first started writing in markdown, I googled something like "how to apply
 
 For example, let's say you want to apply a different class to a paragraph. Instead of writing the regular text on markdown, as:
 
-{% highlight text %}
+{% highlight markdown %}
 ...
 Hello! I'm a regular textile paragraph written in a markdown file!
 ...
@@ -238,13 +251,14 @@ Hello! I'm a regular textile paragraph written in a markdown file!
 
 ... you are free to write it as a `<p>...</p>` HTML tag, like:
 
-{% highlight text linenos %}
+{% highlight markdown linenos %}
 ...
 
 <p class="myclass">Hello! I'm a regular HTML paragraph written in a markdown file!</p>
 
 ...
 {% endhighlight %}
+
 
 ... and it will be compiled to:
 
@@ -266,9 +280,53 @@ Just *do not forget* to always leave a blank line between your markdown regular 
 
 <br>
 
+### **<mkp-blue>Update!</mkp-blue>**
+
+I've just found out an easy way to applying **classes** to your markdown!! Look at that:
+
+I'm in a green box now!
+{: .bkggreen}
+
+This was simply achieved by this piece of code:
+
+{% highlight markdown %}
+I'm in a green box now!
+{% raw %}{: .bkggreen}{% endraw %}
+{% endhighlight %}
+
+ It's awesome, isn't it?! :dancers:
+
+**What if I need more than one `class`?**
+{: .color_blue}
+
+{% highlight markdown %}
+I have tree classes now!
+{% raw %}{: .class1 .class2 .class3}{% endraw %}
+{% endhighlight %}
+
+**What if I need an `id`?**
+{: .color_blue}
+
+{% highlight markdown %}
+# I have an ID now! => works for headings too!
+{% raw %}{: #i_am_an_id}{% endraw %}
+{% endhighlight %}
+
+**What if I need both, an `id` and a `.class`?**
+{: .color_blue}
+
+{% highlight markdown %}
+I have an ID and a CLASS now!
+{% raw %}{: #i_am_an_id .class}{% endraw %}
+{% endhighlight %}
+
+I just **loved** this! Check the [full reference](http://kramdown.gettalong.org/quickref.html) out!
+
+<br>
+
 ### **<mkp-blue>Done!</mkp-blue>**
 
-All right then, now that you know that you can add `html elements` and apply classes to them in markdown files, it's time to make it work for you! Go on and use them freely, you'll see that the results are fantastic and at the same time we keep the astonishing advantages of writing in markdown!
+All right then, now that you know that you can add **html elements** and **apply classes** to them in markdown files, it's time to make it work for you! Go on and use them freely, you'll see that the results are fantastic and at the same time we keep the astonishing advantages of writing in markdown!
 
 Don't lose our next post, where we will show you how to embed videos in markdown files. It can be a little tricky, specially giving them responsiveness, but we are here to share our knowledge with you! :smiley:
 
@@ -280,9 +338,11 @@ Don't lose our next post, where we will show you how to embed videos in markdown
 
 We hope to have been helpful! Please, if you enjoyed this article, share it, recommend it or leave a comment to let us know! 
 
-If you have any questions or suggestions, please feel free to get in touch with us by filling our  [contact form]({{ site.data.url.virtua.git-contact }}).
+If you have any questions or suggestions, please feel free to get in touch with us by filling our  [contact form]({{ site.data.url.virtua.home_contact }}).
 
-Thanks for reading! Stay tuned for the next article (**Markdown Tips and Tricks - Part 2**)! Follow us on [Twitter]({{ site.data.url.virtua.twitter }}), [Google+]({{ site.data.url.virtua.googleplus }}) or subscribe to our [YouTube Channel]({{ site.data.url.virtua.youtube }})! 
+Thanks for reading! Check our next article **[Markdown Tips and Tricks - Part 2](/markdown-tips-tricks-part2.html)**! 
+
+Stay tuned! Follow us on [Twitter]({{ site.data.url.virtua.twitter }}), [Google+]({{ site.data.url.virtua.googleplus }}) or subscribe to our [YouTube Channel]({{ site.data.url.virtua.youtube }})! 
 
 <br>
 
@@ -332,7 +392,8 @@ Thanks for reading! Stay tuned for the next article (**Markdown Tips and Tricks 
 [GitHub Pages]: {{ site.data.url.git.pages }}
 [Jekyll]:  {{ site.data.url.jekyll.home }}
 [Kramdown]: {{ site.data.url.markdown.kramdown }}
-[Pygments]: {{ site.data.url.markdown.pygments }}
+[Rouge]: {{ site.data.url.markdown.rouge_gem }}
 [GitHub Flavored Markdown]: {{ site.data.url.git.gfm }}
 [Jekyll Documentation]: {{ site.data.url.jekyll.docs }}
 [Markdown]: {{ site.data.url.markdown.all }}
+[GFM]: {{ site.data.url.git.gfm }}

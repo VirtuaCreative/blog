@@ -7,7 +7,7 @@ fb_title: Jekyll e GitHub Markdown
 categories: [jekyll, Github, Tutoriais, Blog]
 tags: [git, jekyll, markdown, kramdown, emoji]
 meta_keywords: git, jekyll, markdown, kramdown, emoji
-description: Lista prática de markdowns do Jekyll e do Github.
+description: Lista prática de markdowns do Jekyll para o GitHub.
 image: https://goo.gl/CbwGMU
 image_schema: 'https://c2.staticflickr.com/4/3826/20355844915_657dc373d8_b.jpg'
 imageUrl: https://www.flickr.com/photos/virtuacreative/20355844915
@@ -18,21 +18,26 @@ author_twitter: xmdramos
 authorEmail: virtua.creative@gmail.com
 comments: true
 date: 2015-08-02 17:47:29 UTC
-date_update: 2016-01-09 00:47:10 UTC
+date_update: 2016-02-12 15:26:59 UTC
 # language: [pt_BR]
 ---
 
-## **Markdown**
+# **Markdown**
 
-Para facilitar a sua escrita com o **Jekyll**, vou fazer uma lista de markdowns de arquivos `.md` ou `.markdown` e mostrar como funcionam. 
+Para facilitar a escrita com o **Jekyll**, este artigo apresenta uma lista de _markups_ em markdown [Kramdown](http://kramdown.gettalong.org/syntax.html) de arquivos com as extensões `.md` ou `.markdown`. 
 
-Eu mesma uso o conteúdo deste artigo como guia quando não lembro de algum markdown, por isso resolvi publicá-lo e deixá-lo à mão para a comunidade web também. 
+Eu mesma uso o conteúdo deste artigo como guia quando não lembro de algum markup, por isso resolvi publicá-lo e deixá-lo à mão para a comunidade web também. 
 
 Este artigo parte do princípio que você já tem o Jekyll instalado e usa o GitHub Pages para publicar seu site ou seu blog. Se você precisa de mais informações sobre isso, veja o artigo [Criando Blogs com Jekyll no Windows]({{ site.baseurl }}{% post_url 2015-07-30-jekyll-github-blog %}).
 
+[Veja abaixo](#config) as configurações aplicadas ao `_config.yml`.
+
+
 <br>  
 
-## Básicos
+---------------------
+
+## **<mkp-blue>Markups Básicos</mkp-blue>**
 
  <br>   
 
@@ -50,7 +55,7 @@ Este artigo parte do princípio que você já tem o Jekyll instalado e usa o Git
 
 _Itálico_ e __negrito__: <br/>
 *Itálico e **negrito-itálico**:*
-{% highlight html %}
+{% highlight markdown %}
 *Texto em Itálico*
 _Texto em itálico_
 
@@ -70,28 +75,28 @@ Ordenadas:
 
 1. Item 1
 2. Item 2
-	* Sub-item 2.1
-	* Sub-item 2.2
+    2.1. Sub-item 2.1
+    2.2. Sub-item 2.2
 
-{% highlight html %}
+{% highlight markdown %}
 1. Item 1
 2. Item 2
-	* Sub-item 2.1
-	* Sub-item 2.2
+    2.1. Sub-item 2.1
+    2.2. Sub-item 2.2
 {% endhighlight %}
 
 Não-ordenadas:
 
-* Item 1
-* Item 2
-	* Sub-item 2.1
-	* Sub-item 2.2
+- Item 1
+- Item 2
+    - Sub-item 2.1
+    - Sub-item 2.2
 
-{% highlight html %}
-* Item 1
-* Item 2
-	* Sub-item 2.1
-	* Sub-item 2.2
+{% highlight markdown %}
+- Item 1
+- Item 2
+    - Sub-item 2.1
+    - Sub-item 2.2
 {% endhighlight %}
 
  <br>   
@@ -100,7 +105,7 @@ Não-ordenadas:
 
 ![Virtua Creative Logo](http://www.gravatar.com/avatar/6fa7e8a0b8a820fa63c7cfd1833b1be4 "VirtuaCreative")
 
-{% highlight html %}
+{% highlight markdown %}
 ![Texto ALT](url "Título")
 {% endhighlight %}
 
@@ -110,9 +115,9 @@ _Alt_ e _Título_ não são obrigatórios.
 
 #### **Links**
 
-[Virtua Creative Technology](http://www.virtuacreative.com.br)
+[Virtua Creative Technology](http://virtuacreative.com.br)
 
-{% highlight html %}
+{% highlight markdown %}
 [Texto impresso](url)
 {% endhighlight %}
 
@@ -125,7 +130,7 @@ Digâmos que você usar a palavra a seguir como âncora.
 Olá. Eu sou uma <a name="ancora"></a> âncora!
 
 O texto ficará assim:
-{% highlight html %}
+{% highlight markdown %}
 Olá. Eu sou uma <a name="ancora"></a> âncora!
 {% endhighlight %}
 
@@ -134,7 +139,7 @@ E para recuperar a âncora, você poderá denotá-la como um link comum:
 Quero citar minha [âncora](#ancora).
 
 Seu texto estará escrito assim:
-{% highlight html %}
+{% highlight markdown %}
 Quero citar minha [âncora](#ancora).
 {% endhighlight %}
 
@@ -145,7 +150,7 @@ Quero citar minha [âncora](#ancora).
 As tabela são criadas com hifens e barras verticais. O cabeçalho é separado do restante da tabela por traços e as colunas são separadas por barras. O código a seguir...
 
 
-{% highlight html %}
+{% highlight markdown %}
 Cabeçalho Um	 | Cabeçalho Dois
 ---------------	 | --------------
 Célula Um    	 | Célula Dois
@@ -209,50 +214,68 @@ Conforme acima, a "coluna um" aparecerá com o texto alinhado à esquerda; a "co
 
 #### **Códigos**
 
-Este é um `código inline`
+As formas de exibir códigos em markdown mais utilizadas são:
+
+**<mkp-blue>1. Código Inline</mkp-blue>**
+
+Este é um `código inline`.
 
 {% highlight html %}
 Este é um `código inline`
 {% endhighlight %}
+
+**<mkp-blue>2. Blocos de Código</mkp-blue>**
+
+**<mkp-blue>2.1. Utilizando </mkp-blue>** _**<mkp-blue>"Fenced Code Blocks"</mkp-blue>**_ **<mkp-blue>ou</mkp-blue>** _**<mkp-blue>"Backticks"</mkp-blue>**_
 
 Código em blocos, com a linguagem definida:
 
-{% highlight html %} 
-{% raw %}{% highlight html %}{% endraw %} 
-Este é um código em bloco.
+{% highlight html %}{% raw %}```html{% endraw %} 
+Este é um código html em bloco em markdown puro.
 <h1>Hello world!</h1>
-{% raw %}{% endhighlight %}
-{% endraw %} 
-{% endhighlight %}
+{% raw %}```{% endraw %}{% endhighlight %}
+
+**<mkp-blue>2.2. Utilizando </mkp-blue>**_**<mkp-blue>Liquid</mkp-blue>**_ **<mkp-blue>tags</mkp-blue>**
+
+Definindo apenas a liguagem:
+
+{% highlight html %}{% raw %}{% highlight html %}{% endraw %} 
+Este é um código html em bloco via liquid tags!
+{% raw %}{% endhighlight %}{% endraw %}{% endhighlight %}
 
 Inserindo número das linhas ao código em bloco:
 
-{% highlight html linenos %} 
-{% raw %}{% highlight html linenos %}{% endraw %} 
-Este é um código em bloco com linhas numeradas!
-{% raw %}{% endhighlight %}
-{% endraw %} 
-{% endhighlight %}
+{% highlight html linenos %}{% raw %}{% highlight html linenos %}{% endraw %} 
+Este é um código html em bloco com linhas numeradas!
+<h1>Hello world!</h1>
+{% raw %}{% endhighlight %}{% endraw %}{% endhighlight %}
 
-Aqui o interessante é que você pode colorir os números no seu css, como você notou no bloco acima. Para fazer isso, vá até o seu css e atribua uma cor para a classe `linenos` em uma `<span>` tag:
+Aqui o interessante é que você pode colorir os números no seu css, como você notou no bloco acima. Para fazer isso, vá até o seu css e atribua uma cor para a classe `linenos` que será compilado a uma `<pre>` tag:
 
 Como o markdown é transformado em html:
 {% highlight html %}
-<span class="lineno">1</span>
+<pre class="lineno">1 2 3</pre>
 {% endhighlight %}
 
 atribua a classe no seu `style.css`:
 {% highlight css %}
-span.lineno {
+.lineno {
 	color: red;
 }
 {% endhighlight %}
 
+**<mkp-blue>3. Códicos via</mkp-blue>** _**<mkp-blue>Indentation</mkp-blue>**_
+
+Adicione 4 espaços em branco antes de qualquer texto que este aparecerá em bloco de código, como a seguir:
+
+    hello world!
+
+
 <br>   
 
-
+--------------
  
-## Avançados
+## **<mkp-blue>Markups Avançados</mkp-blue>**
 
 <br>
  
@@ -264,7 +287,7 @@ O link para o perfil de Virtua Creative no Github na frase acima foi adicionado 
 
 O único detalhe é que você precisa "ativar" a menção de usuários nos seus artigos adicionado uma linha `gems` ao seu `_config.yml`:
 
-{% highlight text %}
+{% highlight yml %}
 
 gems:
   - jekyll-mentions
@@ -277,7 +300,7 @@ Neste caso, o padrão será para citação de usuários do GitHub.
 
 Caso prefira, poderá definir o a menção de usuários de outras redes sociais, desta forma:
 
-{% highlight text %}
+{% highlight yml %}
 gems:
   - jekyll-mentions
 
@@ -312,7 +335,7 @@ Este blog usa o kramdown como markdown, se você estiver usando outros, não sab
 
 Para habilitar o GFM, é necessário que o inclua no seu `_config.yml`, desta forma:
 
-{% highlight text linenos %}
+{% highlight yml linenos %}
 markdown: kramdown
 
 kramdown:
@@ -337,7 +360,7 @@ Veja como escrever esta frase:
 
 "Vamos ilustrar com um gravatinha :bowtie: e com uma setinha :arrow_left:" 
 
-{% highlight text %}
+{% highlight markdown %}
 Vamos ilustrar com um gravatinha : bowtie :  e com uma setinha : arrow_left : 
 {% endhighlight %}
 
@@ -345,14 +368,14 @@ Veja o link [Emoji - Lista de Emoticons](http://www.emoji-cheat-sheet.com/) para
 
 Seguindo a mesma lógica dos [links para usuários](#arroba), você precisará habilitar o uso do Emoji no seu site, adicionando ao `_config.yml`:
 
-{% highlight text %}
+{% highlight yml %}
 gems:
   - jemoji
 {% endhighlight %}
 
 Se você usar tanto o Emoji quanto o Mentions, como é o caso deste blog, simplesmente coloque um sobre o outro nos `gems` do seu `_config.yml`:
 
-{% highlight text %}
+{% highlight yml %}
 
 gems:
   - jekyll-mentions
@@ -370,16 +393,17 @@ gem install jemoji
 
 <br>
 
-## **Config**
+<a name="config"></a>
 
-Para simplificar seu entendimento, vou mostrar abaixo como ficou o meu `_config.yml` para usar todos os markdowns citados neste artigo:
+## **`_config.yml`**
 
-{% highlight text %}
-#suas configurações...
+Para simplificar seu entendimento, vou mostrar abaixo como ficou o meu `_config.yml` para usar todos os _markups_ de __markdown__ citados neste artigo:
 
-highlighter: pygments
+{% highlight yml %}
+# demais configurações...
+
+highlighter: rouge
 markdown: kramdown
-
 kramdown:
   input: GFM
 
@@ -387,20 +411,20 @@ gems:
   - jemoji
   - jekyll-mentions
 
-#suas configurações...
+# demais configurações...
 {% endhighlight %}
 
 <br>
 
 **Pronto!**
 
-É isso gente, para checar as informações acima, veja abaixo a lista de referências que usei para elaborar o artigo.
+É isso gente, para checar as informações acima, veja abaixo a lista de referências utilizadas para elaborar o artigo.
 
 Se gostou do artigo, por favor deixe a gente saber disso nos comentários abaixo! :clap: :grimacing: :clap: 
 
 Deixe seu comentário se puder complementar, dar mais algumas dicas, sugestões e deixar sua contribuição para a comundade!
 
-Valeu! Abraços!
+Obrigada!
 
 <br>
 
@@ -409,8 +433,9 @@ Valeu! Abraços!
 
 <br>
 
-- [Referência completa](http://daringfireball.net/projects/markdown/basics) sobre os markdowns que abordamos.
-- [Referência básica](https://help.github.com/articles/markdown-basics/)
+- [Referência completa](http://daringfireball.net/projects/markdown/basics) sobre markdown
+- [Referência completa para Kramdown](kramdown.gettalong.org/syntax.html)
+- [Referência básica](https://help.github.com/articles/markdown-basics/) para markdown
 - [Referência do GFM](https://help.github.com/articles/github-flavored-markdown/)
 - [Emoji - Lista de Emoticons](http://www.emoji-cheat-sheet.com/)
 - [Instalação local do Markup do GitHub](https://github.com/github/markup)

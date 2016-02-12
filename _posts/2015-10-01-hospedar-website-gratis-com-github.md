@@ -18,15 +18,15 @@ author_fb: marciaramosmdr
 fb_section: Tutoriais - GitHub
 comments: true
 date: 2015-10-01 00:19:58 UTC
-date_update: 2016-01-08 23:07:09 UTC
-# language: [en_US, en_UK]
+date_update: 2016-02-12 17:15:58 UTC
+# language: [en_US, en_GB]
 copy: true
 codingbox: true
 ---
 
 # **GitHub**
 
-Para saber o que é o **[GitHub][]** e quais são as melhores formas de aproveitá-lo, por favor leia o artigo **[O que é o GitHub - e porque utilizá-lo](http://virtuacreative.github.io/blog/introducao-ao-github.html)**, em que cobrimos os seguintes tópicos:
+Para saber o que é o **[GitHub][]** e quais são as melhores formas de aproveitá-lo, por favor leia o artigo **[O que é o GitHub - e porque utilizá-lo](http://blog.virtuacreative.com.br/introducao-ao-github.html)**, em que cobrimos os seguintes tópicos:
 
 1. **O que é GitHub**: Como funciona / Privacidade / Cotas
 2. **Hospedagem gratuita de websites com o GitHub**: Como funciona / Limitações / Extensões / Privacidade
@@ -71,7 +71,7 @@ Estes websites são construídos nos _branches_ `master` de um repositório que 
 
 Ao criar um repositório com este nome, ele estará **automaticamente programado** para ser utilizado para hospedar um website, que será acessado através da URL `http://nome-do-usuario.github.io`. Ou seja, basta inserir o conteúdo do seu website neste repositório que, quando esta URL for acessada, você verá seu website no ar. 
 
-De fato, não há difença nenhuma entre websites de usuários e de organizações. A única coisa que difere é o tipo de conta que você tem no GitHub: contas pessoais ("usuário") e contas empresariais ("organização"). As contas têm inúmeras diferenças entre si, mas **os websites são criados exatamente da mesma forma**, a partir do mesmo método descrito acima. Para mais detalhes sobre estas contas, veja nosso artigo anterior ["O que é o GitHub - e porque utilizá-lo"](http://virtuacreative.github.io/blog/introducao-ao-github.html). 
+De fato, não há difença nenhuma entre websites de usuários e de organizações. A única coisa que difere é o tipo de conta que você tem no GitHub: contas pessoais ("usuário") e contas empresariais ("organização"). As contas têm inúmeras diferenças entre si, mas **os websites são criados exatamente da mesma forma**, a partir do mesmo método descrito acima. Para mais detalhes sobre estas contas, veja nosso artigo anterior ["O que é o GitHub - e porque utilizá-lo"](http://blog.virtuacreative.com.br/introducao-ao-github.html). 
 
 <br>
 
@@ -89,7 +89,7 @@ Websites de projetos estão sujeitos às mesmas **três condições** descritas 
 
 ### **<mkp-blue>Vantagens</mkp-blue>** 
 
-O maior ganho que temos é a possibilidade de utilizar uma conta do GitHub apenas para hospedar múltiplos websites. Isso mesmo, podemos criar quantos websites quisermos, pois o GitHub não impõe limite de cotas de utilização, conforme explicado detalhadamente no artigo anterior **[O que é o GitHub - e porque utilizá-lo](http://virtuacreative.github.io/blog/introducao-ao-github.html)**. Mas atenção! Você poderá publicar apenas UM website de usuário, mas poderá criar quantos websites de projetos precisar.
+O maior ganho que temos é a possibilidade de utilizar uma conta do GitHub apenas para hospedar múltiplos websites. Isso mesmo, podemos criar quantos websites quisermos, pois o GitHub não impõe limite de cotas de utilização, conforme explicado detalhadamente no artigo anterior **[O que é o GitHub - e porque utilizá-lo](http://blog.virtuacreative.com.br/introducao-ao-github.html)**. Mas atenção! Você poderá publicar apenas UM website de usuário, mas poderá criar quantos websites de projetos precisar.
 
 Então caso você precise de um website para sua empresa, com o domínio `suaempresa.com` e precise de um outro website para você mesmo, com um segundo domínio `voce.com`, é possível fazer isso com apenas uma conta do GitHub e **sem gastar um centavo** em hospedagem! Basta alocar cada um deles em um repositório diferente e pronto! :smiley:
 
@@ -117,7 +117,7 @@ Nosso usuário do GitHub, @virtuacreative, tem como **website de usuário** a se
 
 **Temos dois websites de projetos:**
 
-1. [Virtua Creative Blog](http://virtuacreative.github.io/blog/), acessado via `http://virtuacreative.github.io/blog`, que "mora" no repositório chamado `blog`;
+1. [Virtua Creative Blog](http://blog.virtuacreative.com.br/), acessado via `http://virtuacreative.github.io/blog`, que "mora" no repositório chamado `blog`;
 2. [Virtua Creative & GitHub](http://virtuacreative.github.io/git/), acessado via `http://virtuacreative.github.io/git`, que mora no repositório chamado `git`.
 
 As estruturas dos websites não precisam ser as mesmas, e no exemplo dado, de fato **não são**!
@@ -208,7 +208,7 @@ function fDisplay() {
 
 ### **<mkp-blue>Criar pasta para seus arquivos CSS</mkp-blue>**
 
-Você poderá utiliza a tag `<style>...</style>` na `<head>` dos seus arquivos `html`, mas provavelmente irá preferir criar arquivos separados para seus estilos CSS. Para fazer isso, por favor siga o [passo-a-passo](http://virtuacreative.github.io/blog/introducao-ao-github.html#add-files) explicado no artigo anterior a este. No vídeo postado acima também incluímos este processo.
+Você poderá utiliza a tag `<style>...</style>` na `<head>` dos seus arquivos `html`, mas provavelmente irá preferir criar arquivos separados para seus estilos CSS. Para fazer isso, por favor siga o [passo-a-passo](http://blog.virtuacreative.com.br/introducao-ao-github.html#add-files) explicado no artigo anterior a este. No vídeo postado acima também incluímos este processo.
 
 <br>
 
@@ -296,10 +296,10 @@ Obrigada e até o próximo artigo!
 
 ### **Artigos relacionados**
 
-[O que é GitHub - e porque utilizá-lo](http://virtuacreative.github.io/blog/introducao-ao-github.html)
-[O que é Jekyll - e para que ele serve](http://virtuacreative.github.io/blog/jekyll-for-beginners-introduction.html)
-[Criando blogs com Jekyll no Windows](http://virtuacreative.github.io/blog/jekyll-github-blog.html)
-[Jekyll e GitHub Markdown](http://virtuacreative.github.io/blog/jekyll-github-markdown.html)
+[O que é GitHub - e porque utilizá-lo](http://blog.virtuacreative.com.br/introducao-ao-github.html)
+[O que é Jekyll - e para que ele serve](http://blog.virtuacreative.com.br/jekyll-for-beginners-introduction.html)
+[Criando blogs com Jekyll no Windows](http://blog.virtuacreative.com.br/jekyll-github-blog.html)
+[Jekyll e GitHub Markdown](http://blog.virtuacreative.com.br/jekyll-github-markdown.html)
 
 <br>
 
@@ -316,11 +316,11 @@ Obrigada e até o próximo artigo!
 
 [Canal do YouTube]: http://www.youtube.com/c/VirtuaCreativeBrWebsites 
 [Twitter]: https://twitter.com/virtuacreative
-[Blog]: http://virtuacreative.github.io/blog/
+[Blog]: http://blog.virtuacreative.com.br/
 [GitHub Desktop]: https://desktop.github.com/
 [GitHub]: https://github.com
 [GitHub Help Guide]: https://help.github.com/articles/user-organization-and-project-pages/
-[news feed]: http://virtuacreative.github.io/blog/feed.xml
+[news feed]: http://blog.virtuacreative.com.br/feed.xml
 [GitHub Pages]: https://pages.github.com/
 [here]: https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/
 [novo tutorial em Inglês]: {{ site.data.url.virtua.blog }}github-pages-project-website.html
