@@ -298,13 +298,13 @@ Related articles (by Jekyll itself) -->
 
 ### **References**
 
-\- [GitHub][]
-\- [GitHub Pages][]
-\- [Jekyll][]
-\- [GitHub Flavored Markdown][]
-\- [Jekyll Documentation][]
-\- [Markdown][]
-\- [Kramdown][]
+- &#9734; [GitHub][]
+- &#9734; [GitHub Pages][]
+- &#9734; [Jekyll][]
+- &#9734; [GitHub Flavored Markdown][]
+- &#9734; [Jekyll Documentation][]
+- &#9734; [Markdown][]
+- &#9734; [Kramdown][]
 
 <br>
 
@@ -312,8 +312,8 @@ Related articles (by Jekyll itself) -->
 
 ### **Image Credits**
 
-\- Art work: Virtua Creative
-\- Illustrations: we have downloaded from Freepik the original [box](http://www.freepik.com/free-vector/vectors_785241.htm) and the original [bulb](http://www.freepik.com/free-vector/vectors_810569.htm).
+- &#9733; Art work: Virtua Creative
+- &#9733; Illustrations: we have downloaded from Freepik the original [box](http://www.freepik.com/free-vector/vectors_785241.htm) and the original [bulb](http://www.freepik.com/free-vector/vectors_810569.htm).
 
 <br>
 
