@@ -482,6 +482,14 @@ h2 { font-size: 30px; }
 h3 { font-size: 26px; }
 h4 { font-size: 22 px; }
 
+ul li ul li {
+	padding: 5px 0px 5px 10px;
+}
+
+ol li ul li {
+	padding: 5px 0px 5px 10px;
+}
+
 figure {
 	margin-top: 15px;
 	margin-bottom: 15px;
