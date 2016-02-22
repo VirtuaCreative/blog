@@ -18,7 +18,7 @@ author_twitter: xmdramos
 authorEmail: virtua.creative@gmail.com
 comments: true
 date: 2015-08-17 22:32:11 UTC
-date_update: 2016-02-12 17:03:51 UTC
+date_update: 2016-02-22 17:28:49 UTC
 # language: [en_US, en_GB]
 ---
 
@@ -89,7 +89,7 @@ Note que __não há espaço__ entre a variável e o começo da linha e que há a
 
 #### **<mkp-blue>Arquivos individuais</mkp-blue>**
 
-Os arquivos individuais são compostos por duas partes: a parte superior, ou __cabeçalho yaml__ (ou _"yaml frontmatter"_), e o corpo - em html ou markdown.
+Os arquivos individuais são compostos por duas partes: a parte superior, ou __cabeçalho yaml__ (ou _"yaml front matter"_), e o corpo - em html ou markdown.
 
 A parte do cabeçalho define as __variáveis particulares daquela página em questão__. Por exemplo, se o seu website vai comportar um blog, você terá o autor da obra - do website - e o autor dos artigos publicados no blog. Desta forma, você terá dois tipos de variáveis, ambas chamadas "autor": uma será autor do __site__ e outra autor do __post__. Para chamá-las ao longo do website, basta especificar de qual você está falando, utilizando a chamada [Liquid](#liquid) apropriada.
 
@@ -105,7 +105,7 @@ Texto da página
 
 Neste link você poderá encontrar toda a [documentação do Yaml](http://www.yaml.org/start.html). Nesta página para a qual o link aponta, você poderá ver o quão útil ela poderá tornar-se para seu website.
 
-Neste link você encontrará o [tutorial do Jekyll](http://jekyllrb.com/docs/frontmatter/) sobre o uso do _Yaml Frontmatter_.
+Neste link você encontrará o [tutorial do Jekyll](http://jekyllrb.com/docs/frontmatter/) sobre o uso do _Yaml Front Matter_.
 
 <br>
 <a name="liquid"></a>
@@ -281,14 +281,14 @@ Se você tem pressa para montar seu formulário de contato, fale com a gente por
 
 <br>
 
-\- [Jekyll - Documentation][jekyll]
-\- [Jekyll Help][jekyll-help]
-\- [Liquid Design][Liquid Design]
-\- [GitHub - Markdown][Markdown]
-\- [Yaml - Documentation][Yaml]
-\- [Jekyll - SASS - Article][sass-jekyll]
-\- [GitHub Pages][github-pages]
-\- [Jekyll Video Tutorial][jekyll-youtube1]
+- &#9734; [Jekyll - Documentation][jekyll]
+- &#9734; [Jekyll Help][jekyll-help]
+- &#9734; [Liquid Design][Liquid Design]
+- &#9734; [GitHub - Markdown][Markdown]
+- &#9734; [Yaml - Documentation][Yaml]
+- &#9734; [Jekyll - SASS - Article][sass-jekyll]
+- &#9734; [GitHub Pages][github-pages]
+- &#9734; [Jekyll Video Tutorial][jekyll-youtube1]
 
 
 [jekyll]: http://jekyllrb.com

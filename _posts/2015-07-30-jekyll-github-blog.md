@@ -18,7 +18,7 @@ author_twitter: xmdramos
 authorEmail: virtua.creative@gmail.com
 comments: true
 date: 2015-07-30 22:05:45 UTC
-date_update: 2016-02-12 14:49:45 UTC
+date_update: 2016-02-22 17:51:11 UTC
 # language: [pt_BR]
 ---
 
@@ -46,7 +46,7 @@ Devido à falta de informações e tutoriais nesta área específica, resolvi de
 
 <br>
 
-Programas e gems necessários para a instalação: 
+Programas e gems necessários para a instalação (veja abaixo as notas referentes às marcações **(1)**, **(2)**, **(3)**, **(4)**, e **(*)**): 
 
 - [Ruby (1)][ruby]* - _instalador_
 - [Ruby DevKit][ruby]* - _instalador_
@@ -62,7 +62,7 @@ Programas e gems necessários para a instalação:
 Recomendados: 
 - [Rails][rails] - _[instalador](http://installrails.com/)_
 
-<small>Updates - Jekyll 2 para Jekyll 3 - não mais recomendados para Jekyll 3.x:</small> 
+<small>Updates: Upgrade de Jekyll 2 para Jekyll 3 - não mais recomendados para Jekyll 3.x:</small> 
 <div style="text-decoration: line-through; color: #999; font-style: italic;"><small>- Python / Pip / Redcarpet / Easy-Install / Pygments ou (4)</small> </div>
 <p> </p>
 
@@ -89,7 +89,7 @@ O Sass é uma ferramenta fantástica de web design. Não é obrigatória para ro
 
 #### (4) Markdown / Highlighter
 
-<small>Updates - Jekyll 2 para Jekyll 3 </small>
+<small>Updates: Upgrade de Jekyll 2 para Jekyll 3 </small>
 
 A versão 2 do Jekyll possuía como padrão:
 
@@ -357,7 +357,7 @@ Ficaremos muito felizes se puder deixar seu comentário com sugestões e dicas q
 
 
 
-#### **<mkp-blue>Atualização ("update") do Jekyll 2.x para 3.x</mkp-blue>**
+#### **<mkp-blue>Atualização (<em>upgrade</em>) do Jekyll 2.x para 3.x</mkp-blue>**
 
 Tivemos que alterar algumas coisas neste artigo para que sigamos compatíveis com a nova versão do Jekyll, que está inclusive sendo [utilizada pelo GitHub Pages](https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0) desde 1º de fevereiro de 2016.
 
@@ -390,17 +390,17 @@ De qualquer forma, dependendo da complexidade que você queira atingir, não é 
 <ul>
 {% for art in site.data.artigos.jekyll %}
   <li>
-    <a href="{{ art.url }}">- {{ art.title }}</a>
+    <a href="{{ art.url }}">&#8674; {{ art.title }}</a>
   </li>
 {% endfor %}
 {% for art in site.data.artigos.github %}
   <li>
-    <a href="{{ art.url }}">- {{ art.title }}</a>
+    <a href="{{ art.url }}">&#8674; {{ art.title }}</a>
   </li>
 {% endfor %}					 
 {% for art in site.data.artigos.markdown %}
   <li>
-    <a href="{{ art.url }}">- {{ art.title }}</a>
+    <a href="{{ art.url }}">&#8674; {{ art.title }}</a>
   </li>
 {% endfor %}
 </ul>

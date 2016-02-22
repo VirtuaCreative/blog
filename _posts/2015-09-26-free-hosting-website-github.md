@@ -15,7 +15,7 @@ comments: true
 fb_type: article
 meta_keywords: github, free hosting, tutorials github, github pages, github user website, github organization website, websites, create free website, free website
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
-date_update: 2015-09-27 09:16:13 UTC
+date_update: 2016-02-22 17:10:02 UTC
 date: 2015-09-26 02:22:34 UTC
 author_fb: marciaramosmdr
 fb_section: Tutorials - GitHub
@@ -77,9 +77,9 @@ Project websites have the same rules in order to exist on GitHub as User or Orga
 Our account @virtuacreative has one user website at [http://virtuacreative.github.io](http://virtuacreative.github.io), which lives in a specific repository, called `virtuacreative.github.io`. 
 
 2. **Project websites**:
-We also have two other project websites, and they live in their own repositories. 
-  2.1. One of them is this Blog ([http://virtuacreative.github.io/blog/](http://virtuacreative.github.io/blog/)), which lives in its repository called `blog`. 
-  2.2. The other is Git ([http://virtuacreative.github.io/git/](http://virtuacreative.github.io/git/)), a website we have build for demonstration purposes, and it lives in its own repository, called `git`.
+We also have two other project websites, and they live in their own repositories:
+   - 2.1. One of them is this Blog ([http://virtuacreative.github.io/blog/](http://virtuacreative.github.io/blog/)), which lives in its repository called `blog`. 
+   - 2.2. The other is Git ([http://virtuacreative.github.io/git/](http://virtuacreative.github.io/git/)), a website we have build for demonstration purposes, and it lives in its own repository, called `git`.
 
 Note that all of them are part of the same sub-domain `virtuacreative.github.io`, but as they live in different repositories, their structure doesn't need to be the same, and in fact they aren't! 
 
@@ -117,15 +117,15 @@ It is quite simple. Please click on the following frame if you wish to **watch o
 1. Go to [https://github.com](https://github.com) and create your account or sign in if you already have one.
 
 2. Create a new repository.
-  2.1. Name your repository by typing on the text box, exactly: `username.github.io` (where `username` is your username).
+   - **2.1.** Name your repository by typing on the text box, exactly: `username.github.io` (where `username` is your username).
   PS.: As you see your username beside the text box, you tend to type `.github.io` only. DO NOT DO THAT! You need to repeat your username, and your repository will have this odd name `username.github.io`.
-  2.2. If you are willing to use Jekyll for writing your website, you can add a default `gitignore` just when you are creating your repository. You don't need to add it at this point, you can add it afterwards; it's up to you.
-  2.3. You can add a README file at this point too - so you can describe what is the purpose to this repository in order to inform other GitHub users. But again, it's up to you.
+   - **2.2.** If you are willing to use Jekyll for writing your website, you can add a default `gitignore` just when you are creating your repository. You don't need to add it at this point, you can add it afterwards; it's up to you.
+   - **2.3.** You can add a README file at this point too - so you can describe what is the purpose to this repository in order to inform other GitHub users. But again, it's up to you.
 
 3. After creating your repository, go to `settings` and there you will be able to see if everything worked as it was supposed to. If it's all right, you will see this warning: <strong>"Your site is published at http:// username.github.io"</strong>.
-  3.1. At this point, you can click on <strong>"Launch automatic page generator"</strong> button, so GitHub will create an index file to your website. If you follow their steps, you can easily customize your content, based on one of their templates. So, if you aren't interested in designing your website, you can pick one of their templates and develop your content as you wish.
+   - **3.1.** At this point, you can click on <strong>"Launch automatic page generator"</strong> button, so GitHub will create an index file to your website. If you follow their steps, you can easily customize your content, based on one of their templates. So, if you aren't interested in designing your website, you can pick one of their templates and develop your content as you wish.
 
-4. Let's say you are not interested in following the previous 3.1 step and you want to develop and design your website according to your needs. Click on `username.github.io` to go back to your repository. 
+4. Let's say you are not interested in following the previous step (**3.1**) and you want to develop and design your website according to your needs. Click on `username.github.io` to go back to your repository. 
 
 5. Click on the PLUS `+` sign to create your `index.html` file and type it in the text box.
 

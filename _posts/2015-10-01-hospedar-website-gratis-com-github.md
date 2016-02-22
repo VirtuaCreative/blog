@@ -10,7 +10,7 @@ description: Aprenda a publicar seu website gratuitamente com o GitHub
 published: True
 imageUrl: https://goo.gl/DDWMXz
 image: http://goo.gl/YqKqpe
-image_schema: 'http://c1.staticflickr.com//1//738//21709156692_7a6a2b42eb_b.jpg'
+image_schema: "http://c1.staticflickr.com//1//738//21709156692_7a6a2b42eb_b.jpg"
 author: Marcia Ramos
 author_twitter: xmdramos
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
@@ -18,7 +18,7 @@ author_fb: marciaramosmdr
 fb_section: Tutoriais - GitHub
 comments: true
 date: 2015-10-01 00:19:58 UTC
-date_update: 2016-02-12 17:15:58 UTC
+date_update: 2016-02-22 16:44:16 UTC
 # language: [en_US, en_GB]
 copy: true
 codingbox: true
@@ -159,10 +159,10 @@ O vídeo a seguir mostra como fazer o processo inteiro. Caso prefira, logo abaix
 4. Defina as demais opções para seu repositório (criar automaticamente um README.md, adicionar um gitigonore e licensas para seu conteúdo). Nada disso precisa ser feito, fica a seu critério como utilizar as opções adicionais.
 5. Depois de criado, o GitHub automaticamente redirecionará para a página do repositório. Nesta página, clique em `Settings` (barra lateral direita), que é a parte que define as configurações do repositório.
 6. Se deu tudo certo até aqui, você verá o seguinte alerta: <strong>"Your site is published at http:// username.github.io"</strong>, mostrando o endereço de acesso do seu website de usuário/orgazinação.
-  **6.1.** Neste momento, você poderá executar o comando <strong>"Launch automatic page generator"</strong>, que gerará uma Home Page para você. Ao clicar nesta opção, o GitHub o redirecionará para uma nova página, onde você poderá escolher um tema do GitHub e editar o conteúdo da sua Home Page. Ao clicar em "Publicar", seu website estará no ar. Mas digamos que você queira continuar o processo sem utilizar um dos _templates_ do GitHub, e vamos aos próximos itens.
+    - **6.1.** Neste momento, você poderá executar o comando <strong>"Launch automatic page generator"</strong>, que gerará uma Home Page para você. Ao clicar nesta opção, o GitHub o redirecionará para uma nova página, onde você poderá escolher um tema do GitHub e editar o conteúdo da sua Home Page. Ao clicar em "Publicar", seu website estará no ar. Mas digamos que você queira continuar o processo sem utilizar um dos _templates_ do GitHub, e vamos aos próximos itens.
 7. Ignorando o sub-item 6.1., vamos voltar ao seu repositório e criar sua Home Page. Clique sobre o nome do repositório.
 8. Clique no sinal de `+` para adicionar um arquivo. Escreva na caixa de texto `index.html`. Escreva o conteúdo na área de texto ou copie e cole de um arquivo que você já tenha pronto.
-  **8.1.** Se você ainda não tem nada para colocar no arquivo, mas deseja testar o processo, copie e cole o [código abaixo](#bloco-html) na área de texto fornecida pelo GitHub. Depois você poderá voltar e editar o conteúdo como quiser.
+    - **8.1.** Se você ainda não tem nada para colocar no arquivo, mas deseja testar o processo, copie e cole o [código abaixo](#bloco-html) na área de texto fornecida pelo GitHub. Depois você poderá voltar e editar o conteúdo como quiser.
 9. Clique em `Commit New File` para salvá-lo. Pronto! Seu website já estará no ar!
 
 <br>
@@ -296,10 +296,10 @@ Obrigada e até o próximo artigo!
 
 ### **Artigos relacionados**
 
-[O que é GitHub - e porque utilizá-lo](http://blog.virtuacreative.com.br/introducao-ao-github.html)
-[O que é Jekyll - e para que ele serve](http://blog.virtuacreative.com.br/jekyll-for-beginners-introduction.html)
-[Criando blogs com Jekyll no Windows](http://blog.virtuacreative.com.br/jekyll-github-blog.html)
-[Jekyll e GitHub Markdown](http://blog.virtuacreative.com.br/jekyll-github-markdown.html)
+- &#128204; [O que é GitHub - e porque utilizá-lo](http://blog.virtuacreative.com.br/introducao-ao-github.html)
+- &#128204; [O que é Jekyll - e para que ele serve](http://blog.virtuacreative.com.br/jekyll-for-beginners-introduction.html)
+- &#128204; [Criando blogs com Jekyll no Windows](http://blog.virtuacreative.com.br/jekyll-github-blog.html)
+- &#128204; [Jekyll e GitHub Markdown](http://blog.virtuacreative.com.br/jekyll-github-markdown.html)
 
 <br>
 
@@ -307,10 +307,10 @@ Obrigada e até o próximo artigo!
 
 ### **Referências**
 
-[GitHub][]
-[GitHub Desktop][]
-[GitHub Pages][]
-[User, Organization and Project Pages](https://help.github.com/articles/user-organization-and-project-pages/)
+- &#9734; [GitHub][]
+- &#9734; [GitHub Desktop][]
+- &#9734; [GitHub Pages][]
+- &#9734; [User, Organization and Project Pages](https://help.github.com/articles/user-organization-and-project-pages/)
 
 
 

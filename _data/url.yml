@@ -1,6 +1,7 @@
 virtua:
   home: http://www.virtuacreative.com.br/
   home_contact: http://virtuacreative.com.br/en/contacts/
+  home_contact_pt: http://virtuacreative.com.br/contato/
   git-home: http://virtuacreative.github.io/ # DO NOT USE THIS
   git_home: http://virtuacreative.github.io/ # USE THIS
   git-contact: http://git.virtuacreative.com.br/contact.html # DO NOT USE THIS

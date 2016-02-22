@@ -18,7 +18,7 @@ author_fb: marciaramosmdr
 fb_section: Tutorials - GitHub
 comments: true
 date: 2015-09-14 23:41:41 UTC
-date_update: 2016-01-09 00:23:31 UTC
+date_update: 2016-02-22 17:17:31 UTC
 # language: [en_US, en_GB]
 ---
 
@@ -124,8 +124,9 @@ O GitHub dá a possibilidade de você transformar sua conta pessoal numa conta d
 
 Criar um repositório também é bastante simples: após acessar sua conta, clique em **"New Repository"**, escolha um nome, adicione uma descrição (caso queira), escolha se deverá ser público ou privado, e caso deseje, escolha campos alternativos: 
 
-- a. adicione um `gitignore` (um documento que dará o comando para ignorar arquivos - mais comumente utilizado ao criar um repositório para hospedar um website);
-- b. adicione uma licença para garantir seus direitos autorais.
+- &#9656; a) adicione um `gitignore`: é um documento que dará o comando para ignorar pastas ou arquivos - aqueles que estão em sua pasta local mas que você não quer que sejam adicionados ao seu repositório remoto;
+
+- &#9656; b) adicione uma licença para garantir seus direitos autorais.
 
 <br>
 
@@ -140,20 +141,20 @@ Existem algumas formas de inserir arquivos ao seu repositório:
 2. **da linha de comando**, através do seu prompt (veja uma série de linhas de comando básicas neste [link][prompt]);
 
 3. **do site do GitHub**: acesse sua conta, clique no seu repositório. Na barra superior você verá o nome do seu repositório seguido de uma barra `/` e um sinal `+`, conforme a imagem abaixo (Obs: nesta imagem, o nome do repositório utilizado para este exemplo é `git`). Clique no sinal `+`.
-	![1][]
+	- ![1][]
 
-	3.1. Em seguida, você verá na mesma área uma caixa de texto precedida pelo nome do seu repositório e a barra `/`. Nesta caixa, escreva o **nome do arquivo e sua extensão** (por exemplo, `index.html` ou `informacoes.md` ou `style.css` ou qualquer outra possibilidade que tenha em mente). 
-	![2][]
-
-	3.2. Caso queira **criar uma nova pasta**, escreva na mesma caixa de texto referida acima o nome da sua pasta seguido de `/` que o GitHub automaticamente criará a pasta para você. Neste exemplo, escrevemos `NOVA-PASTA/`. Em seguida, escreva o nome do arquivo na nova caixa de texto que surgirá. 
-	![3][]
+	- 3.1. Em seguida, você verá na mesma área uma caixa de texto precedida pelo nome do seu repositório e a barra `/`. Nesta caixa, escreva o **nome do arquivo e sua extensão** (por exemplo, `index.html` ou `informacoes.md` ou `style.css` ou qualquer outra possibilidade que tenha em mente). 
+	- ![2][]
+	- 3.2. Caso queira **criar uma nova pasta**, escreva na mesma caixa de texto referida acima o nome da sua pasta seguido de `/` que o GitHub automaticamente criará a pasta para você. Neste exemplo, escrevemos `NOVA-PASTA/`. Em seguida, escreva o nome do arquivo na nova caixa de texto que surgirá. 
+	- ![3][]
 
 	Note que, para que uma pasta exista, é necessário que haja pelo menos um arquivo dentro dela. **Não é possível criar uma pasta vazia**.
 
 	3.3. Escreva seu novo arquivo  - ou copie e cole seu texto -  e o salve conforme explicado no item abaixo.
 
 	3.4. Para **salvar seu aquivo**, você precisará fazer um `commit`, preenchendo os seguintes campos: 
-	![4][]
+	
+	- ![4][]
 
 	Escreva na primeira caixa o que você está inserindo, por exemplo: "adicionando info.md". Na segunda caixa de texto, poderá escrever uma descrição longa relativa à ação. Por exemplo: "adicionando novo arquivo de informações para usuários da Língua Portuguesa". Clique em `Commit New File` e pronto! Seu arquivo terá sido criado.
 

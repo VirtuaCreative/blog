@@ -30,11 +30,11 @@ defaults:
 description: Virtua Creative Blog
 fb_description: "Tutoriais e dicas para desenvolvimento de websites, web design e artes gráficas."
 meta_keywords: blog, tutoriais, tutorials, jekyll, github, sass, html5, php, websites, web development, web design, artes gráficas, dreamweaver, criação de websites
-share_image: http://blog.virtuacreative.com.br/assets/media/fb_feed1200x630_virtua.png # FB e Twitter feed
+share_image: http://blog.virtuacreative.com.br/assets/media/fb_feed1200x630_virtua.png # fb feed
 logo_image: http://goo.gl/mXXyFH # logo sidebar
 organization:
   name: Virtua Creative Technology
-  url: http://www.virtuacreative.com.br
+  url: http://virtuacreative.com.br
   logo: http://virtuacreative.com.br/images/LOGO-virtuacreative-60x72-gray.png # http://goo.gl/XzUou0
   logo_width: 72px
   logo_height: 60px
@@ -43,7 +43,7 @@ fb_app:
   app_id: 1634907943429790
   app_admin: 100000561118294
 author:
-  name: VirtuaCreative
+  name: Virtua Creative
   email: info@virtuacreative.com.br
   github: VirtuaCreative
   twitter: virtuacreative

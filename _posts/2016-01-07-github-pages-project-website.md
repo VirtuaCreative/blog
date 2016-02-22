@@ -155,12 +155,12 @@ If you need an overview for configuring your custom domain with GitHub Pages, st
 
 {% for art in site.data.articles.github %}
   <li>
-    <a href="{{ art.url }}">- {{ art.title }}</a>
+    <a href="{{ art.url }}">&#8674; {{ art.title }}</a>
   </li>
 {% endfor %}
 {% for art in site.data.articles.markdown %}
   <li>
-    <a href="{{ art.url }}">- {{ art.title }}</a>
+    <a href="{{ art.url }}">&#8674; {{ art.title }}</a>
   </li>
 {% endfor %}
 
@@ -183,11 +183,11 @@ If you need an overview for configuring your custom domain with GitHub Pages, st
 
 <br>
 
-\- [GitHub][]
-\- [GitHub Pages][]
-\- [GitHub Desktop][]
-\- [GitHub - Custom Domain Name][]
-\- [Jekyll][]
+- &#9734; [GitHub][]
+- &#9734; [GitHub Pages][]
+- &#9734; [GitHub Desktop][]
+- &#9734; [GitHub - Custom Domain Name][]
+- &#9734; [Jekyll][]
 
 
 [GitHub]: {{ site.data.url.git.home }}

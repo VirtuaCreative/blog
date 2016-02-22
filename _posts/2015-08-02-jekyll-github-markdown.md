@@ -7,7 +7,7 @@ fb_title: Jekyll e GitHub Markdown
 categories: [jekyll, Github, Tutoriais, Blog]
 tags: [git, jekyll, markdown, kramdown, emoji]
 meta_keywords: git, jekyll, markdown, kramdown, emoji
-description: Lista prática de markdowns do Jekyll para o GitHub.
+description: Lista prática de markups em markdown do Jekyll para o GitHub Pages.
 image: https://goo.gl/CbwGMU
 image_schema: 'https://c2.staticflickr.com/4/3826/20355844915_657dc373d8_b.jpg'
 imageUrl: https://www.flickr.com/photos/virtuacreative/20355844915
@@ -18,7 +18,7 @@ author_twitter: xmdramos
 authorEmail: virtua.creative@gmail.com
 comments: true
 date: 2015-08-02 17:47:29 UTC
-date_update: 2016-02-12 15:26:59 UTC
+date_update: 2016-02-22 17:33:19 UTC
 # language: [pt_BR]
 ---
 
@@ -75,14 +75,14 @@ Ordenadas:
 
 1. Item 1
 2. Item 2
-    2.1. Sub-item 2.1
-    2.2. Sub-item 2.2
+    - 2.1. Sub-item 2.1
+    - 2.2. Sub-item 2.2
 
 {% highlight markdown %}
 1. Item 1
 2. Item 2
-    2.1. Sub-item 2.1
-    2.2. Sub-item 2.2
+    - 2.1. Sub-item 2.1
+    - 2.2. Sub-item 2.2
 {% endhighlight %}
 
 Não-ordenadas:
@@ -208,7 +208,7 @@ Este código...
 | Célula 1 - _Esquerda_ | Célula 2 - _Centro_ | Célula 3 - _Direita_ | 	
 | Célula Quatro | Célula Cinco | Célula Seis |
 
-Conforme acima, a "coluna um" aparecerá com o texto alinhado à esquerda; a "coluna dois", centralizada; e a "coluna três", à direita. Note que o as barras verticais não precisam estar simetricamente dispostas. O estilo aplicado à tabela é o mesmo definido no [CSS](#table-css) anteriormente
+Conforme acima, a "coluna um" aparecerá com o texto alinhado à esquerda; a "coluna dois", centralizada; e a "coluna três", à direita. Note que o as barras verticais não precisam estar simetricamente dispostas. O estilo aplicado à tabela é o mesmo definido no [CSS](#table-css) anteriormente.
 
 <br>
 
@@ -433,13 +433,13 @@ Obrigada!
 
 <br>
 
-- [Referência completa](http://daringfireball.net/projects/markdown/basics) sobre markdown
-- [Referência completa para Kramdown](kramdown.gettalong.org/syntax.html)
-- [Referência básica](https://help.github.com/articles/markdown-basics/) para markdown
-- [Referência do GFM](https://help.github.com/articles/github-flavored-markdown/)
-- [Emoji - Lista de Emoticons](http://www.emoji-cheat-sheet.com/)
-- [Instalação local do Markup do GitHub](https://github.com/github/markup)
-- [Instalação/Update local do GitHub Pages](https://github.com/github/pages-gem)
-- [Instalação local do Emoji - Emoticons](https://github.com/jekyll/jemoji)
-- [Instalação local do Jekyll Mentions](https://github.com/jekyll/jekyll-mentions)
-- [Kramdown + GFM - Jekyll Docs](http://jekyllrb.com/docs/configuration/#kramdown)
+- &#9734; [Referência completa](http://daringfireball.net/projects/markdown/basics) sobre markdown
+- &#9734; [Referência completa para Kramdown](kramdown.gettalong.org/syntax.html)
+- &#9734; [Referência básica](https://help.github.com/articles/markdown-basics/) para markdown
+- &#9734; [Referência do GFM](https://help.github.com/articles/github-flavored-markdown/)
+- &#9734; [Emoji - Lista de Emoticons](http://www.emoji-cheat-sheet.com/)
+- &#9734; [Instalação local do Markup do GitHub](https://github.com/github/markup)
+- &#9734; [Instalação/Update local do GitHub Pages](https://github.com/github/pages-gem)
+- &#9734; [Instalação local do Emoji - Emoticons](https://github.com/jekyll/jemoji)
+- &#9734; [Instalação local do Jekyll Mentions](https://github.com/jekyll/jekyll-mentions)
+- &#9734; [Kramdown + GFM - Jekyll Docs](http://jekyllrb.com/docs/configuration/#kramdown)

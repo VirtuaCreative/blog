@@ -19,7 +19,7 @@ comments: true
 published: true
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
 language: [en_US, en_GB]
-date_update: 2016-02-12 19:00:48 UTC
+date_update: 2016-02-22 16:05:49 UTC
 copy: true # copy button with javascript  
 codingbox: true # code type on the top-right of code block boxes 
 ---
@@ -268,12 +268,12 @@ Thanks for reading! Stay tuned for the next article: follow us on [Twitter]({{ s
 <ul>
 {% for art in site.data.articles.github %}
   <li>
-    <a href="{{ art.url }}">- {{ art.title }}</a>
+    <a href="{{ art.url }}">&#8674; {{ art.title }}</a>
   </li>
 {% endfor %}
 {% for art in site.data.articles.markdown %}
   <li>
-    <a href="{{ art.url }}">- {{ art.title }}</a>
+    <a href="{{ art.url }}">&#8674; {{ art.title }}</a>
   </li>
 {% endfor %}
 
@@ -312,7 +312,7 @@ Related articles (by Jekyll itself) -->
 
 ### **Image Credits**
 
-- &#9733; Art work: Virtua Creative
+- &#9733; Art work: [Virtua Creative](https://goo.gl/Kb7R0N)
 - &#9733; Illustrations: we have downloaded from Freepik the original [box](http://www.freepik.com/free-vector/vectors_785241.htm) and the original [bulb](http://www.freepik.com/free-vector/vectors_810569.htm).
 
 <br>

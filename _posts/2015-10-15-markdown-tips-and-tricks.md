@@ -19,7 +19,7 @@ comments: true
 published: True
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
 language: [en_US, en_GB]
-date_update: 2016-02-12 18:54:36 UTC
+date_update: 2016-02-22 16:05:37 UTC
 # copy:
 codingbox: true
 related: jekyll
@@ -77,7 +77,12 @@ The tips provided by this post worked very well using [Kramdown][] with [GFM][] 
 
 Our build has been made by running `bundle exec jekyll serve --safe` on the command prompt, at the local root folder, as [recommended by GitHub][]. Using the `--safe` mode allows you to build your site locally in the closest way that GitHub will do it, [avoiding building errors][] when uploading your files to GitHub.
 
-Our `default.html` file (where the markdown posts are called to) is placed at our `_includes` folder and is a `HTML 5` document. Our styles are written in `CSS 3`.
+**Update!**
+{: .color_blue}
+
+It seems to have a [**bug** on GitHub Pages](https://talk.jekyllrb.com/t/jekyll-3-x-with-github-pages/1832/12) regarding the `--safe` flag! So, for now, we recommend you to serve Jekyll with Bundler without this flag, at least until they fix it. Run `bundle exec jekyll serve` and watch for changes running `bundle exec jekyll serve --watch`.
+
+Our `default.html` file (where the markdown posts are called to) is placed at our `_includes` folder and is a `HTML5` document. Our styles are written in `CSS3`.
 
 <br>
 
@@ -107,7 +112,7 @@ Note that we left the lines `2` and `4` empty, this is a **condition** for `html
 
 Now you can freely style your `<hr>` in your `CSS`. 
 
-Just to let you know, in this particular case you can use just a sequence of `----------` onto your markdown and it will produce a `<hr>` tag when compiled to html. But sometimes you can't run from using some `html` tags themselves in order to have the results you want.
+Just to let you know, in this particular case you can use just a sequence of `-----` onto your markdown and it will produce a `<hr>` tag when compiled to html. But sometimes you can't run from using some `html` tags themselves in order to have the results you want.
 
 Feel free to use the tag `<br>` the same way for breaking lines. 
 
@@ -353,12 +358,10 @@ Stay tuned! Follow us on [Twitter]({{ site.data.url.virtua.twitter }}), [Google+
 <ul>
 {% for art in site.data.articles.github %}
   <li>
-    <a href="{{ art.url }}">- {{ art.title }}</a>
+    <a href="{{ art.url }}">&#8674; {{ art.title }}</a>
   </li>
 {% endfor %}
 </ul>
-
-<p>{{ site.data.artigos.jekyll.title }}</p>
 
 <br>
 
@@ -366,13 +369,13 @@ Stay tuned! Follow us on [Twitter]({{ site.data.url.virtua.twitter }}), [Google+
 
 ### **References**
 
-\- [GitHub][]
-\- [GitHub Pages][]
-\- [Jekyll][]
-\- [GitHub Flavored Markdown][]
-\- [Jekyll Documentation][]
-\- [Markdown][]
-\- [Kramdown][]
+- &#9734; [GitHub][]
+- &#9734; [GitHub Pages][]
+- &#9734; [Jekyll][]
+- &#9734; [GitHub Flavored Markdown][]
+- &#9734; [Jekyll Documentation][]
+- &#9734; [Markdown][]
+- &#9734; [Kramdown][]
 
 <br>
 
@@ -380,8 +383,8 @@ Stay tuned! Follow us on [Twitter]({{ site.data.url.virtua.twitter }}), [Google+
 
 ### **Image Credits**
 
-\- Art work: Virtua Creative
-\- Illustrations: we have downloaded from Freepik the original [box](http://www.freepik.com/free-vector/vectors_785241.htm) and the original [bulb](http://www.freepik.com/free-vector/vectors_810569.htm).
+- &#9733; Art work: [Virtua Creative](https://goo.gl/j7q6Az)
+- &#9733; Illustrations: we have downloaded from Freepik the original [box](http://www.freepik.com/free-vector/vectors_785241.htm) and the original [bulb](http://www.freepik.com/free-vector/vectors_810569.htm).
 
 [How to publish your website on GitHub]: http://virtuacreative.github.io/blog/free-hosting-website-github.html
 [another article]: http://virtuacreative.github.io/blog/free-hosting-website-github.html
