@@ -1,8 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 {% if page.language %}<html lang="en">{% else %}<html lang="pt_BR">{% endif %}
- {% if page.fb_title %}<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">{% else %}<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# {{ site.fb_app.namespace }}: http://ogp.me/ns/fb/{{ site.fb_app.namespace }}#">{% endif %}
+{% if page.fb_title %}<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">{% else %}<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# {{ site.fb_app.namespace }}: http://ogp.me/ns/fb/{{ site.fb_app.namespace }}#">{% endif %}
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+	{% if page.redirect %}<!-- redirect -->
+	<meta http-equiv="refresh" content="{{ page.redir_time }};URL={{ page.redirect_url }}">
+	<meta name="robots" CONTENT="noindex, nofollow">
+	<!-- redirect -->{% endif %}
 	<meta name="google-site-verification" content="EwdXtwSaGRqlL1wY8IKNQe2HJCgxEAeR-FkEXalVjLs" />
 	<title>{{ page.title }}</title>
 	{% if page.description %}<meta name="description" content="{{ page.description }}">{% else %}<meta name="description" content="{{ site.fb_description }}">{% endif %}
@@ -50,6 +54,7 @@
 	<link href="{{ site.baseurl }}/assets/resources/syntax/syntax.css" rel="stylesheet">
 	<link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet">
 	<link href="{{ site.baseurl }}/assets/css/animate.css" rel="stylesheet">
+	{% if page.css %}{% for css in page.css %}<link href="{{ site.baseurl }}/assets/css/{{ css }}.css" rel="stylesheet">{% endfor %}{% endif %}
 	<!-- Le fav and touch icons -->
 	<!-- Update these with your own images
 	<link rel="shortcut icon" href="images/favicon.ico">
@@ -61,6 +66,7 @@
 	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.baseurl }}/feed.xml">
 	<link rel="shortcut icon" href="http://git.virtuacreative.com.br/img/favicon.ico" type="image/x-icon">
 	<link rel="author, nofollow" href="https://plus.google.com/+{{ site.author.googleplus }}">
+	<link rel="me" href="https://twitter.com/virtuacreative">
 	{% if page.codingbox %}
 	<link href="{{ site.baseurl }}/assets/css/code-custom-css.css" rel="stylesheet">
 	{% endif %}
@@ -86,25 +92,13 @@
 	  ga('create', 'UA-65885766-1', 'auto');
 	  ga('send', 'pageview');
     </script>
- </head>
- <body>
-	<script>
-	  window.fbAsyncInit = function() {
-		FB.init({
-		  appId      : '{{ site.fb_app.app_id }}',
-		  xfbml      : true,
-		  version    : 'v2.4'
-		});
-	  };
-
-	  (function(d, s, id){
-		 var js, fjs = d.getElementsByTagName(s)[0];
-		 if (d.getElementById(id)) {return;}
-		 js = d.createElement(s); js.id = id;
-		 js.src = "//connect.facebook.net/en_US/sdk.js";
-		 fjs.parentNode.insertBefore(js, fjs);
-	   }(document, 'script', 'facebook-jssdk'));
-	</script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $('body').css('touch-action', 'auto');
+      });
+    </script>
+</head>
+<body onresize="resize()">
 	<nav class="navbar navbar-default visible-xs" role="navigation">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
@@ -114,38 +108,36 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			{% if site.author.twitter %}
-				<a rel="nofollow" class="navbar-toggle nav-link" type="button"  href="https://twitter.com/intent/follow?screen_name={{ site.author.twitter }}">
-					<i class="fa fa-twitter"></i>
-				</a>
-			{% endif %}
-			{% if site.author.googleplus %}
-				<a rel="nofollow" type="button" class="navbar-toggle nav-link" target="_blank" href="https://plus.google.com/+{{ site.author.googleplus }}">
-					<i class="fa fa-google-plus"></i>
-				</a>
-			{% endif %}
-			{% if site.author.email %}
-				<a rel="nofollow" type="button" class="navbar-toggle nav-link" target="_blank" href="mailto:{{ site.author.email }}">
-					<i class="fa fa-envelope"></i>
-				</a>
-			{% endif %}
+		{% if site.author.twitter %}
+			<a rel="nofollow" class="navbar-toggle nav-link" type="button"  href="https://twitter.com/intent/follow?screen_name={{ site.author.twitter }}"><i class="fa fa-twitter"></i>
+			</a>
+		{% endif %}
+		{% if site.author.googleplus %}
+			<a rel="nofollow" type="button" class="navbar-toggle nav-link" target="_blank" href="https://plus.google.com/+{{ site.author.googleplus }}"><i class="fa fa-google-plus"></i>
+			</a>
+		{% endif %}
+		{% if site.author.gitlab %}
+			<a rel="nofollow" type="button" class="navbar-toggle nav-link icon-gitlab" title="GitLab" target="_blank" href="https://gitlab.com/u/{{ site.author.gitlab }}">{% include icon-gitlab.svg %}
+			</a>
+		{% endif %}
 			<a rel="nofollow" class="navbar-brand" href="{{ site.baseurl }}/">
-				<img src="http://goo.gl/JjzjsU" width="25%" />
-				{{ site.title }}
+				<img src="http://goo.gl/JjzjsU" width="100%" />{{ site.title }}
 			</a>
 		</div>
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li><a href="{{ site.baseurl }}/">Artigos</a></li>
-				<li><a href="{{ site.baseurl }}/{{ site.categories_path }}">Categorias</a></li>
+				<li><a href="{{ site.baseurl }}/">{% if page.language %}Posts{% else %}Artigos{% endif %}</a></li>
+				<li><a href="{{ site.baseurl }}/{{ site.categories_path }}">{% if page.language %}Categories{% else %}Categorias{% endif %}</a></li>
 				<li><a href="{{ site.baseurl }}/{{ site.tags_path }}">Tags</a></li>
-				<li><a href="{{ site.baseurl }}/{{ site.copyright_path }}">Termos</a></li>			
+				<li><a href="{{ site.baseurl }}/{{ site.copyright_path }}">{% if page.language %}Terms{% else %}Termos{% endif %}</a></li>			
 				<li class="divider-1"></li>
 				<li><a href="http://git.virtuacreative.com.br/">Home</a></li>
-				<li><a href="http://git.virtuacreative.com.br/about.html">Sobre</a></li>
-				<li><a href="http://git.virtuacreative.com.br/contact.html">Contato</a></li>
-				<li><a href="http://virtuacreative.com.br/">Oficial</a></li>
+				<li><a href="http://git.virtuacreative.com.br/about.html">{% if page.language %}About{% else %}Sobre{% endif %}</a></li>
+				<li><a href="http://git.virtuacreative.com.br/contact.html">{% if page.language %}Contacts{% else %}Contato{% endif %}</a></li>
+				<li><a href="http://virtuacreative.com.br/">{% if page.language %}Official{% else %}Oficial{% endif %}</a></li>
+				<li class="divider-1"></li>
+				<li><a class="scroll-top" href="#"><i class="fa fa-arrow-up"></i>&nbsp;&nbsp;{% if page.language %}Back to Top{% else %}Topo da Página{% endif %}</a></li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</nav>
@@ -155,27 +147,26 @@
 			<i class="fa fa-bars"></i>
 		</button>
 		<ul class="dropdown-menu" role="menu">
-			<li><a href="{{ site.baseurl }}/"><i class="fa fa-list"></i>&nbsp;&nbsp;Artigos</a></li>
-			<li><a href="{{ site.baseurl }}/{{ site.categories_path }}"><i class="fa fa-folder"></i>&nbsp;&nbsp;Categorias</a></li>
+			<li><a href="{{ site.baseurl }}/"><i class="fa fa-list"></i>&nbsp;&nbsp;{% if page.language %}Posts{% else %}Artigos{% endif %}</a></li>
+			<li><a href="{{ site.baseurl }}/{{ site.categories_path }}"><i class="fa fa-folder"></i>&nbsp;&nbsp;{% if page.language %}Categories{% else %}Categorias{% endif %}</a></li>
 			<li><a href="{{ site.baseurl }}/{{ site.tags_path }}"><i class="fa fa-tags"></i>&nbsp;&nbsp;Tags</a></li>
-			<li><a href="{{ site.baseurl }}/{{ site.copyright_path }}"><i class="fa fa-info"></i>&nbsp;&nbsp;Termos</a></li>	
+			<li><a href="{{ site.baseurl }}/{{ site.copyright_path }}"><i class="fa fa-info"></i>&nbsp;&nbsp;{% if page.language %}Terms{% else %}Termos{% endif %}</a></li>	
 			<li class="divider"></li>
 			<li><a href="http://git.virtuacreative.com.br/"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a></li>
-			<li><a href="http://git.virtuacreative.com.br/about.html"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Sobre</a></li>
-			<li><a href="http://git.virtuacreative.com.br/contact.html"><i class="fa fa-envelope-o"></i>&nbsp;&nbsp;Contato</a></li>
-			<li><a href="http://virtuacreative.com.br/"><i class="fa fa-star"></i>&nbsp;&nbsp;Oficial</a></li>
+			<li><a href="http://git.virtuacreative.com.br/about.html"><i class="fa fa-heart"></i>&nbsp;&nbsp;{% if page.language %}About{% else %}Sobre{% endif %}</a></li>
+			<li><a href="http://git.virtuacreative.com.br/contact.html"><i class="fa fa-envelope-o"></i>&nbsp;&nbsp;{% if page.language %}Posts{% else %}Contacts{% endif %}</a></li>
+			<li><a href="http://virtuacreative.com.br/"><i class="fa fa-star"></i>&nbsp;&nbsp;{% if page.language %}Official{% else %}Oficial{% endif %}</a></li>
 			<li class="divider"></li>
-			<li><a href="#"><i class="fa fa-arrow-up"></i>&nbsp;&nbsp;Topo da Página</a></li>
+			<li><a class="scroll-top" href="#"><i class="fa fa-arrow-up"></i>&nbsp;&nbsp;{% if page.language %}Back to Top{% else %}Topo da Página{% endif %}</a></li>
 		</ul>
 	</div>
-
 	<div class="col-sm-3 sidebar hidden-xs">
 		{% include sidebar.html %}
 	</div>
-
 	<div class="header-color col-sm-9 col-sm-offset-3 animated fadeIn">
-		{{ content }}
-
+		<main>
+			{{ content }}
+		</main>
 		<footer class="content-box-virtua">
 			<hr/>
 			<p style="text-align: center">
@@ -189,6 +180,88 @@
 	{% endif %}
 	<script type="text/javascript" src="{{ site.baseurl }}/assets/resources/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="{{ site.baseurl }}/assets/js/app.js"></script>
+	<!-- fancy scroll (MUST come after jquery and bootstrap.js) -->
+	<script type="text/javascript">
+		// navigation click actions	
+		$('.scroll-link').on('click', function(event){
+			event.preventDefault();
+			var sectionID = $(this).attr("data-id");
+			scrollToID('#' + sectionID, 750);
+		});
+		// scroll to top action
+		$('.scroll-top').on('click', function(event) {
+			event.preventDefault();
+			$('html, body').animate({scrollTop:0}, 'slow'); 		
+		});
+		// scroll function
+		function scrollToID(id, speed){
+			var offSet = 50;
+			var targetOffset = $(id).offset().top - offSet;
+			var mainNav = $('#main-nav');
+			$('html,body').animate({scrollTop:targetOffset}, speed);
+			if (mainNav.hasClass("open")) {
+				mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+				mainNav.removeClass("open");
+			}
+		}
+		if (typeof console === "undefined") {
+		    console = {
+		        log: function() { }
+		    };
+		}
+	</script>
+	<!-- end fancy scroll -->
+	<!-- twitter async -->
+	<a href="https://twitter.com/virtuacreative" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false"></a>
+	<script>window.twttr = (function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0],
+	    t = window.twttr || {};
+	  if (d.getElementById(id)) return t;
+	  js = d.createElement(s);
+	  js.id = id;
+	  js.src = "https://platform.twitter.com/widgets.js";
+	  fjs.parentNode.insertBefore(js, fjs);
+	 
+	  t._e = [];
+	  t.ready = function(f) {
+	    t._e.push(f);
+	  };
+	 
+	  return t;
+	}(document, "script", "twitter-wjs"));</script>
+	<!-- end twitter async -->
+	<!-- facebook async -->
+	<script>
+	  window.fbAsyncInit = function() {
+		FB.init({
+		  appId      : '{{ site.fb_app.app_id }}',
+		  xfbml      : true,
+		  version    : 'v2.4'
+		});
+	  };
+	  (function(d, s, id){
+		 var js, fjs = d.getElementsByTagName(s)[0];
+		 if (d.getElementById(id)) {return;}
+		 js = d.createElement(s); js.id = id;
+		 js.src = "//connect.facebook.net/en_US/sdk.js";
+		 fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+	</script>
+	<!-- auto resize (does it really works? not sure..) -->
+    <script>
+	    var w = 0;
+	    $( window ).load( function(){
+	       w = $( window ).width();
+	    });
+	    $( window ).resize( function(){
+	      if( w != $( window ).width() ){
+	        w = $( window ).width();
+	        delete w;
+	      }
+	    });
+    </script>
+    <!-- end auto resize -->
+    <!-- Schema.org - Organization -->
 	<script type="application/ld+json">
 	{ "@context" : "http://schema.org",
 	  "@type" : "Organization",   
@@ -212,5 +285,6 @@
 	    {% if site.author.googleplus %}"https://plus.google.com/+{{ site.author.googleplus }}"]{% endif %}      
    }
 	</script>
+	<!-- end Schema.org - Organization -->
 </body>
 </html>

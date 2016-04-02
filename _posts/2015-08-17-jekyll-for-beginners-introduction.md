@@ -18,15 +18,15 @@ author_twitter: xmdramos
 authorEmail: virtua.creative@gmail.com
 comments: true
 date: 2015-08-17 22:32:11 UTC
-date_update: 2016-02-22 17:28:49 UTC
+date_update: 2016-03-30 21:14:00 UTC
 # language: [en_US, en_GB]
 ---
 
 # **O que é Jekyll**
 
-**[Jekyll](http://jekyllrb.com/)** é um programa escrito em [Ruby](https://www.ruby-lang.org/pt/) que permite a criação dinâmica de websites e blogs utilizando apenas **html**, **css** e **javascript**. Websites em Jekyll são escritos utilizando três tecnologias de programação: **[Liquid Templating Language](https://github.com/Shopify/liquid/wiki)**, **[Yaml](https://pt.wikipedia.org/wiki/YAML)** e **[Markdown](https://guides.github.com/features/mastering-markdown/)**, que são então automaticamente compiladas para formar páginas em html. 
+**[Jekyll](http://jekyllrb.com/)** é um programa escrito em [Ruby](https://www.ruby-lang.org/pt/) que permite a criação dinâmica de websites e blogs utilizando apenas **html**, **css** e **javascript**. Tecnicamente, chama-se _Static Site Generator_ (SSG), Gerador de websites estáticos, em Português. Entre os [SSGs](https://www.staticgen.com/) disponíveis, Jekyll é de longe o mais utilizado.
 
-<br>
+Websites em Jekyll são escritos utilizando três tecnologias de programação: **[Liquid Templating Language](https://github.com/Shopify/liquid/wiki)**, **[Yaml](https://pt.wikipedia.org/wiki/YAML)** e **[Markdown](https://guides.github.com/features/mastering-markdown/)**, que são então automaticamente compiladas para formar páginas em html. 
 
 ### **Markdown**
 
@@ -44,15 +44,11 @@ O arquivo em markdown pode ter algumas extensões. A mais abreviada e utilizada 
 
 A escrita em _Markdown_ é amplamente utilizada e pode ser encontrada em diversos websites, como por exemplo [GitHub](https://guides.github.com/features/mastering-markdown/), [Stack Overflow](http://pt.stackoverflow.com/editing-help), [Wordpress Posts](https://en.support.wordpress.com/markdown/) e em foruns desenvolvidos com o [Discourse](http://www.discourse.org/), como [Sublime Forum](https://forum.sublimetext.com/) e [Jekyll Talk](https://talk.jekyllrb.com/).
 
-<br>
-
 ### **Yaml**
 
 O Yaml é utilizado para definir as configurações e como seu site será compilado. Para isso, existe na pasta raíz um arquivo de configuração chamado `_config.yml`. Neste arquivo você definirá as configuração para todo o site - e não para arquivos individuais.
 
 Há uma série de configurações padrão que você pode aplicar no seu website e recuperá-las com facilidade utilizando a [Liquid](#liquid), próximo tópico deste artigo. Há outras variáveis que você mesmo poderá definir e recuperar com a mesma facilidade. Basta entender a lógica que você aprenderá a usá-las e poderá ver como são úteis.
-
-<br>
 
 #### **<mkp-blue>_config.yml</mkp-blue>**
 
@@ -85,8 +81,6 @@ Este é apenas um exemplo simples de configuração. Conforme você vai aprenden
 
 Note que __não há espaço__ entre a variável e o começo da linha e que há apenas __um espaço__ entre os `:` e o valor da variável. Estes espaços devem ser estritamente respeitados, sob pena de gerar erros difíceis de encontrar no futuro. Isso acontece porque você poderá usar espaços para definir vários atributos a uma única variável. Mas não vamos aprofundar este detalhe neste artigo introdutório. Fica a menção apenas para que você tome cuidado com os espaços e símbolos e detalhes deste tipo na hora de escrever em partes `Yaml` do seu novo projeto em Jekyll.
 
-<br>
-
 #### **<mkp-blue>Arquivos individuais</mkp-blue>**
 
 Os arquivos individuais são compostos por duas partes: a parte superior, ou __cabeçalho yaml__ (ou _"yaml front matter"_), e o corpo - em html ou markdown.
@@ -107,14 +101,11 @@ Neste link você poderá encontrar toda a [documentação do Yaml](http://www.ya
 
 Neste link você encontrará o [tutorial do Jekyll](http://jekyllrb.com/docs/frontmatter/) sobre o uso do _Yaml Front Matter_.
 
-<br>
 <a name="liquid"></a>
 
 ### **Liquid**
 
 A **Liquid** é uma ferramenta excelente para trabalhar com textos que se repetem ao longo de um website. Podemos considerá-lo o "irmão" dos `php includes` para **html**. A Liquid **dinamiza** o conteúdo do website, assim como muitos desenvolvedores fazem utilizando o `php`.
-
-<br>
 
 #### **<mkp-blue>Variáveis</mkp-blue>**
 
@@ -160,8 +151,6 @@ Note que a chamada para esta variável utiliza a marcação `site.` precedente �
 {% highlight yaml %}{% raw %}{{ page.author }}{% endraw %} => refere-se ao autor do artigo
 {% endhighlight %}
 
-<br>
-
 #### **<mkp-blue>Funcionalidades</mkp-blue>**
 
 Mais uma vantagem em relação ao `php` é que cada `php include` faz um _request_ para um arquivo diferente, enquanto a Liquid não: todos os _"includes"_ são processados quando o site é compilado para html. Portanto, você escreve com dinamismo e publica com estaticidade! É tão bom quanto parece! :smiley:
@@ -170,21 +159,17 @@ Além dos _"includes"_, a Liquid também tem seus análogos para `if`, `else` e 
 
 A **[Liquid Templating Language](https://docs.shopify.com/themes/liquid-documentation/basics)** possui uma estrutura que pode ser muito explorada e utilizada com muita praticidade. Siga o link para um ver um panorama completo sobre esta linguagem.
 
-<br>
-
 #### **<mkp-blue>Compilação</mkp-blue>**
 
 A compilação do website se dá de forma automática. Basta executar o comando `jekyll serve` no seu prompt de comando que o seu html será gerado automaticamente - na pasta `_site`. Mas abordamos melhor este assunto no artigo **[Criando Blogs com Jekyll no Windows]({{ site.baseurl }}{% post_url 2015-07-30-jekyll-github-blog %})**.
 
-<br>
+
 
 <hr/>
 
 # **Por que usar o Jekyll**
 
 Após a introdução que acabamos de fazer, imagino que você já tenha entendido boa parte da funcionalidade e praticidade que o Jekyll provê. Mas, caso você ainda se sinta perdido no assunto, segue neste tópico uma série de motivos interessantes.
-
-<br>
 
 ### **Blogs sem bases de dados**
 
@@ -194,14 +179,9 @@ Com o Jekyll, como explicado anteriormente, há a possibilidade de dinamizar o c
 
 Além dos casos que comentamos acima, a Liquid permite a inserção dinâmica de dados como data, hora e localização geográfica.
 
-
-<br>
-
 ### **Hospedagem gratuita no GitHub**
 
 Mais interessante ainda para quem deseja publicar blogs, é que o Jekyll é suportado pelo [GitHub Pages][github-pages], permitindo assim que websites e blogs escritos em Jekyll sejam hospedados gratuitamente no GitHub. Há vários outros provedores de blogs, mas via de regra é necessário que você se adeque aos layouts deles, sem muita interatividade com seu próprio código e design. Por isso, a escrita de blogs em Jekyll tem se propagado imensamente pela internet. Você termina com um blog absolutamente seguro - pois é publicado em html - e totalmente personalizado.
-
-<br>
 
 ### **Agilidade para escrita e publicação**
 
@@ -210,16 +190,12 @@ Além da segurança e personalização, depois que você pega a prática, escrev
 Depois de escrito o artigo, caso você use o GitHub Pages, basta fazer um "git commit" do `.md` para o seu repositório que seu blog será compilado e publicado em html. Não tem mistério.
 
 Caso não queira publicar o blog com GitHub, mas queira usar seu código no seu domínio hospedado em um servidor Apache, por exemplo, basta copiar o conteúdo da pasta `_site` e colar no seu `public_html` via FTP e pronto, seu blog estará atualizado. 
-<br>
 
 <hr/>
 
 # **Jekyll para Profissionais**
 
-<br>
-
 ### **Jekyll para Web Designers**
-
 
 O Jekyll combina muito bem com preprocessadores como o **Sass**. E você pode turbinar o Sass com o Bourbon, Bitter, Neat, Animate... conforme preferir! Além de você poder montar seu CSS da melhor forma possível com essa ferramenta fantástica de design, seus arquivos `.sass` ou `.scss` são convertidos em css pelo comando `jekyll serve`. Você não precisa nem rodar o `sass --watch` no seu prompt! 
 
@@ -241,13 +217,9 @@ sass:
 
 A leitura da [documentação do Jekyll](http://jekyllrb.com/docs/assets/) que explica o assunto **SASS** em detalhes, incluindo como trabalhar com _"imports"_ **é fundamental** para estruturar o projeto corretamente. 
 
-<br>
-
 ### **Jekyll para Desenvolvedores Web**
 
 Além das funcionalidades da Liquid, com inserção de __variáveis__, trabalho com __dados__, __coleções de dados__, __variáveis múltiplas__ e mais um monte de **[atrativos](http://webdesign.tutsplus.com/tutorials/getting-started-with-liquid-shopifys-template-language--cms-19747)** para qualquer desenvolvedor, há ainda editores de códigos que podem facilitar a vida de **autores de artigos** de blog em Jekyll. 
-
-<br>
 
 #### Editores de Código
 
@@ -257,15 +229,11 @@ O [Sublime](http://www.sublimetext.com/) é outro editor de texto muito interess
 
 Portanto, caso você seja um desenvolvedor e pense duas vezes antes de escrever em Jekyll a estrutura de **blogs para terceiros**, pode ficar tranquilo. Mesmo que você mesmo tenha que publicar os artigos para seu cliente, transformar um arquivos de texto em markdown é "uma passada", e um _git push_ dá pra fazer "com as mãos nas costas"... O bacana é que sai tudo do forno com a uma simplicidade impressionante de comandos. :dancers:
 
-<br>
-
 ### **Uso de Marcadores de Dados Estruturados**
 
 Depois de aprender a lidar com as variáveis dos _posts_, das _pages_ e do _site_, você poderá "inventar" um monte de coisas bacanas. Por exemplo, utilizar _accordions_, _tabbed panels_, e outras ferramentas de design para inserir dados dinamicamente chamados com a Liquid. Para ver um exemplo, sugiro que dê uma olhada nas páginas de [tags][tags] ou [categorias][categ] deste blog. Nelas, utilizamos _collapsible panels_ para exibir (dinamicamente) os artigos pertencentes a cada uma das variáveis aplicando _loops_ em valores de _arrays_.
 
 Utilizando essas ferramentas, você poderá montar como quiser os seus __marcadores de dados estruturados__, como por exemplo, [Schema Markup](http://schema.org/), [Facebook Open Graph](http://ogp.me/) e [Twitter Card](https://dev.twitter.com/cards/overview). A estrutura Liquid para criar as tags de modo inteligente é longa e por isso não a descreveremos neste artigo introdutório. Assim que possível publicaremos um artigo com um passo a passo de como estruturar seus marcadores, por isso o convidamos para seguir-nos no [Twitter](https://twitter.com/virtuacreative) para receber nossos artigos em primeira mão!
-
-<br>
 
 ### **Formulários de Contato para Jekyll**
 
@@ -273,13 +241,9 @@ Formulários de contato são mais delicados para formular no Jekyll. Há como fa
 
 Se você tem pressa para montar seu formulário de contato, fale com a gente por um dos nossos [canais de relacionamento](http://virtuacreative.com.br/contato/) que poderemos preparar um script exclusivo para você ou para a sua empresa, que poderá ser usado com segurança em páginas `html` ou `php`. Para ver um exemplo, acesse nossa [página de contato][contact] deste blog.
 
-<br>
-
 <hr/>
 
 #### Documentação de Referência & Leitura Complementar
-
-<br>
 
 - &#9734; [Jekyll - Documentation][jekyll]
 - &#9734; [Jekyll Help][jekyll-help]

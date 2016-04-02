@@ -15,7 +15,7 @@ comments: true
 fb_type: article
 meta_keywords: github, free hosting, tutorials github, github pages, github user website, github organization website, websites, create free website, free website
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
-date_update: 2016-02-22 17:10:02 UTC
+date_update: 2016-03-30 21:04:27 UTC
 date: 2015-09-26 02:22:34 UTC
 author_fb: marciaramosmdr
 fb_section: Tutorials - GitHub
@@ -25,8 +25,6 @@ description: Learn how to create your own website hosting it on GitHub for free!
 # **GitHub**
 
 [GitHub] is a social network for programmers and developers, which is used for sharing their codes and contribute to others'. Furthermore, it can be used for **hosting websites for free**!
-
-<br/>
 
 ## **Conditions for hosting websites** 
 
@@ -38,8 +36,6 @@ In order to publish your website with [GitHub Pages][], you must be aware of a f
 
 3. **Third**: you can use GitHub sub-domains (always **username**.github.io) or your own domain name (like **mydomain**.com).
 
-<br/>
-
 ## **Undestanding GitHub Pages**
 
 [GitHub Pages] is a GitHub feature that allows us to use it like a hosting provider. You can have basically two types of websites:
@@ -49,8 +45,6 @@ In order to publish your website with [GitHub Pages][], you must be aware of a f
 
 Their permissions and features are the same, there is no difference on their base structure to host websites. But there are a few things different when you set them up.
 
-<br/>
-
 ### **<mkp-blue>User and Organization Websites</mkp-blue>**
 
 These websites are based on `master` branches of GitHub repositories and they will have this default URL throughout GitHub: `http://username.github.io`, where `username`, of course, is your username. 
@@ -59,8 +53,6 @@ They are build **automatically** when you create a new repository named exactly 
 
 There is actually no difference between user and organization websites. If your account is personal, GitHub will built your website exactly the same as if you have an organization account. There are a lot of differences between those accounts, but not for building websites purposes.
 
-<br/>
-
 ### **<mkp-blue>Project Websites</mkp-blue>**
 
 Project websites have the same rules in order to exist on GitHub as User or Organization websites. Their main differences are:
@@ -68,8 +60,6 @@ Project websites have the same rules in order to exist on GitHub as User or Orga
 - :arrow_right: They live in `gh-pages` branches - not in `master`'s
 - :arrow_right: They will be accessed by this default url: `http://username.github.io/repositoryname` - not `http://username.github.io`
 - :arrow_right: You can create as many project websites as you want. But each GitHub account can have one user/organization website only (`username.github.io`). You don't need an user or organization website in order to create a project website itself. They can be linked, of course, but just if you want they to.
-
-<br/>
 
 ### **<mkp-blue>Practical Examples</mkp-blue>**
 
@@ -87,19 +77,13 @@ I suggest you check [GitHub Help Guide][] if you need more information concernin
 
 If you wish to use your own domain name, please follow GitHub guides from [here][], as this topic is not going to be discussed on this article. 
 
-<br/>
-
 -----------------------
 
 # **How to create your User/Organization website**
 
-<br/>
-
 It is quite simple. Please click on the following frame if you wish to **watch our video tutorial** for this purpose. If you'd rather read the tutorial, it's right below.
 
-<br/>
-
-<div class="iframe_container" itemprop="video" itemscope="" itemtype="http://schema.org/VideoObject">
+<figure class="iframe_container" itemprop="video" itemscope="" itemtype="http://schema.org/VideoObject">
 	<iframe width="853" height="480" src="http://www.youtube.com/embed/E-ONNjFoOx0" frameborder="0" allowfullscreen="allowfullscreen"> </iframe> 
 	<meta itemprop="contentURL" content="https://youtu.be/E-ONNjFoOx0" />
   	<meta itemprop="embedURL" content="http://www.youtube.com/embed/E-ONNjFoOx0" />
@@ -108,9 +92,7 @@ It is quite simple. Please click on the following frame if you wish to **watch o
   	<meta itemprop="description" content="Learn how to create your own website hosting it on GitHub for free!" />
   	<meta itemprop="duration" content="T3M07S" />
   	<meta itemprop="uploadDate" content="{{ page.date | date_to_xmlschema }}" />
-</div>
-
-<br/>
+</figure>
 
 #### **<mkp-blue>Step by Step Tutorial</mkp-blue>**
 
@@ -137,11 +119,7 @@ It is quite simple. Please click on the following frame if you wish to **watch o
 
 Please, if you got lost on reading those steps, please watch our video tutorial (posted above) to make it more clear. 
 
-<br/>
-
 ## **Further steps**
-
-<br/>
 
 ### **<mkp-blue>How to create a folder to your css styles or javascript files</mkp-blue>**
 
@@ -163,8 +141,6 @@ Please, if you got lost on reading those steps, please watch our video tutorial 
 
 Note that **you CANNOT create an empty folder**. Every time you create a folder you will need to add a file to it.
 
-<br/>
-
 ### **<mkp-blue>How to add images folder</mkp-blue>**
 
 This option is not possible via web platform, as far as I'm aware of. So, you will need to do that via command line or via [GitHub Desktop][] application.
@@ -173,9 +149,7 @@ Let's say you are not used to the command line way to work, so let's keep it eas
 
 Please click on the following frame if you wish to **watch our video tutorial** for this purpose. If you'd rather read the step-by-step tutorial, it's right below.
 
-<br/>
-
-<div class="iframe_container" itemprop="video" itemscope="" itemtype="http://schema.org/VideoObject">
+<figure class="iframe_container" itemprop="video" itemscope="" itemtype="http://schema.org/VideoObject">
 	<iframe width="853" height="480" src="http://www.youtube.com/embed/fayd6VWdzmU" frameborder="0" allowfullscreen="allowfullscreen"> </iframe> 
 	<meta itemprop="contentURL" content="https://youtu.be/fayd6VWdzmU" />
   	<meta itemprop="embedURL" content="http://www.youtube.com/embed/fayd6VWdzmU" />
@@ -184,9 +158,7 @@ Please click on the following frame if you wish to **watch our video tutorial** 
   	<meta itemprop="description" content="Learn how to add images folder to your website hosted on GitHub" />
   	<meta itemprop="duration" content="T3M11S" />
   	<meta itemprop="uploadDate" content="{{ page.date | date_to_xmlschema }}" />
-</div>
-
-<br/>
+</figure>
 
 #### **<mkp-blue>Step by Step Tutorial</mkp-blue>**
 
@@ -206,23 +178,13 @@ Please click on the following frame if you wish to **watch our video tutorial** 
 
 8. There we go! Your images are going to be uploaded to GitHub exactly as you did it on your computer.
 
-<br/>
-
 # **How to create Project Websites**
-
-<br/>
 
 Read the full tutorial and watch the video on the article **[How to publish Project Websites on GitHub][]**
 
-That's all for now folks! I hope this article were useful for you! :smiley:
+## Stay tuned!
 
-<br/>
-
---------------
-
-#### **<mkp-blue>Stay tuned!</mkp-blue>** 
-
-<br/>
+That's all for now folks! :smiley:
 
 Subscribe to our new **[YouTube Channel][]**!
 

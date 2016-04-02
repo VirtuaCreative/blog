@@ -1,7 +1,7 @@
 virtua:
-  home: http://www.virtuacreative.com.br/
-  home_contact: http://virtuacreative.com.br/en/contacts/
-  home_contact_pt: http://virtuacreative.com.br/contato/
+  home: https://virtuacreative.com.br/
+  home_contact: https://virtuacreative.com.br/en/contacts/
+  home_contact_pt: https://virtuacreative.com.br/contato/
   git-home: http://virtuacreative.github.io/ # DO NOT USE THIS
   git_home: http://virtuacreative.github.io/ # USE THIS
   git-contact: http://git.virtuacreative.com.br/contact.html # DO NOT USE THIS
@@ -31,7 +31,7 @@ jekyll:
   docs: http://jekyllrb.com/docs/home/
 
 markdown:
-  kramdown: http://jekyllrb.com/docs/configuration/#kramdown
+  kramdown: "http://jekyllrb.com/docs/configuration/#kramdown"
   all: http://daringfireball.net/projects/markdown/basics
   pygments: http://pygments.org/
   kramdown_syntax: http://kramdown.gettalong.org/syntax.html
@@ -59,8 +59,11 @@ yaml:
   wiki: https://en.wikipedia.org/wiki/YAML
 
 gitlab:
-  home: http://virtuacreative.gitlab.io
-  youtube_thumbs: http://virtuacreative.gitlab.io/images/youtube
-  images: http://virtuacreative.gitlab.io/images
-  videos: http://virtuacreative.gitlab.io/videos
+  home: https://virtuacreative.gitlab.io
+  youtube_thumbs: https://virtuacreative.gitlab.io/images/youtube
+  images: https://virtuacreative.gitlab.io/images
+  videos: https://virtuacreative.gitlab.io/videos
 
+environments:
+  ruby: https://www.ruby-lang.org/en/
+  python: https://www.python.org/

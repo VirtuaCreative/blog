@@ -1,10 +1,11 @@
 baseurl: http://blog.virtuacreative.com.br
 paginate: 10 # pagination based on number of posts
 paginate_path: "page:num/"
-exclude: ["README.md"] # files to exclude
+exclude: ["README.md", "Gemfile", "Gemfile.lock", "LICENSE"] # files to exclude
 disqus: virtuacreative # blog post comments
 permalink: /:title.html
 timezone: America/Sao_Paulo
+future: true
 highlighter: rouge
 markdown: kramdown
 kramdown:
@@ -14,6 +15,7 @@ gems:
   - jemoji
   - jekyll-mentions
   - jekyll-paginate
+  - jekyll-gist
 
 rss_path: feed.xml
 categories_path: categories.html
@@ -34,8 +36,8 @@ share_image: http://blog.virtuacreative.com.br/assets/media/fb_feed1200x630_virt
 logo_image: http://goo.gl/mXXyFH # logo sidebar
 organization:
   name: Virtua Creative Technology
-  url: http://virtuacreative.com.br
-  logo: http://virtuacreative.com.br/images/LOGO-virtuacreative-60x72-gray.png # http://goo.gl/XzUou0
+  url: https://virtuacreative.com.br
+  logo: https://virtuacreative.com.br/images/LOGO-virtuacreative-60x72-gray.png
   logo_width: 72px
   logo_height: 60px
 fb_app:
@@ -48,6 +50,7 @@ author:
   github: VirtuaCreative
   twitter: virtuacreative
   flickr: virtuacreative
+  gitlab: virtuacreative
   linkedin:
   facebook: virtuacreative
   googleplus: VirtuacreativeBrWebsites/ # DO NOT REMOVE - schema tags

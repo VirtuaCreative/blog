@@ -1,0 +1,18 @@
+.article_body table {
+	width: 100%;
+} 
+@media screen and (max-width: 479px) {
+	.article_body table {
+		width: auto;
+		display: block;
+		overflow: auto;
+		overflow-x: scroll;
+		white-space: nowrap;
+		border-collapse: collapse;
+		border-spacing: 0;
+		clear: both;
+		-webkit-overflow-scrolling:touch;
+		touch-action: auto;
+		-ms-touch-action: auto;
+	} 	
+}

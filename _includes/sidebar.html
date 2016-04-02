@@ -1,48 +1,50 @@
 <!-- sidebar.html -->
-<header class="sidebar-header" role="banner">
-	<a href="{{ site.baseurl }}/">
-		<img src="http://goo.gl/JjzjsU" width="40%" />
-	</a>
-</header>
-{% if site.author.bio %}
-	<div id="bio" class="text-center">{{ site.author.bio }}
-		<p style="text-align: center; line-height: 2em">Blog</p>
+<aside>
+	<header class="sidebar-header" role="banner">
+		<a href="{{ site.baseurl }}/">
+			<img src="http://goo.gl/JjzjsU" width="40%" />
+		</a>
+	</header>
+	{% if site.author.bio %}
+		<div id="bio" class="text-center">{{ site.author.bio }}
+			<p style="text-align: center; line-height: 2em">Blog</p>
+		</div>
+	{% endif %}
+	<div id="contact-list" class="text-center">
+		<ul class="list-unstyled list-inline">
+			{% if site.author.github %}
+				<li>
+					<a title="GitHub" rel="nofollow" class="btn btn-default btn-sm" type="button" href="https://github.com/{{ site.author.github }}"><i class="fa fa-github-alt fa-lg"></i></a>
+				</li>
+			{% endif %}
+			{% if site.author.flickr %}
+				<li>
+					<a title="Gallery on Fickr" rel="nofollow" class="btn btn-default btn-sm" type="button" href="https://www.flickr.com/photos/{{ site.author.flickr }}"><i class="fa fa-flickr fa-lg"></i></a>
+				</li>
+			{% endif %}		
+			{% if site.author.email %}
+				<li>
+					<a title="Contact Us" rel="nofollow" class="btn btn-default btn-sm" type="button" href="mailto:{{ site.author.email }}"><i class="fa fa-envelope fa-lg"></i></a>
+				</li>
+			{% endif %}
+		</ul>
+		<ul id="contact-list-secondary" class="list-unstyled list-inline">
+			{% if site.author.twitter %}
+				<li>
+					<a title="Follow Us on Twitter" rel="nofollow" type="button" class="btn btn-default btn-sm" href="https://twitter.com/intent/follow?screen_name={{ site.author.twitter }}"><i class="fa fa-twitter fa-lg"></i>
+						<script async src="https://platform.twitter.com/widgets.js"></script>
+					</a>			
+				</li>
+			{% endif %}		
+			{% if site.author.gitlab %}
+				<li>
+					{% include icon-gitlab.html username=site.author.gitlab %}
+				</li>
+			{% endif %}
+			<li>
+				<a class="btn btn-default btn-sm" title="XML Feed" type="button" href="{{ site.baseurl }}/{{ site.rss_path }}"><i class="fa fa-rss fa-lg"></i></a>
+			</li>
+		</ul>
 	</div>
-{% endif %}
-<div id="contact-list" class="text-center">
-	<ul class="list-unstyled list-inline">
-		{% if site.author.github %}
-			<li>
-				<a rel="nofollow" class="btn btn-default btn-sm" type="button" href="https://github.com/{{ site.author.github }}"><i class="fa fa-github-alt fa-lg"></i></a>
-			</li>
-		{% endif %}
-		{% if site.author.flickr %}
-			<li>
-				<a rel="nofollow" class="btn btn-default btn-sm" type="button" href="https://www.flickr.com/photos/{{ site.author.flickr }}"><i class="fa fa-flickr fa-lg"></i></a>
-			</li>
-		{% endif %}		
-		{% if site.author.email %}
-			<li>
-				<a rel="nofollow" class="btn btn-default btn-sm" type="button" href="mailto:{{ site.author.email }}"><i class="fa fa-envelope fa-lg"></i></a>
-			</li>
-		{% endif %}
-	</ul>
-	<ul id="contact-list-secondary" class="list-unstyled list-inline">
-		{% if site.author.twitter %}
-			<li>
-				<a title="Follow Us" rel="nofollow" type="button" class="btn btn-default btn-sm" href="https://twitter.com/intent/follow?screen_name={{ site.author.twitter }}"><i class="fa fa-twitter fa-lg"></i>
-					<script async src="https://platform.twitter.com/widgets.js"></script>
-				</a>			
-			</li>
-		{% endif %}
-		{% if site.author.facebook %}
-			<li>
-				<a rel="nofollow" type="button" class="btn btn-default btn-sm" href="https://www.facebook.com/{{ site.author.facebook }}"><i class="fa fa-facebook fa-lg"></i></a>
-			</li>
-		{% endif %}
-		<li>
-			<a class="btn btn-default btn-sm" title="XML Feed" type="button" href="{{ site.baseurl }}/{{ site.rss_path }}"><i class="fa fa-rss fa-lg"></i></a>
-		</li>
-	</ul>
-</div>
+</aside>
 <!-- sidebar.html end -->

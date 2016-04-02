@@ -18,7 +18,7 @@ author_fb: marciaramosmdr
 fb_section: Tutorials - GitHub
 comments: true
 date: 2015-09-14 23:41:41 UTC
-date_update: 2016-02-22 17:17:31 UTC
+date_update: 2016-03-30 21:12:27 UTC
 # language: [en_US, en_GB]
 ---
 
@@ -48,29 +48,19 @@ O GitHub não impõe um limite para uso da capacidade de arquivamento, como voc�
 
 Com a [partir de US$ 7,00][paid] (valor válido na data de publicação deste artigo), você poderá ter acesso a repositórios privados, permitindo assim com que você use o GitHub para guardar seus arquivos com privacidade e segurança.
 
-<br>
-
 #### **Limites de tamanho de arquivo**
 
 Você poderá fazer uploads de arquivos de até 100 MB sem precisar nenhuma configuração extra. Caso seu arquivo seja maior que 100 MB, você poderá instalar uma [extensão para lidar com grandes arquivos][large]. Chama-se [Git Large Storage Extension][glfe], e poderá ser instalada e utilizada inclusive com a versão gratuita do GitHub.
-
-<br>
 
 #### **Limite de tamanho de repositório**
 
 O [GitHub recomenda][limits] que um repositório não ultrapasse o limite de 1 GB, mas você poderá utilizar o [Git Large Storage Extension][glfe] para estender esta capacidade, embora o GitHub ainda não tenha expressamente especificado qual será o limite de armazenamento. 
 
-<br>
-
 ---------------------------------
 
 # **Hospedagem gratuita de websites com o GitHub**
 
-<br>
-
 Uma das possibilidades mais interessantes do GitHub para não-programadores é a capacidade de hospedar websites inteiros gratuitamente. Isso mesmo! Hospedagem grátis!
-
-<br>
 
 ### **<mkp-blue>Como funciona a hospedagem gratuita do GitHub</mkp-blue>**
 
@@ -78,11 +68,7 @@ Para hospedar seu website, você precisará criar uma conta no GitHub e criar um
 
 Seu website poderá ser acessado através de um subdomínio do GitHub `suaempresa.github.io` ou através do seu próprio domínio, `www.suaempresa.com`. Veja exemplos: [http://virtuacreative.github.io](http://virtuacreative.github.io) e [https://jekyllrb.com/](https://jekyllrb.com/)
 
-<br>
-
 ### **<mkp-blue>Limitações</mkp-blue>**
-
-<br>
 
 #### **Cotas**
 
@@ -90,25 +76,17 @@ Embora não haja limite de arquivos armazenados, **o GitHub recomenda que os rep
 
 Para ver um exemplo prático, veja que nosso website [http://virtuacreative.github.io](http://virtuacreative.github.io), que "mora" no repositório `virtuacreative.github.io` dá acesso ao nosso website [Virtua Creative & GitHub][] `http://virtuacreative.github.io/git/`, que "mora" no repositório `git` e a este [Blog][] `http://virtuacreative.github.io/blog/`, que "mora" no repositório `blog`. Ambos têm links um para o outro. Não é o caso, mas cada um deles poderia suportar até 1GB de armazenamento cada, totalizando 3GB para um único subdomínio `virtuacreative.github.io`.
 
-<br>
-
 #### **Extensões**
 
 O GitHub suporta apenas **websites estáticos** construídos em linguagem de _web browsers_ (navegadores) e não em linguagem de servidor. Portanto, o seu website deverá ser publicado em **html**, **css** e **js**. Arquivos em php não são permitidos pelo GitHub para hospedagem, e nem o uso de base de dados - em MySQL por exemplo. 
 
 Para desenvolvedores web que utilizam o `php` para criar websites dinâmicos, há uma ferramenta extremamente útil que poderá simular os `php includes`: o **Jekyll** - criador de websites estáticos a partir de escrita dinâmica. Para saber mais, recomendamos a leitura dos nossos artigos: "[O que é o Jekyll - e para que ele serve]({{ site.baseurl }}/jekyll-for-beginners-introduction.html)" e "[Criando blogs com Jekyll no Windows]({{ site.baseurl }}/jekyll-github-blog.html)".  
 
-<br>
-
 #### **Privacidade**
 
 Todo repositório criado com a intenção de hospedar um website **deverá** ser um **repositório público**. Portanto, mesmo que você tenha uma conta paga, que lhe permita criar repositórios privados, todo website hospedado com o GitHub deverá ser público e seu código estará visível a qualquer pessoa conectada à internet. Então, caso você pretenda utilizar conteúdos sensíveis no seu site, não recomendamos o uso do GitHub para hospedá-lo.
 
-<br>
-
 ### **<mkp-blue>Primeiros Passos</mkp-blue>**
-
-<br>
 
 #### **Criando uma conta**
 
@@ -118,8 +96,6 @@ Lembre-se de criar um nome de usuário que corresponda ao que você ou sua empre
 
 O GitHub dá a possibilidade de você transformar sua conta pessoal numa conta de organização (empresa). Com esta conta, você poderá dar acesso à conta a várias pessoas que trabalham para você, com permissões diferentes. Se este for seu caso, pense nesta opção. Entretanto, caso você seja o único a utilizar a conta, pense em mantê-la como conta pessoal (por mais que seu nome de usuário refira-se à sua empresa), principalmente caso você queira fazer o upgrade à conta paga. Os [valores pagos][paid] para conta organização são maiores que os para contas pessoais.
 
-<br>
-
 #### **Criando um repositório**
 
 Criar um repositório também é bastante simples: após acessar sua conta, clique em **"New Repository"**, escolha um nome, adicione uma descrição (caso queira), escolha se deverá ser público ou privado, e caso deseje, escolha campos alternativos: 
@@ -127,8 +103,6 @@ Criar um repositório também é bastante simples: após acessar sua conta, cliq
 - &#9656; a) adicione um `gitignore`: é um documento que dará o comando para ignorar pastas ou arquivos - aqueles que estão em sua pasta local mas que você não quer que sejam adicionados ao seu repositório remoto;
 
 - &#9656; b) adicione uma licença para garantir seus direitos autorais.
-
-<br>
 
 <a name="add-files"></a>
 
@@ -162,8 +136,6 @@ Existem algumas formas de inserir arquivos ao seu repositório:
 
 	Note também que, via de regra, todo repositório começa com um arquivo chamado `README.md`. Neste arquivo você deve escrever do que se trata o repositório. Não é obrigatória a presença deste arquivo, mas esta prática é comum à maioria dos usuários do GitHub. Arquivos com a extensão `.md` ou `.markdown` são escrito em Markdown, uma linguagem amplamente utilizada no GitHub para publicação de arquivos de texto. Por exemplo, neste link você poderá ver o repositório do Jekyll e como ele utiliza o arquivo `README` para explicar do que se trata:  [Jekyll no GitHub](https://github.com/jekyll/jekyll). Veja nosso artigo ["Jekyll e GitHub Markdown"]({{ site.baseurl }}/jekyll-github-markdown.html) para saber como escrever em Markdown.
 
-<br>
-
 #### **Acesso público ao repositório e seus arquivos**
 
 Todo repositório público poderá ser acessado via url escrita neste formato: `github.com/nome-do-usuario/nome-do-repositorio`. Por sua vez, quando o repositório for criado para hospedar um website, ele poderá ser acessado de duas formas: 
@@ -174,8 +146,6 @@ Todo repositório público poderá ser acessado via url escrita neste formato: `
 
 Entenda a diferença entre os tipos de website (usuário/organização e projeto) no artigo **[Como hospedar um website gratuitamente no GitHub]({{ site.baseurl }}/hospedar-website-gratis-com-github.html)**. Siga-nos no [Twitter][] para receber a chamada em primeira mão!
 
-<br>
-
 #### **Considerações finais**
 
 Este artigo descreveu brevemente uma introdução ao uso do GitHub. Outras funcionalidades podem ser atingidas, como, por exemplo, o trabalho com diferentes tipos de `branches` - são tipos de conteúdos dentro dos repositórios, ou ainda, o comando `fork`, que permite a criação de um projeto sobre outro já existente, ou ainda a função `contribute` que permite que várias pessoas trabalhem no mesmo repositório, entre outras funcionalidades avançadas que não convém serem detalhadas em artigos introdutórios como este.
@@ -185,8 +155,6 @@ Nosso artigo **[Como hospedar um website gratuitamente no GitHub]({{ site.baseur
 Esperamos que este artigo tenha sido útil para você, no sentido de dar uma visão geral sobre o uso do GitHub e das funcionalidades que ele oferece.
 
 Para enriquecer o assunto, sinta-se convidado para deixar seu comentário abaixo! Obrigada e até o próximo artigo! :smiley:
-
-<br>
 
 _Siga Virtua Creative no **[Twitter][]** para receber nossos artigos em primeira mão!_
 

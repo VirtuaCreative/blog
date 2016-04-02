@@ -17,7 +17,7 @@ author_fb: marciaramosmdr
 author_twitter: xmdramos
 authorEmail: virtua.creative@gmail.com
 date: 2015-07-29 20:00:02 UTC
-date_update: 2016-02-22 18:10:14 UTC
+date_update: 2016-03-30 21:24:50 UTC
 # language: [pt_BR]
 ---
 
@@ -60,11 +60,7 @@ Este blog é nosso instrumento para compartilhar informações e tutoriais ao no
 
 Veja todos os nossos dados de contatos e redes sociais em [Virtua Creative][].
 
-<br>
-
-Obrigada e até a próxima!
-
-<br>
+#### Obrigada e até a próxima!
 
 [Marcia Ramos](https://plus.google.com/+MarciaDiasRamosMD/posts)
 

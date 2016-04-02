@@ -19,14 +19,12 @@ comments: true
 published: true
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
 language: [en_US, en_GB]
-date_update: 2016-02-22 16:05:49 UTC
+date_update: 2016-03-30 20:47:30 UTC
 copy: true # copy button with javascript  
 codingbox: true # code type on the top-right of code block boxes 
 ---
 
 # **<mkp-blue>Embedding Videos in Markdown</mkp-blue>**
-
-<br>
 
 This is the second article of the series **"Markdown Tips & Tricks - Thinking Outside the Box"**. On the [previous article][], it was explained how to deal with `html` **elements** and **classes** when writing markdown files. Now we are going to show you how to embed videos.
 
@@ -40,35 +38,23 @@ As we have explained on the [previous article][], there's only a thing you need 
 
 ### **<i class="fa fa-youtube"></i>&nbsp;&nbsp;Case A: `<iframe>` Tags** - Embedding YouTube Videos
 
-<br>
-
 All right. Let's begin by showing you how to embed **YouTube videos**, as found in our post **[How to publish your website on GitHub][]**. Doing this can be a little tricky, as there are some steps to have covered up to make it be rendered correctly. Let's see a live example, with a video we have used on the post we just mentioned. Here it is, down below. You will notice that you can resize your browser's window and it will maintain its responsiveness.
-
-<br>
 
 <figure class="iframe_container">
 	<iframe width="853" height="480" src="http://www.youtube.com/embed/E-ONNjFoOx0" frameborder="0" allowfullscreen="allowfullscreen"> </iframe> 
 </figure>
 
-<br>
-
 <p class="bkggreen"><i class="fa fa-exclamation" style="color: red;"></i>&nbsp;&nbsp;We'll need to copy the code given by <strong>YouTube</strong> and paste it onto your markdown file, and from that we'll need to <strong>make a few corrections</strong> in order to make it work properly, according to step-by-step section below.</p>
-
-<br>
 
 ### **Step-by-Step**
 
 **First:** open in a web browser the YouTube video that you want to embed to your post and copy the `iframe`. If you don't know how to do that, learn from this 15 seconds video: 
-
-<br>
 
 <figure id="iframe-video" class="video_container">
 	<video controls="controls" allowfullscreen="true" poster="{{ site.baseurl }}/assets/media/embed-youtube-poster.png">
   		<source src="{{ site.baseurl }}/assets/media/embed-youtube.mp4" type="video/mp4">
 	</video> 
 </figure>
-
-<br>
 
 **Second:** paste the `<iframe>` into a `<div>` tag:
 
@@ -156,13 +142,9 @@ function Display() {
 
 **That's it!** Now you can use the code block we provided whenever you want to embed a YouTube video. Actually, the only thing you will need to change is the **video id**, given by the last part after the last forward slash. On this video `http://www.youtube.com/embed/E-ONNjFoOx0`, its **id** is `E-ONNjFoOx0`. 
 
-<br>
-
 <hr>
 
 ### **<i class="fa fa-youtube-play"></i>&nbsp;&nbsp;Case B: `<video>` Tags**
-
-<br>
 
 Now, if you have videos that you don't want to publish on YouTube and want them to be part of your media files, you will need a `html 5` `<video>` tag.
 
@@ -195,7 +177,6 @@ function nDisplay() {
 }
 </script>
 
-
 <br>
 
 Let's see a live example with the code above, using a video we have in our blog assets:
@@ -206,9 +187,6 @@ Let's see a live example with the code above, using a video we have in our blog 
 
 	</video> 
 </figure>
-
-<br>
-
 
 As we did for the `<iframe>`, we wrapped the `<video>` tag within a `<div>`, in order to provide full responsiveness to our videos, and we have applied exactly the same styles:
 
@@ -229,26 +207,15 @@ As we did for the `<iframe>`, we wrapped the `<video>` tag within a `<div>`, in 
 }
 {% endhighlight %}
 
-<br>
-
-
 **That's it!** Now you can use your `<video>` tags whenever you want! Just replace the path and you're done! The supported formats are: `.mp4`, `.ogg` and `.webm`. If you want to check other **methods and attributes** that can be used with `<video>` tags, go ahead and find them in **W3Schools**: a [basic usage][] or a [complete reference][].
 
 If you are thinking about `flash` videos, it's not a good idea using them anymore. As little as you use flash, better for you. It's promised to be deprecated soon. iPhones, iPads and lots of other devices do not support flash anymore. 
-
-<br>
-
-<hr>
 
 ### **<mkp-blue>Well done!</mkp-blue>**
 
 After covering all the content of this and the [previous article][], we can see that when working on markdown files, if we want to do something that is not by the books, we just need give it a try! As a matter of fact, most of them will work!
 
 Enjoy! :dancers: :smiley: :thumbsup:
-
-<br>
-
-<hr>
 
 
 ### **<mkp-blue>That's all folks!</mkp-blue>**
@@ -258,10 +225,6 @@ We hope to have been helpfull! Please, if you enjoyed this article, leave a comm
 If you have any questions or suggestions, please feel free to get in touch with us by filling our  [contact form]({{ site.data.url.virtua.git-contact }}).
 
 Thanks for reading! Stay tuned for the next article: follow us on [Twitter]({{ site.data.url.virtua.twitter }}), [Google+]({{ site.data.url.virtua.googleplus }}) or subscribe to our [YouTube Channel]({{ site.data.url.virtua.youtube }}) 
-
-<br>
-
----------------
 
 ### **Related Articles**
 
@@ -292,10 +255,6 @@ Related articles (by Jekyll itself) -->
 
 </ul>
 
-<br>
-
-<hr>
-
 ### **References**
 
 - &#9734; [GitHub][]
@@ -306,7 +265,7 @@ Related articles (by Jekyll itself) -->
 - &#9734; [Markdown][]
 - &#9734; [Kramdown][]
 
-<br>
+
 
 <hr>
 
@@ -315,7 +274,7 @@ Related articles (by Jekyll itself) -->
 - &#9733; Art work: [Virtua Creative](https://goo.gl/Kb7R0N)
 - &#9733; Illustrations: we have downloaded from Freepik the original [box](http://www.freepik.com/free-vector/vectors_785241.htm) and the original [bulb](http://www.freepik.com/free-vector/vectors_810569.htm).
 
-<br>
+
 
 [How to publish your website on GitHub]: http://virtuacreative.github.io/blog/free-hosting-website-github.html
 [another article]: http://virtuacreative.github.io/blog/free-hosting-website-github.html

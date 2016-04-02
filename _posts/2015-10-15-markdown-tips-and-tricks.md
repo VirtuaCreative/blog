@@ -19,38 +19,28 @@ comments: true
 published: True
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
 language: [en_US, en_GB]
-date_update: 2016-02-22 16:05:37 UTC
+date_update: 2016-03-30 20:52:42 UTC
 # copy:
 codingbox: true
 related: jekyll
 ---
 # **<mkp-blue>Markdown</mkp-blue>**
 
-<br>
-
 For those who are used to write in Markdown or are beginning to learn this language, we are here to provide you some tricks and tips that may help you to think outside the box and make some :zap: "magic" :zap: when writing your files. 
-
-<br>
 
 #### _Markdown Tips & Tricks - Part 1_ 
 
 On this article, you will learn how to **[add new `HTML` elements](#mkp-blueadding-html-elementsmkp-blue)** (also **[`div` tags](#mkp-blueadding-html-divsmkp-blue)**) and how to **[apply classes to `html` elements](#mkp-blueapplying-html-classesmkp-blue)** onto your markdown files.
 
-<br>
-
 #### _[Markdown Tips & Tricks - Part 2](/markdown-tips-tricks-part2.html)_  
 
 On the **next post**, we are going to show you how to **embed videos** on your markdown files. This second part will be published at October 26th.
-
-<br>
 
 #### _Additional Information_  
 
 For markdown basics, you can check this [GitHub article](https://guides.github.com/features/mastering-markdown/#syntax), which provides us with a bunch of very often applied markup.
 
 All the examples given below were tested on our [Blog] written in [Jekyll][], hosted by [GitHub Pages][], within a `gh-pages` branch for a `project` website. Depending on your server or on the way your site is build, some of these tips might not work. Anyway, feel free to give them a try, even if your markdown files don't have the same configuration or compilation. 
-
-<br> 
 
 ### **Settings**
 
@@ -84,13 +74,9 @@ It seems to have a [**bug** on GitHub Pages](https://talk.jekyllrb.com/t/jekyll-
 
 Our `default.html` file (where the markdown posts are called to) is placed at our `_includes` folder and is a `HTML5` document. Our styles are written in `CSS3`.
 
-<br>
-
 <hr>
 
 # **<mkp-blue>Adding HTML Elements</mkp-blue>**
-
-<br>
 
 Let's begin with new elements. Did you know you can add `HTML elements` to your markdown? For example, if you need a horizontal line, you can add it as the code below: 
 
@@ -114,11 +100,9 @@ Now you can freely style your `<hr>` in your `CSS`.
 
 Just to let you know, in this particular case you can use just a sequence of `-----` onto your markdown and it will produce a `<hr>` tag when compiled to html. But sometimes you can't run from using some `html` tags themselves in order to have the results you want.
 
-Feel free to use the tag `<br>` the same way for breaking lines. 
+Feel free to use the tag `` the same way for breaking lines. 
 
 <p class="bkggreen"><i class="fa fa-exclamation" style="color: red;"></i>&nbsp;&nbsp;Don't forget to leave a <strong>blank line</strong> between some regular markdown text and a <strong>html tag</strong>, otherwise you might face errors during files compilation!</p>
-
-<br>
 
 ### Custom Elements 
 
@@ -182,10 +166,7 @@ Making up your own custom elements is not recommended when you want to stick to 
 
 This will create a new element when the http request to your site is comming from _Internet Explorer 9_. 
 
-<br> 
-
-<hr>
-
+----
 
 # **<mkp-blue>Adding HTML Divs</mkp-blue>**
 
@@ -224,25 +205,17 @@ And you customize your special image as you want, for example:
 }
 {% endhighlight %}
 
-<br>
-
 Here is the result:
 
-<div class="example">
+<figure class="example">
 	<img src="{{ site.baseurl }}/assets/media/blog_poster.png" alt="Some alternative text" style="width: 30%;	border: 1px solid #333;	box-shadow: 2px 2px 5px #999; border-radius: 5px;">
-</div>
-
-<br>
+</figure>
 
 Of course we could have styled the image itself in this case, but sometimes we need nested elements in order to produce the results we want. A very common case is giving an element a `position="relative"` and its nested element a `position="absolute"`. We cannot achieve the same results by playing around just with one of them, we'll need them both!
 
-<br>
-
-<hr>
+----
 
 # **<mkp-blue>Applying HTML Classes</mkp-blue>**
-
-<br> 
 
 When I first started writing in markdown, I googled something like "how to apply classes to markdown" and couldn't find much. **BUT**, when I tried something unusual, for my best surprise, it worked!
 
@@ -282,8 +255,6 @@ The only difference is that we have applied a new class to the paragraph, giving
 That's it! As simple as it looks! This way you are free to style your `HTML tags` compiled from your markdown files however you want!
 
 Just *do not forget* to always leave a blank line between your markdown regular text and any `HTML` tag!
-
-<br>
 
 ### **<mkp-blue>Update!</mkp-blue>**
 
@@ -327,17 +298,11 @@ I have an ID and a CLASS now!
 
 I just **loved** this! Check the [full reference](http://kramdown.gettalong.org/quickref.html) out!
 
-<br>
-
 ### **<mkp-blue>Done!</mkp-blue>**
 
 All right then, now that you know that you can add **html elements** and **apply classes** to them in markdown files, it's time to make it work for you! Go on and use them freely, you'll see that the results are fantastic and at the same time we keep the astonishing advantages of writing in markdown!
 
 Don't lose our next post, where we will show you how to embed videos in markdown files. It can be a little tricky, specially giving them responsiveness, but we are here to share our knowledge with you! :smiley:
-
-<br>
-
-<hr>
 
 ### **<mkp-blue>That's all folks!</mkp-blue>**
 
@@ -349,10 +314,6 @@ Thanks for reading! Check our next article **[Markdown Tips and Tricks - Part 2]
 
 Stay tuned! Follow us on [Twitter]({{ site.data.url.virtua.twitter }}), [Google+]({{ site.data.url.virtua.googleplus }}) or subscribe to our [YouTube Channel]({{ site.data.url.virtua.youtube }})! 
 
-<br>
-
----------------
-
 ### **Related Article(s)**
 
 <ul>
@@ -362,10 +323,6 @@ Stay tuned! Follow us on [Twitter]({{ site.data.url.virtua.twitter }}), [Google+
   </li>
 {% endfor %}
 </ul>
-
-<br>
-
-<hr>
 
 ### **References**
 
@@ -377,9 +334,7 @@ Stay tuned! Follow us on [Twitter]({{ site.data.url.virtua.twitter }}), [Google+
 - &#9734; [Markdown][]
 - &#9734; [Kramdown][]
 
-<br>
-
-<hr>
+----
 
 ### **Image Credits**
 

@@ -32,14 +32,9 @@ Este artigo parte do princípio que você já tem o Jekyll instalado e usa o Git
 
 [Veja abaixo](#config) as configurações aplicadas ao `_config.yml`.
 
-
-<br>  
-
 ---------------------
 
 ## **<mkp-blue>Markups Básicos</mkp-blue>**
-
- <br>   
 
 #### **Títulos**
 
@@ -48,8 +43,6 @@ Este artigo parte do princípio que você já tem o Jekyll instalado e usa o Git
 ## Texto = <h2>Texto</h2>
 ### Texto = <h3>Texto</h3>
 {% endhighlight %}
-
- <br>   
 
 #### **Enfases**
 
@@ -66,8 +59,6 @@ __Texto em negrito__
 
 #### **Título em negrito**
 {% endhighlight %}
-
-<br>  
 
 #### **Listas**
 
@@ -98,9 +89,7 @@ Não-ordenadas:
     - Sub-item 2.1
     - Sub-item 2.2
 {% endhighlight %}
-
- <br>   
-
+  
 #### **Imagens**
 
 ![Virtua Creative Logo](http://www.gravatar.com/avatar/6fa7e8a0b8a820fa63c7cfd1833b1be4 "VirtuaCreative")
@@ -111,8 +100,6 @@ Não-ordenadas:
 
 _Alt_ e _Título_ não são obrigatórios.
 
- <br>  
-
 #### **Links**
 
 [Virtua Creative Technology](http://virtuacreative.com.br)
@@ -120,8 +107,6 @@ _Alt_ e _Título_ não são obrigatórios.
 {% highlight markdown %}
 [Texto impresso](url)
 {% endhighlight %}
-
-  <br>  
 
 #### **Âncoras**
 
@@ -143,12 +128,9 @@ Seu texto estará escrito assim:
 Quero citar minha [âncora](#ancora).
 {% endhighlight %}
 
- <br>   
-
 #### **Tabelas**
 
 As tabela são criadas com hifens e barras verticais. O cabeçalho é separado do restante da tabela por traços e as colunas são separadas por barras. O código a seguir...
-
 
 {% highlight markdown %}
 Cabeçalho Um	 | Cabeçalho Dois
@@ -210,8 +192,6 @@ Este código...
 
 Conforme acima, a "coluna um" aparecerá com o texto alinhado à esquerda; a "coluna dois", centralizada; e a "coluna três", à direita. Note que o as barras verticais não precisam estar simetricamente dispostas. O estilo aplicado à tabela é o mesmo definido no [CSS](#table-css) anteriormente.
 
-<br>
-
 #### **Códigos**
 
 As formas de exibir códigos em markdown mais utilizadas são:
@@ -271,13 +251,9 @@ Adicione 4 espaços em branco antes de qualquer texto que este aparecerá em blo
     hello world!
 
 
-<br>   
-
 --------------
  
 ## **<mkp-blue>Markups Avançados</mkp-blue>**
-
-<br>
  
 #### <a name="arroba"></a>**Links para Usuários**
 
@@ -295,8 +271,6 @@ gems:
 {% endhighlight %}
 
 Neste caso, o padrão será para citação de usuários do GitHub.
-
-<br>
 
 Caso prefira, poderá definir o a menção de usuários de outras redes sociais, desta forma:
 
@@ -344,15 +318,13 @@ kramdown:
 
 _Observações:_
 A linha um define o markdown que você está usando. A linha 4 insere um input no kramdown.
-<br>
+
 
 #### **Carinhas (Emoticons)**
 
 É bacana poder usar o markdown para descontrair o texto com os emoticons que conhecemos :smiley: !
 
 Você poderá acessar do seu :computer: toda a coleção de carinhas!
-
-<br>
 
 Sintaxe:
 
@@ -391,8 +363,6 @@ gem install jemoji
 
 {% endhighlight %}
 
-<br>
-
 <a name="config"></a>
 
 ## **`_config.yml`**
@@ -414,8 +384,6 @@ gems:
 # demais configurações...
 {% endhighlight %}
 
-<br>
-
 **Pronto!**
 
 É isso gente, para checar as informações acima, veja abaixo a lista de referências utilizadas para elaborar o artigo.
@@ -426,12 +394,7 @@ Deixe seu comentário se puder complementar, dar mais algumas dicas, sugestões 
 
 Obrigada!
 
-<br>
-
-
-#### **Referências**
-
-<br>
+## **Referências**
 
 - &#9734; [Referência completa](http://daringfireball.net/projects/markdown/basics) sobre markdown
 - &#9734; [Referência completa para Kramdown](kramdown.gettalong.org/syntax.html)

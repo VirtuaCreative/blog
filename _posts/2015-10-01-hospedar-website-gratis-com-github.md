@@ -18,7 +18,7 @@ author_fb: marciaramosmdr
 fb_section: Tutoriais - GitHub
 comments: true
 date: 2015-10-01 00:19:58 UTC
-date_update: 2016-02-22 16:44:16 UTC
+date_update: 2016-03-30 20:59:30 UTC
 # language: [en_US, en_GB]
 copy: true
 codingbox: true
@@ -32,15 +32,9 @@ Para saber o que é o **[GitHub][]** e quais são as melhores formas de aproveit
 2. **Hospedagem gratuita de websites com o GitHub**: Como funciona / Limitações / Extensões / Privacidade
 3. **Primeiros Passos**: Criando uma conta / Criando um repositório / Adicionando arquivos / Acesso público
 
-<br>
-
 No presente artigo explicaremos como **hospedar gratuitamente seu website com o GitHub**, incluindo um passo-a-passo e **tutoriais em vídeo** que facilitarão o processo.
 
-<br>
-
 ## **Como utilizar o GitHub para hospedar seu website**
-
-<br>
 
 ### **<mkp-blue>Condições</mkp-blue>**
 
@@ -52,8 +46,6 @@ Para publicar seu website com o GitHub, você precisa estar ciente das seguintes
 
 Todo o processo de hospedagem oferecido pelo GitHub acontece via GitHub Pages, que será explicado em seguida.
 
-<br>
-
 ## **Entendendo o GitHub Pages**
 
 O [GitHub Pages][] é a ferramenta do GitHub utilizada para hospedar websites. Você poderá ter dois tipos de websites:
@@ -63,8 +55,6 @@ O [GitHub Pages][] é a ferramenta do GitHub utilizada para hospedar websites. V
 
 Ambos hospedam os websites com as mesmas condições e características expostas no tópico anterior, mas eles diferem no método que você utilizará para colocá-los no ar.
 
-<br>
-
 ### **<mkp-blue>Website do Usuário ou Organização</mkp-blue>**
 
 Estes websites são construídos nos _branches_ `master` de um repositório que tenha exatamente este nome: `nome-do-usuario.github.io`, onde `nome-do-usuario`, é claro, é o seu nome de usuário. Nem uma letra nem símbolo poderá ser alterada, de outra forma não funcionará.
@@ -72,8 +62,6 @@ Estes websites são construídos nos _branches_ `master` de um repositório que 
 Ao criar um repositório com este nome, ele estará **automaticamente programado** para ser utilizado para hospedar um website, que será acessado através da URL `http://nome-do-usuario.github.io`. Ou seja, basta inserir o conteúdo do seu website neste repositório que, quando esta URL for acessada, você verá seu website no ar. 
 
 De fato, não há difença nenhuma entre websites de usuários e de organizações. A única coisa que difere é o tipo de conta que você tem no GitHub: contas pessoais ("usuário") e contas empresariais ("organização"). As contas têm inúmeras diferenças entre si, mas **os websites são criados exatamente da mesma forma**, a partir do mesmo método descrito acima. Para mais detalhes sobre estas contas, veja nosso artigo anterior ["O que é o GitHub - e porque utilizá-lo"](http://blog.virtuacreative.com.br/introducao-ao-github.html). 
-
-<br>
 
 <a name="projetos"></a>
 
@@ -85,27 +73,19 @@ Websites de projetos estão sujeitos às mesmas **três condições** descritas 
 2. Você não poderá utilizar um _branch_ `master` - deverá criar um _branch_ chamado `gh-pages`, que será a raiz do seu website, para onde você fará o upload do conteúdo (index.html, arquivos e pastas).
 3. Por padrão, seu website será acessado via `http://nome-do-usuario.github.io/nome-do-repositorio`, e não mais apenas `http://nome-do-usuario.github.io` como nos websites de usuário/organização. Mas você poderá também utilizar seu próprio domínio como endereço do website do seu projeto.
 
-<br>
-
 ### **<mkp-blue>Vantagens</mkp-blue>** 
 
 O maior ganho que temos é a possibilidade de utilizar uma conta do GitHub apenas para hospedar múltiplos websites. Isso mesmo, podemos criar quantos websites quisermos, pois o GitHub não impõe limite de cotas de utilização, conforme explicado detalhadamente no artigo anterior **[O que é o GitHub - e porque utilizá-lo](http://blog.virtuacreative.com.br/introducao-ao-github.html)**. Mas atenção! Você poderá publicar apenas UM website de usuário, mas poderá criar quantos websites de projetos precisar.
 
 Então caso você precise de um website para sua empresa, com o domínio `suaempresa.com` e precise de um outro website para você mesmo, com um segundo domínio `voce.com`, é possível fazer isso com apenas uma conta do GitHub e **sem gastar um centavo** em hospedagem! Basta alocar cada um deles em um repositório diferente e pronto! :smiley:
 
-<br>
-
 ### **<mkp-blue>Domínios próprios</mkp-blue>**
 
 Você poderá utilizar seu próprio domínio que o GitHub fará o redirecionamento automático, tanto em websites de usuários/empresas quanto em websites de projetos. Mas este é um passo posterior que não será coberto pelo presente artigo. Mais tarde publicaremos um artigo explicando este processo, quando o fizermos vamos inserir o link aqui para você. De qualquer forma, você poderá acessar às informações diretamente no [GitHub Help Guide][here].
 
-<br>
-
 ### **<mkp-blue>Links entre websites</mkp-blue>**
 
 Os seus websites poderão estar "linkados" entre si, mas somente se você quiser que estejam. Para tal, basta inserir o link onde você desejar, seja em tags no conteúdo, seja em tags no menu. Basta copiar a URL e colar como valor para o parâmetro `href` do seu link. 
-
-<br>
 
 ### **<mkp-blue>Exemplos Práticos</mkp-blue>**
 
@@ -122,13 +102,9 @@ Nosso usuário do GitHub, @virtuacreative, tem como **website de usuário** a se
 
 As estruturas dos websites não precisam ser as mesmas, e no exemplo dado, de fato **não são**!
 
-<br>
-
 ### **<mkp-blue>Integração com Redes Sociais e outros serviços</mkp-blue>**
 
 Como a maior parte das empresas que fornecem serviços variados para serem integrados aos websites de terceiros normalmente fornecem um **bloco de código** pronto e escrito em **javascript** para inserirmos no `<body>` ou na `<head>` dos nossos arquivos, não há a menor dificuldade em utilizá-los. Proceda normalmente sua integração com o Google Analytics, Facebook, Twitter, Gravatar, etc.
-
-<br>
 
 -------------------
 
@@ -136,9 +112,7 @@ Como a maior parte das empresas que fornecem serviços variados para serem integ
 
 O vídeo a seguir mostra como fazer o processo inteiro. Caso prefira, logo abaixo descreveremos o passo-a-passo do processo.
 
-<br>
-
-<div class="iframe_container" itemprop="video" itemscope="" itemtype="http://schema.org/VideoObject">
+<figure class="iframe_container" itemprop="video" itemscope="" itemtype="http://schema.org/VideoObject">
 	<iframe width="853" height="480" src="http://www.youtube.com/embed/A4-yOP6JDA8" frameborder="0" allowfullscreen="allowfullscreen"> </iframe>
 	<meta itemprop="contentURL" content="https://youtu.be/A4-yOP6JDA8" />
   	<meta itemprop="embedURL" content="http://www.youtube.com/embed/A4-yOP6JDA8" />
@@ -147,9 +121,7 @@ O vídeo a seguir mostra como fazer o processo inteiro. Caso prefira, logo abaix
   	<meta itemprop="description" content="Aprenda como hospedar gratuitamente seu website com o GitHub Pages!" />
   	<meta itemprop="duration" content="T3M06S" />
   	<meta itemprop="uploadDate" content="{{ page.date | date_to_xmlschema }}" />
-</div>
-
-<br>
+</figure>
 
 ### **<mkp-blue>Passo-a-Passo</mkp-blue>**
 
@@ -164,8 +136,6 @@ O vídeo a seguir mostra como fazer o processo inteiro. Caso prefira, logo abaix
 8. Clique no sinal de `+` para adicionar um arquivo. Escreva na caixa de texto `index.html`. Escreva o conteúdo na área de texto ou copie e cole de um arquivo que você já tenha pronto.
     - **8.1.** Se você ainda não tem nada para colocar no arquivo, mas deseja testar o processo, copie e cole o [código abaixo](#bloco-html) na área de texto fornecida pelo GitHub. Depois você poderá voltar e editar o conteúdo como quiser.
 9. Clique em `Commit New File` para salvá-lo. Pronto! Seu website já estará no ar!
-
-<br>
 
 <a name="bloco-html"></a>
 
@@ -200,25 +170,19 @@ function fDisplay() {
 }
 </script>
 
-<br>
-
 ## **Passos Seguintes**
 
-<br>
 
 ### **<mkp-blue>Criar pasta para seus arquivos CSS</mkp-blue>**
 
 Você poderá utiliza a tag `<style>...</style>` na `<head>` dos seus arquivos `html`, mas provavelmente irá preferir criar arquivos separados para seus estilos CSS. Para fazer isso, por favor siga o [passo-a-passo](http://blog.virtuacreative.com.br/introducao-ao-github.html#add-files) explicado no artigo anterior a este. No vídeo postado acima também incluímos este processo.
 
-<br>
 
 ### **<mkp-blue>Criar pasta para imagens no GitHub</mkp-blue>**
 
 Para criar uma pasta e adicionar imagens a ela para que você possa inserí-las no seu website hospedado no GitHub, não é possível fazer via plataforma web. Será necessário ou fazer o processo via linha de comando ou via [GitHub Desktop][]. É um aplicativo gratuito que permite que você gerencie seus repositórios diretamente do seu computador, seja ele Windows, MAC ou Linux. Basta acessar o link e fazer o download, instalá-lo e fazer o login com sua conta do GitHub. Veja o **tutorial de como adicionar uma pasta para suas imagens no vídeo abaixo** ou siga o passo-a-passo seguinte, como preferir.
 
-<br>
-
-<div class="iframe_container" itemprop="video" itemscope="" itemtype="http://schema.org/VideoObject">
+<figure class="iframe_container" itemprop="video" itemscope="" itemtype="http://schema.org/VideoObject">
 	<iframe width="853" height="480" src="http://www.youtube.com/embed/nwJkFACNSG4" frameborder="0" allowfullscreen="allowfullscreen"> </iframe>
 		<meta itemprop="contentURL" content="https://youtu.be/nwJkFACNSG4" />
 	  	<meta itemprop="embedURL" content="http://www.youtube.com/embed/nwJkFACNSG4" />
@@ -227,9 +191,7 @@ Para criar uma pasta e adicionar imagens a ela para que você possa inserí-las 
 	  	<meta itemprop="description" content="Aprenda como adicionar imagens a uma pasta para seu website gratuitamente hospedado no GitHub" />
 	  	<meta itemprop="duration" content="T3M10S" />
 	  	<meta itemprop="uploadDate" content="{{ page.date | date_to_xmlschema }}" />
-</div>
-
-<br>
+</figure>
 
 ### **<mkp-blue>Passo-a-Passo</mkp-blue>**
 
@@ -278,9 +240,6 @@ function Display() {
 
 Caso você precise criar um [website de projeto](#projetos), conforme explicamos acima, por favor pedimos que volte mais tarde, pois estamos preparando um tutorial em vídeo para este passo. Já temos um [novo tutorial em Inglês][]. Quando o mesmo estiver pronto em Português, incluiremos o link aqui. Adicione nosso [Blog ao seu feed][news feed], siga-nos no [Twitter][] e/ou inscreva-se no nosso [Canal do YouTube][] para receber em primeira mão!  
 
-<br>
-
-------------------------------------
 
 ### **<mkp-blue>Isso é tudo, pessoal!</mkp-blue>**
 
@@ -290,9 +249,6 @@ Se você tiver dúvidas ou sugestões, comente ou acesse nosso [formulário de c
 
 Obrigada e até o próximo artigo!
 
-<br>
-
----------------
 
 ### **Artigos relacionados**
 
@@ -300,10 +256,6 @@ Obrigada e até o próximo artigo!
 - &#128204; [O que é Jekyll - e para que ele serve](http://blog.virtuacreative.com.br/jekyll-for-beginners-introduction.html)
 - &#128204; [Criando blogs com Jekyll no Windows](http://blog.virtuacreative.com.br/jekyll-github-blog.html)
 - &#128204; [Jekyll e GitHub Markdown](http://blog.virtuacreative.com.br/jekyll-github-markdown.html)
-
-<br>
-
----------------
 
 ### **Referências**
 

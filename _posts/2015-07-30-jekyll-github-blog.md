@@ -18,7 +18,7 @@ author_twitter: xmdramos
 authorEmail: virtua.creative@gmail.com
 comments: true
 date: 2015-07-30 22:05:45 UTC
-date_update: 2016-02-22 17:51:11 UTC
+date_update: 2016-03-30 21:24:35 UTC
 # language: [pt_BR]
 ---
 
@@ -26,7 +26,7 @@ date_update: 2016-02-22 17:51:11 UTC
 
 [Jekyll](http://jekyllrb.com/) é um programa escrito em [Ruby](https://www.ruby-lang.org/pt/) que permite a criação dinâmica de websites e blogs utilizando apenas `html`, `css` e `javascript`. Entenda o que é o Jekyll neste artigo: "**[O que é e para que serve o Jekyll]({{ site.baseurl }}{% post_url 2015-08-17-jekyll-for-beginners-introduction %})**", no qual explicamos detalhadamente como ele funciona.
 
-<br>
+
 
 #### **<mkp-blue>Vantagens de utilizar o Jekyll</mkp-blue>**
 
@@ -44,7 +44,7 @@ Devido à falta de informações e tutoriais nesta área específica, resolvi de
 
 ### **Criando seu projeto com o Jekyll no Windows (Win 7)**
 
-<br>
+
 
 Programas e gems necessários para a instalação (veja abaixo as notas referentes às marcações **(1)**, **(2)**, **(3)**, **(4)**, e **(*)**): 
 
@@ -115,7 +115,7 @@ O Python é um programa com instalador. Todos os demais são "gems".
 
 </div>
 
-<br>
+
 
 #### **<mkp-blue>Passo-a-passo para a instalação</mkp-blue>**
 
@@ -123,14 +123,14 @@ O passo-a-passo para a instalação dos programas e gems mencionados acima via d
 
 **UPDATE** - Jekyll 2 para Jekyll 3: O processo de instalação do Jekyll melhorou significativamente depois da alteração de `markdown` e `highlighter` de `redcarpet` para `kramdown` e de `pygments` para `rouge`, respectivamente. Esta alteração nos padrões reduziu significativamente o número de dependências das `gems` instaladas e a ausência do `Python`, um programa voltado a programadores, mas não utilizado por todos os desenvolvedores e designers web.
 
-<br>
+
 
 <hr/>  
 
 
 ### **<a name="new-project"></a>Criando seu primeiro Blog com Jekyll**
 
-<br>
+
 
 Agora que você já conseguiu instalar o Jekyll, vamos criar seu primeiro site.
 
@@ -156,13 +156,13 @@ _Com o comando_ `--watch`, _o Jekyll acomanhará as mudanças que você fará no
 
 Se der tudo certo até aqui, você verá uma notificação no seu prompt informando que o Jekyll está rodando neste endereço: `server address: http://127.0.0.1:4000`. A parte à esqueda da pontuação `:` corresponde ao seu ip local ou localhost. A parte da direita te informa qual é a porta que o localhost está usando. Para ver seu novo site, vá até seu navagedor e digite `localhost:4000` ou o endereço informado pelo prompt de comando, caso seja diferente deste. Ao fazer uma mudança no seu arquivo, você terá que atualizar a página no navegador (F5) para vê-la.
 
-<br>
+
 
 #### **<mkp-blue>Parando a compilação</mkp-blue>**
 
 Se por algum motivo você quiser parar a compilação do Jekyll, vá ao prompt de comando e aperte `Ctrl C` no seu teclado. Se quiser alterar o arquivo `_config.yml`, sobre o qual falaremos logo [abaixo](#config), você terá que parar o Jekyll e reiniciá-lo, caso contrário as suas configurações não serão atualizadas. Para reiniciá-lo rapidamente, aperte a seta para cima :arrow_up: do seu teclado que aparecerá seus últimos comandos. Encontre o `jekyll serve --watch` e aperte `enter` para reiniciar.
 
-<br>
+
 
 <a name="gemfile"></a>
 
@@ -194,17 +194,17 @@ Desta forma, via `bundler`, você estará garantindo que as `gems` necessárias 
 
 _Nota: há outras `gems` que poderão ser inseridas conforme sua necessidade._
 
-<br>
+
 <hr/>
 
 
 ### **Hospedando gratuitamente com o GitHub Pages**
 
-<br>
+
 
 Agora que temos um projeto, e partido do pressuposto que você queira hospedá-lo no [GitHub Pages][github-pages], temos que fazer com que o Jekyll "converse" com o GitHub. Partimos do princípio que você já tenha um repositório pronto para receber seu blog. Para fazer o setup do GitHub Pages, veja o artigo [Como publicar seu website no GitHub][]. Siga-nos no [Twitter]() para ver nossos artigos em primeira mão!
 
-<br>
+
 
 #### <a name="config"></a><mkp-blue>Configuração do</mkp-blue> **<mkp-blue>_config.yml</mkp-blue>**
 
@@ -242,7 +242,7 @@ baseurl: http://www.seudominio.com
 
 Note que há apenas um espaço entre os dois pontos `:` e a url. Mantenha desta forma. Bagunçar com os espaços nos seus arquivos `.yml` pode gerar erros na compilação que você ficará louco até encontrar. Portanto, recomendo que não deixe de respeitar os espaços e a pontuação nos seus arquivos Yaml!
 
-<br>
+
 
 #### <mkp-blue>Gerando o</mkp-blue> **<mkp-blue>Gemfile</mkp-blue>**
 
@@ -273,7 +273,7 @@ Depois de fazer todos os updates, insira novamente o comando `bundle exec jekyll
 
 Pronto! Seu website deverá estar pronto para que você insira seu conteúdo!  :clap:   :clap:
 
-<br>
+
 
 #### **<mkp-blue>Posts</mkp-blue>**
 
@@ -318,29 +318,19 @@ Estes são apenas exemplos simples. Aprofundaremos os detalhes da escrita em Liq
 
 Os únicos arquivos que não trarão o cabeçalho se configuração serão os arquivos da pasta `_includes`. Estes arquivos terão seus conteúdos inseridos dinamicamente através da chamada `{% raw %}{{ content }}{% endraw %}` ou `{% raw %}{% include %}{% endraw %}`. Este tipo de objeto faz parte da estrutura Liquid, que deixaremos para discutir em outros artigos. Para ter um panorama introdutório a este assunto, veja nosso artigo ["O que é Jekyll - e para que ele serve"]({{ site.baseurl }}{% post_url 2015-08-17-jekyll-for-beginners-introduction %}). 
 
-<br>
-
 #### **<mkp-blue>Estilizando seu projeto</mkp-blue>**
 
 O projeto padrão do Jekyll (obtido com o comando `jekyll new meuprojeto` explicado [acima](#new-project)) já traz um design interessante. Muitas pessoas não perdem muito tempo estilizando suas páginas, usam o próprio projeto padrão e se aprofundam apenas em seus conteúdos. De qualquer forma, para saber o que é o que, você pode usar o `Inspecionar Elemento` do seu navegador para interagir com o css e personalizá-lo. Se você não está familiarizado com esta ferramenta, poderá ver este [artigo](http://www.gerenciandoblog.com.br/2013/10/como-usar-inspecionar-elemento-google-chrome.html), no qual o autor descreve detalhadamente como utilizá-la. Nesse artigo, o rapaz explica como o  "Inpecionar elemento" funciona no Google Chrome, mas no Mozilla Firefox você poderá acessá-la da mesma forma. Há ainda diversos temas gratuitos disponíveis no site [Jekyll Themes](http://jekyllthemes.io/).
-
-
-<br>
 
 #### **<mkp-blue>Markdown</mkp-blue>**
 
 **Markdown:** para ter acesso a uma lista prática de markdowns do Jekyll / GitHub, veja o nosso artigo [Jekyll e GitHub Markdown]({{ site.baseurl }}{% post_url 2015-08-02-jekyll-github-markdown %}).
 
-<br>
-
 <hr/>
 
 ### **+ Mais**
 
-<br>
-
 #### **<mkp-blue>Fontes de informação</mkp-blue>**
-
 
 Para quem entende Inglês, sugiro que siga os tutoriais em vídeo da série Jekyll do [Thomas Bradley][jekyll-youtube1]. Ficará mais fácil compreender como utilizar a estrutura de pastas, as ferramentas e os arquivos em  markdown `.md` do Jekyll.
 
@@ -352,11 +342,6 @@ Você poderá acessar a documentação do Jekyll no [Jekyll docs][jekyll]. Se vo
 
 Ficaremos muito felizes se puder deixar seu comentário com sugestões e dicas que ajudem a comunidade web!
 
-
-<br>
-
-
-
 #### **<mkp-blue>Atualização (<em>upgrade</em>) do Jekyll 2.x para 3.x</mkp-blue>**
 
 Tivemos que alterar algumas coisas neste artigo para que sigamos compatíveis com a nova versão do Jekyll, que está inclusive sendo [utilizada pelo GitHub Pages](https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0) desde 1º de fevereiro de 2016.
@@ -366,8 +351,6 @@ Algumas alterações foram significativas, mas nosso Blog sobreviveu intacto, po
 A documentação oficial completa fazendo referência a todas as alterações necessárias para adequar seu projeto ao Jekyll v3.x poderá ser encontrada na página destinada a esta orientação no site oficial do Jekyll: [Upgrading from 2.x to 3.x](http://jekyllrb.com/docs/upgrading/2-to-3/).
 
 A lista de `gems` utilizadas oficialmente pelo GitHub Pages pode ser encontrada [aqui](https://pages.github.com/versions/).
-
-<br>
 
 #### **<mkp-blue>Prós &amp; Contras</mkp-blue>**
 
@@ -379,13 +362,9 @@ Para quem precisa de websites mais elaborados com páginas de login, com CMS, co
 
 De qualquer forma, dependendo da complexidade que você queira atingir, não é possível fugir da programação baseada em linguagem de servidor, como o **php** faz muito bem. E neste caso, você não poderia utilizar o GitHub Pages, que não suporta php.
 
-<br>
-
 ---------------
 
 ### **Artigos Relacionados**
-
-<br>
 
 <ul>
 {% for art in site.data.artigos.jekyll %}
@@ -404,10 +383,6 @@ De qualquer forma, dependendo da complexidade que você queira atingir, não é 
   </li>
 {% endfor %}
 </ul>
-
-<br>
-
-<hr>
 
 
 [jekyll]:      http://jekyllrb.com 
