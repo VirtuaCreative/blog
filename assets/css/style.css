@@ -938,6 +938,10 @@ a.navbar-toggle.nav-link.icon-gitlab:hover svg:path {
 	display: inline-block;
 }
 
+.virtua_hidden {
+	display: none !important;
+}
+
 /* virtua @media rules*/
 
 @media screen and (min-width: 479px) and (max-width: 645px) {
