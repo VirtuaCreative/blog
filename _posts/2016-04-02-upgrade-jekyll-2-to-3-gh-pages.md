@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Upgrading Jekyll 2 to 3 on GitHub Pages
-categories: [github, github pages, tutorials in English]
-tags: [github, github pages, jekyll, upgrade]
+categories: [github, github pages, git, jekyll, tutorials in English]
+tags: [github, github pages, jekyll, upgrade, markdown, kramdown]
 meta_keywords: jekyll, jekyll upgrade, github, github pages, github website, broken site
 author: Marcia Ramos
 fb_section: Tutorials - Jekyll on GitHub
-description: Broken Jekyll site on GitHub Pages? Learn how to fix it!
+description: "Broken Jekyll site on GitHub Pages? Learn how to fix it!"
 image: http://goo.gl/Tz42UV
 imageUrl: https://goo.gl/nKQCBu
 image_schema: 'http://farm2.staticflickr.com//1563//25576817513_3751945298_o.png'
@@ -60,7 +60,7 @@ The changes that mostly affected or will affect the users are regarding Markdown
 
 Let's take a look one by one on the overview below. We'll focus on markdown, highlighter and the gems mentioned above. We'll also give you a brief description on the other changes.
 
-If the changes to adapt your project are substancial and you would like a **better alternative**, please check the <a href="#" class="scroll-link" data-id="alternative">alternative methods</a> at the end of this post.
+If the changes to adapt your project are substancial and you would like a **better alternative**, please check the [alternative methods](#){: .scroll-link data-id="alternative"} at the end of this post.
 
 ----
 
@@ -165,7 +165,7 @@ As we explained before, one of the major requirements for running Jekyll has dro
 - &#8615; `toml` – an alternative to YAML for configuration files
 - &#8615; `classifier-reborn` – for `site.related_posts`
 
-As they are not required by default anymore, if your site uses any of this gems, you'll need to add them manually, otherwise your site most likely won't build or will break. Or, worst, it's already broken. But don't worry, all those changes have a workaround. 
+As they are not required by default anymore, if your site uses any of this gems, you'll need to add them manually, otherwise your site most likely won't build or will break. Or even worst, it's already broken. But don't worry, all those changes have a workaround. 
 
 ### Jekyll-Gist
 {: .color_gray}
@@ -203,11 +203,11 @@ After some research, I've noticed that it is a known issue [reported at GitHub i
 ### Jekyll-Paginate
 {: .color_gray}
 
-They also dropped `jekyll-paginate`, which tons of Jekyll developers use frequently. But you can [add it back] to your project and use it as before.
+Jekyll 3.x also dropped `jekyll-paginate`, which tons of Jekyll developers use frequently. But you can [add it back](#){: .scroll-link data-id="add-the-gems-back-with-bundler"} to your project and use it as before.
 
 #### Troubleshooting `jekyll-paginate`
 
-When I first tried to upgrade this blog from Jekyll 2.x to Jekyll 3.x, my posts were not displaying. I [reported the error][issue-paginator] and Parkr (who is a Jekyll core developer) helped me to find out what the issue relied on. The problem was serving Jekyll in the `--safe` mode (the method [recommended by GitHub][safe]). So, when I ran `bundle exec jekyll serve --safe` my posts didn't displayed within `{% raw %}{% for post in paginator.posts %}{% endraw %}`. But, by running `bundle exec jekyll serve` they were back there, exactly as they should be.
+When I first tried to upgrade this blog from Jekyll 2.x to Jekyll 3.x, my posts were not displaying. I [reported the error][issue-paginator] and Parkr (who is a Jekyll core developer) helped me to find out what the issue relied on. The problem was serving Jekyll in the `--safe` mode (the method [recommended by GitHub][safe]). So, when I ran `bundle exec jekyll serve --safe` my posts didn't displayed within `{% raw %}{% for post in paginator.posts %}{% endraw %}` at all. But, by running `bundle exec jekyll serve` they were back there, exactly as they should be.
 
 ### Add the gems back with Bundler
 {: .color_gray}
@@ -221,7 +221,9 @@ Actually, the best and safest way to build Jekyll locally is using [Bundler]. Fo
 Follow these steps:
 
 \- 1. Install Bundler locally `gem install bundler`
+
 \- 2. On a terminal, navigate to your project `cd path/to/project` 
+
 \- 3. On your `_config.yml`, add the `gems` you want as an array:
 
 ```yaml
@@ -240,14 +242,17 @@ gem 'jekyll-gist'
 ```
 
 \- 5. Run `bundle install` 
+
 \- 6. Serve Jekyll with Bundler `bundle exec jekyll serve --watch`
 
 You're good to go, then! You can add any flag to the last command. E.g. `bundle exec jekyll serve --watch --incremental --baseurl ""`. Once and awhile, run `bundle update` on your project to make sure all gems are up to date.
 
+Of course, you can add more gems to your `Gemfile` if you need. For example, on this blog we use `jemoji` and `jekyll-mentions` too. [Here][gh-versions] you'll find a list of all gems whitelisted by GitHub Pages.
+
 ## Collections
 {: .color_blue}
 
-This is just a brief description. Using collections is a little better in terms of its logic: `site.collections` is an array of `collections`, thus:
+This is just a brief description. Using collections has become a little better in terms of its logic: `site.collections` is an array of `collections`, thus:
 
 `collection[0]` becomes `collection.label`
 
@@ -277,7 +282,7 @@ Our builds can also speed up considerably with by adding the flag `--incremental
 ## Relative Permalinks
 {: .color_blue}
 
-Jekyll 3.x does not support relative permalinks anymore. If you have on your `_config.yml` the following line, you'll need to remove it.
+Jekyll 3.x does **not** support relative permalinks anymore. If you have on your `_config.yml` the following line, you'll need to remove it.
 
 ```yaml
 relative_permalinks: true
@@ -288,13 +293,13 @@ relative_permalinks: true
 
 In Jekyll 2, any URL constructed from the `permalink:` variable had a trailing slash (`/`) added to it automatically. Jekyll 3 no longer adds trailing slashes automatically to `permalink:` URLs.
 
-Basically, instead of:
+Basically, instead of, for example:
 
 ```yaml
 permalink: /:year-:month-:day-:title
 ```
 
-You'll need to make sure it has a trailing slash at the end, otherwise you might face a lot of 404 errors:
+you'll need to make sure it has a trailing slash at the end, otherwise you might face a lot of 404 errors:
 
 ```yaml
 permalink: /:year-:month-:day-:title/
@@ -308,7 +313,7 @@ You might ask yourself if there is a better way to walk trough this process. The
 ### 1. Upload the `_site` folder
 {: .color_gray}
 
-Instead of letting GitHub build your site for you, you can upload **only** the `_site` folder. By doing this, you will push to your repository the site pre-compiled from your local machine. It's a quick way out.
+Instead of letting GitHub build your site for you, you can upload **only** the `_site` folder. By doing this, you will push to your repository the site pre-compiled from your local machine. It's a quick way out. And there is a plus here: you can use **any** Jekyll Plugin available (building locally) and upload the static site only.
 
 ### 2. Travis CI
 {: .color_gray}
@@ -318,27 +323,27 @@ You can use [Travis CI] to trigger a non-default build for you. But it's a littl
 ### 3. GitLab Pages
 {: .color_gray}
 
-Consider migrating to [GitLab Pages]. [GitLab] is a `git` remote repository manager, as GitHub is. There are some pros and cons (more _pros_ than _cons_), but we'll leave this discussion for another post. 
+I really think it's worth considering to migrate to [GitLab Pages]. [GitLab] is a `git` remote repository manager, as GitHub is. There are some pros and cons (more _pros_ than _cons_), but we'll leave this discussion for another post. 
 
-The thing is, with [GitLab Pages] you can choose which Jekyll version you want your project to be build with - you can do a lot more that that, actually. E.g. on [this project][carte-noire], the Jekyll version building this [site][carte-noire-site] is 2.5.3. So we wouldn't have to change anything at all! 
+The thing is, with [GitLab Pages] you can choose which Jekyll version you want your project to be build with - you can do a lot more that that, actually. E.g. on [this project][carte-noire], the Jekyll version building this [site][carte-noire-site] is 2.5.3. So, despite of any Jekyll upgrades, we wouldn't need to change anything at all! 
 
-If your project on GitHub already has a `CNAME`, you'd need just to import it to GitLab and add a `gitlab-ci.yml` configuration file like [this][carte-noire-ci]. Then you just specify the Jekyll Version on your `Gemfile` and that's it! No stress, no redirects, no problems! :+1:
+If your project on GitHub already has a `CNAME` pointing to your custom domain, you'd need just to import it to GitLab and add a `gitlab-ci.yml` configuration file like [this][carte-noire-ci]. Then you just specify the Jekyll version on your `Gemfile` and that's it! No stress, no redirects, no problems! :+1:
 
-Setting up your site on GitLab Pages will be the subject of our very [next post](#next-post). We'll try to bring you video tutorials to make it easier to understand.
+Setting up your site on GitLab Pages will be the subject of our very [next post](#){: .scroll-link data-id="next-post"}. We'll try to bring you video tutorials to make it easier to follow.
 
-We'll migrate this blog to GitLab soon! :smiley:
+We'll probably migrate this blog to GitLab soon! :smiley:
 
 ## Questions?
 
-Please, let us know if you have any questions by commenting below. If you want to ask Jekyll Team directly, they have a forum for that, called [Jekyll Talk].
+Please, let us know if you have any questions by commenting below. If you want to ask questions to the Jekyll Team directly, they have a forum for that, called [Jekyll Talk].
 
 ## Contribute
 
-Did we missed something? Spotted an error? Please add a [new issue on GitHub][blog-issue-tracker] to let us know! Any contribution is more than welcome!
+Did we miss something? Spotted an error? Please add a [new issue on GitHub][blog-issue-tracker] to let us know! Any contribution is more than welcome!
 
 ## Next Post
 
-On our next post we will bring you an alternative for GitHub Pages, which is **[GitLab Pages]**). It's a fantastic alternative to GitHub itself, actually. They both have pros and cons, but [GitLab] is really worth trying. We'll discuss it soon! So, stay tunned for our updates!! Follow us on [Twitter] and/or subscribe to our [YouTube Channel]!
+On our next post we will bring you an alternative for GitHub Pages, **[GitLab Pages]**. It's a fantastic alternative to GitHub itself, actually. They both have pros and cons, but [GitLab] is really worth trying. We'll discuss it soon! So, stay tunned for our updates!! Follow us on [Twitter] and/or subscribe to our [YouTube Channel]!
 
 ## Related Articles
 
