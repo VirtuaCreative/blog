@@ -19,7 +19,7 @@ comments: true
 published: true
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
 language: [en_US, en_GB]
-# date_update: 2016-02-12 19:11:52 UTC
+date_update: 2016-04-10 18:00:52 BRT
 # copy: true # copy button with javascript
 # codingbox: true # code type on the top-right of code block boxes
 related: github
@@ -323,15 +323,15 @@ You can use [Travis CI] to trigger a non-default build for you. But it's a littl
 ### 3. GitLab Pages
 {: .color_gray}
 
-I really think it's worth considering to migrate to [GitLab Pages]. [GitLab] is a `git` remote repository manager, as GitHub is. There are some pros and cons (more _pros_ than _cons_), but we'll leave this discussion for another post. 
+I really think it's worth considering to migrate your site to [GitLab Pages]. [GitLab] is a `git` remote repository manager, with extended functionality. You can create a [free account][gitlab-sign-up] at GitLab.com and enjoy its features, including unlimited free private repos. 
 
-The thing is, with [GitLab Pages] you can choose which Jekyll version you want your project to be build with - you can do a lot more that that, actually. E.g. on [this project][carte-noire], the Jekyll version building this [site][carte-noire-site] is 2.5.3. So, despite of any Jekyll upgrades, we wouldn't need to change anything at all! 
+The thing is, with [GitLab Pages] you can choose which Jekyll version you want your project to be build with (you can do a lot more that that, actually). E.g. on [this project][carte-noire], the Jekyll version building this [site][carte-noire-site] is 2.5.3. So, despite of any Jekyll upgrades, we wouldn't be obligated to change anything at all on our sites! The choice of upgrading or not, would be up to ourselves only.
 
 If your project on GitHub already has a `CNAME` pointing to your custom domain, you'd need just to import it to GitLab and add a `gitlab-ci.yml` configuration file like [this][carte-noire-ci]. Then you just specify the Jekyll version on your `Gemfile` and that's it! No stress, no redirects, no problems! :+1:
 
-Setting up your site on GitLab Pages will be the subject of our very [next post](#){: .scroll-link data-id="next-post"}. We'll try to bring you video tutorials to make it easier to follow.
+[Setting up your site on GitLab Pages][blog-gitlab-pages] will be the subject of our very [next post](#){: .scroll-link data-id="next-post"}. We'll try to bring you video tutorials to make it easier to follow.
 
-We'll probably migrate this blog to GitLab soon! :smiley:
+We'll migrate this blog to GitLab Pages soon! :smiley:
 
 ## Questions?
 
@@ -387,6 +387,7 @@ On our next post we will bring you an alternative for GitHub Pages, **[GitLab Pa
 [issue-gist]: https://github.com/jekyll/jekyll-gist/issues/30
 
 [blog-issue-tracker]: https://github.com/VirtuaCreative/blog/issues
+[blog-gitlab-pages]: https://about.gitlab.com/2016/04/07/gitlab-pages-setup/
 [Bundler]: http://bundler.io
 [carte-noire]: https://gitlab.com/jekyll-themes/carte-noire
 [carte-noire-ci]: https://gitlab.com/jekyll-themes/carte-noire/blob/master/.gitlab-ci.yml
@@ -396,7 +397,9 @@ On our next post we will bring you an alternative for GitHub Pages, **[GitLab Pa
 [GitHub]: {{ site.data.url.git.home }}
 [GitHub Pages]: {{ site.data.url.git.pages }}
 [GitLab]: https://about.gitlab.com
-[GitLab Pages]: http://doc.gitlab.com/ee/pages/README.html
+[gitlab-sign-up]: https://gitlab.com/users/sign_in
+[GitLab Pages]: https://pages.gitlab.io
+[gitlab-pages-docs]: http://doc.gitlab.com/ee/pages/README.html
 [kramdown]: http://kramdown.gettalong.org/
 [kramdown-syntax]: http://kramdown.gettalong.org/quickref.html
 [Python]: {{ site.data.url.environments.python }}
