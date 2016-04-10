@@ -16,3 +16,24 @@
 		-ms-touch-action: auto;
 	} 	
 }
+
+/* @media queries for Chrome 29+ only */
+
+/* this query fixes issue on Chrome for Android, reported at: 
+http://stackoverflow.com/questions/36392311/css-displayblock-not-working-on-chrome-for-android/36527157
+*/
+
+@media screen and (-webkit-min-device-pixel-ratio:0)
+  and (min-resolution:.001dpcm) and (max-width: 479px) {
+    .fadeIn {
+    	display: initial;
+    	margin-left: 5% !important;
+    }
+    article {
+    	padding-left: 5%;
+    	padding-right: 5%;
+    }
+    td pre.lineno {
+    	max-width: inherit;
+    } 
+}
