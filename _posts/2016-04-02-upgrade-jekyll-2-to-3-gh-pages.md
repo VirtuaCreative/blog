@@ -19,7 +19,7 @@ comments: true
 published: true
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
 language: [en_US, en_GB]
-date_update: 2016-04-10 18:00:52 BRT
+date_update: 2016-04-10 18:16:52 BRT
 # copy: true # copy button with javascript
 # codingbox: true # code type on the top-right of code block boxes
 related: github
@@ -329,7 +329,7 @@ The thing is, with [GitLab Pages] you can choose which Jekyll version you want y
 
 If your project on GitHub already has a `CNAME` pointing to your custom domain, you'd need just to import it to GitLab and add a `gitlab-ci.yml` configuration file like [this][carte-noire-ci]. Then you just specify the Jekyll version on your `Gemfile` and that's it! No stress, no redirects, no problems! :+1:
 
-[Setting up your site on GitLab Pages][blog-gitlab-pages] will be the subject of our very [next post](#){: .scroll-link data-id="next-post"}. We'll try to bring you video tutorials to make it easier to follow.
+[Setting up your site on GitLab Pages][blog-gitlab-pages] will be the subject of our very [next post](#){: .scroll-link data-id="next-post"}. We'll try to bring you video tutorials to make it easier to follow through.
 
 We'll migrate this blog to GitLab Pages soon! :smiley:
 
