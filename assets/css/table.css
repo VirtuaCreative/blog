@@ -23,6 +23,8 @@
 http://stackoverflow.com/questions/36392311/css-displayblock-not-working-on-chrome-for-android/36527157
 */
 
+/* also fixes extra lines on highlight linenos */
+
 @media screen and (-webkit-min-device-pixel-ratio:0)
   and (min-resolution:.001dpcm) and (max-width: 479px) {
     .fadeIn {
@@ -32,8 +34,12 @@ http://stackoverflow.com/questions/36392311/css-displayblock-not-working-on-chro
     article {
     	padding-left: 5%;
     	padding-right: 5%;
-    }
-    td pre.lineno {
+    } 
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0)
+  and (min-resolution:.001dpcm) {
+  	td pre.lineno {
     	max-width: inherit;
     } 
 }
