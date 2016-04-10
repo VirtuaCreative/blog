@@ -19,7 +19,7 @@ comments: true
 published: True
 authorUrl: https://plus.google.com/+MarciaDiasRamosMD/
 language: [en_US, en_GB]
-date_update: 2016-03-30 20:52:42 UTC
+date_update: 2016-04-10 19:32:47 UTC
 # copy:
 codingbox: true
 related: jekyll
@@ -152,9 +152,42 @@ Hello! I'm a <mkp-blue>**blue**</mkp-blue> word in a regular markdown text!
 
 ... which probably is not what you want.
 
+#### Workaround
+{: .color_gray}
+
+The good news is, with Kramdown you can do that by adding this markup before the section you want to combine HTML and markdown markup:
+
+{% highlight markdown %}
+{% raw %}{::options parse_block_html="true" /}{% endraw %}
+{% endhighlight %}
+
+It will allow you to do crazy stuff like:
+
+{% highlight markdown %}
+{% raw %}{::options parse_block_html="true" /}{% endraw %}
+
+<p class="bkgblue">Hello! This is gonna be **bold**! And this, <span class="color_blue">**blod and blue**</span>!</p>
+
+{% endhighlight %}
+
+... which will produce:
+
+{::options parse_block_html="true" /}
+
+<p class="bkgblue">Hello! This is gonna be **bold**! And this, <span class="color_blue">**blod and blue**</span>!</p>
+
+{::options parse_block_html="false" /}
+
+Then, if you need, you can close the HTML/Markdown block parser with:
+
+{% highlight markdown %}
+{% raw %}{::options parse_block_html="false" /}{% endraw %}
+{% endhighlight %}
+
 That's it, you can add as many default or non-default elements to your markdown file, as long as you leave blank lines above and below them.
 
-**ATTENTION**
+#### Attention!
+{: .color_gray}
 
 Making up your own custom elements is not recommended when you want to stick to the standards. Also, they haven't cross-browser compatibility. There is an [article](http://www.html5rocks.com/en/tutorials/webcomponents/customelements/#fromtemplate) where the author goes deep into this subject. The [minimum recommendation](http://stackoverflow.com/questions/2802687/is-there-a-way-to-create-your-own-html-tag-in-html5/#answer-11467718) is adding this code to the site `<head>` when you use them:
 
@@ -178,7 +211,7 @@ For example, let's say you want a particular image style at some point, you can 
 ...
 
 <div class="example">
-	<img src="http:something.com/img/img1.png" alt="Some alternative text">
+  <img src="http:something.com/img/img1.png" alt="Some alternative text">
 </div>
 
 ...
@@ -189,7 +222,7 @@ The result will be exactly as expected:
 {% highlight html %}
 ...
 <div class="example">
-	<img src="http:something.com/img/img1.png" alt="Some alternative text">
+  <img src="http:something.com/img/img1.png" alt="Some alternative text">
 </div>
 ...
 {% endhighlight %}
@@ -258,7 +291,7 @@ Just *do not forget* to always leave a blank line between your markdown regular 
 
 ### **<mkp-blue>Update!</mkp-blue>**
 
-I've just found out an easy way to applying **classes** to your markdown!! Look at that:
+I've just found out an easy way to applying **classes** to your markdown markup with Kramdown!! Look at that:
 
 I'm in a green box now!
 {: .bkggreen}
@@ -272,7 +305,7 @@ I'm in a green box now!
 
  It's awesome, isn't it?! :dancers:
 
-**What if I need more than one `class`?**
+**What if I need more than one `.class`?**
 {: .color_blue}
 
 {% highlight markdown %}
@@ -294,6 +327,13 @@ I have tree classes now!
 {% highlight markdown %}
 I have an ID and a CLASS now!
 {% raw %}{: #i_am_an_id .class}{% endraw %}
+{% endhighlight %}
+
+**What if I need to add a `.class` to an image?**
+{: .color_blue}
+
+{% highlight markdown %}
+![ALT text](path/to/img/image.png){: .class}
 {% endhighlight %}
 
 I just **loved** this! Check the [full reference](http://kramdown.gettalong.org/quickref.html) out!
