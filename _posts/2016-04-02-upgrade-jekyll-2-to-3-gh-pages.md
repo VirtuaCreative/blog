@@ -327,7 +327,7 @@ I really think it's worth considering to migrate your site to [GitLab Pages]. [G
 
 The thing is, with [GitLab Pages] you can choose which Jekyll version you want your project to be build with (you can do a lot more that that, actually). E.g. on [this project][carte-noire], the Jekyll version building this [site][carte-noire-site] is 2.5.3. So, despite of any Jekyll upgrades, we wouldn't be obligated to change anything at all on our sites! The choice of upgrading or not, would be up to ourselves only.
 
-If your project on GitHub already has a `CNAME` pointing to your custom domain, you'd need just to import it to GitLab and add a `gitlab-ci.yml` configuration file like [this][carte-noire-ci]. Then you just specify the Jekyll version on your `Gemfile` and that's it! No stress, no redirects, no problems! :+1:
+If your project on GitHub already has a `CNAME` pointing to your custom domain, you'd need just to import it to GitLab and add a `.gitlab-ci.yml` configuration file like [this][carte-noire-ci]. Then you just specify the Jekyll version on your `Gemfile` and that's it! No stress, no redirects, no problems! :+1:
 
 [Setting up your site on GitLab Pages][blog-gitlab-pages] will be the subject of our very [next post](#){: .scroll-link data-id="next-post"}. We'll try to bring you video tutorials to make it easier to follow through.
 
