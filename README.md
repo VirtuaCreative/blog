@@ -7,7 +7,7 @@
 
 =====
 
-_[Ver em Português](https://gitlab.com/virtuacreative/blog/blob/master/README.md#blog-1)_
+_[Ver em Português](#blog-1)_
 
 _______________
 
