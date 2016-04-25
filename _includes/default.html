@@ -3,10 +3,16 @@
 {% if page.fb_title %}<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">{% else %}<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# {{ site.fb_app.namespace }}: http://ogp.me/ns/fb/{{ site.fb_app.namespace }}#">{% endif %}
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-	{% if page.redirect %}<!-- redirect -->
+	<!-- redirect -->
+	{% if page.redirect %}
 	<meta http-equiv="refresh" content="{{ page.redir_time }};URL={{ page.redirect_url }}">
 	<meta name="robots" CONTENT="noindex, nofollow">
-	<!-- redirect -->{% endif %}
+	{% else %}
+	<!--redirect to blog.virtuacreative.com.br-->
+	<meta http-equiv="refresh" content="0;URL="//blog.virtuacreative.com.br/{{ page.url }}">
+	<meta name="robots" CONTENT="noindex, nofollow">
+	{% endif %}
+	<!-- redirect -->
 	<meta name="google-site-verification" content="EwdXtwSaGRqlL1wY8IKNQe2HJCgxEAeR-FkEXalVjLs" />
 	<title>{{ page.title }}</title>
 	{% if page.description %}<meta name="description" content="{{ page.description }}">{% else %}<meta name="description" content="{{ site.fb_description }}">{% endif %}
